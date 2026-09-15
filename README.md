@@ -4,6 +4,8 @@ A collection of cybersecurity projects, labs, practical exercises, and technical
 
 ## 📂 Internship Work
 
+- [02 — Footprinting & Reconnaissance](02-FOOTPRINTING-RECONNAISSANCE/README.md)
+
 More projects and practical exercises will be added here throughout the internship.
 
 ## ⚠️ Ethical Use
