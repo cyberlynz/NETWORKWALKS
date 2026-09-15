@@ -1,23 +1,57 @@
+<div align="center">
+
 # 🌐 Network Scanning with Zenmap
 
-**NetworkWalks Cybersecurity & Ethical Hacking — Batch B083**  
-**Week 02 | Project Module 5 (W2-PM5)**
+**Practical network discovery and topology mapping using Zenmap and Nmap**
+</div>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Skill-Network%20Scanning-404040?style=flat-square&labelColor=C00000" />
+  <img src="https://img.shields.io/badge/Nmap-Zenmap-0070C0?style=flat-square&labelColor=000000" />
+  <img src="https://img.shields.io/badge/NetworkWalks-B083-C00000?style=flat-square" />
+  <img src="https://img.shields.io/badge/Week-02-E87500?style=flat-square&labelColor=000000" />
+  <img src="https://img.shields.io/badge/GitHub-404040?style=flat-square&labelColor=0070C0&logo=github&logoColor=white" />
+  <img src="https://img.shields.io/badge/Ethical%20Hacking-C00000?style=flat-square&labelColor=000000" />
+</p>
+
+---
 
 ## 📌 Project Overview
 
-This project covers practical **network scanning with Zenmap**, the official graphical user interface for Nmap. The exercise focuses on identifying the local IP address and LAN subnet, discovering live hosts, identifying their IP and MAC addresses, and saving the network topology as a PDF.
+This project focuses on practical **network scanning with Zenmap**, the graphical interface for Nmap.
 
-## 🎯 Tasks
+The objective is to identify the local IP address and LAN subnet, discover live hosts on the network, identify host IP and MAC addresses, and use Zenmap's **Topology** view to visualize the discovered network and save the result as a PDF.
 
-### 01 — Download & Install Zenmap
+The work follows the same structured, evidence-based documentation style used throughout the NetworkWalks internship.
 
-Download and install Zenmap from the official Nmap website on a Windows PC.
+---
 
-**Official download:** https://nmap.org/download.html
+## 🎯 Objectives
+
+The main objectives of this project are to:
+
+- Install and configure Zenmap.
+- Identify the local IP address and LAN subnet.
+- Perform a Ping Scan to discover live hosts.
+- Record the IP addresses of discovered hosts.
+- Identify MAC addresses where available.
+- Use Zenmap Topology to visualize the network.
+- Save the network topology as a PDF.
+- Document the results with screenshots and supporting evidence.
+
+---
+
+# 🪜 Network Scanning Procedure
+
+## Step 1. Download & Install Zenmap
+
+Zenmap was installed on the Windows system for graphical Nmap scanning.
+
+**Official Nmap download:** https://nmap.org/download.html
 
 **Result:**
 
-> Add a short note describing your Zenmap installation result here.
+> Zenmap installation completed successfully and the application was ready for network scanning.
 
 **Screenshot:**
 
@@ -25,20 +59,22 @@ Download and install Zenmap from the official Nmap website on a Windows PC.
 
 ---
 
-### 02 — Find Local IP Address & LAN Subnet
+## Step 2. Find Local IP Address & LAN Subnet
 
-Open Command Prompt and run:
+Open **Command Prompt** and run:
 
 ```cmd
 ipconfig
 ```
 
-Use the output to identify the computer's local IP address and LAN subnet.
+Use the output to identify the local IPv4 address and determine the LAN subnet.
 
 **Result:**
 
-- Local IP: `Add your result`
-- LAN Subnet: `Add your result`
+```text
+Local IP: Add your result
+LAN Subnet: Add your result
+```
 
 **Screenshot:**
 
@@ -46,21 +82,21 @@ Use the output to identify the computer's local IP address and LAN subnet.
 
 ---
 
-### 03 — Find Live Hosts in the IP Subnet
+## Step 3. Find Live Hosts in the IP Subnet
 
-Open Zenmap, enter your local LAN subnet as the target, select **Ping Scan**, and run the scan.
+Open Zenmap, enter the local LAN subnet as the target, select **Ping Scan**, and run the scan.
 
-Example command shown in the guide:
+Example Nmap command:
 
 ```text
 nmap -sn 10.0.0.0/24
 ```
 
-Use your own local subnet rather than the example subnet if it is different.
+> Use the actual local subnet identified from your `ipconfig` output rather than the example subnet above.
 
 **Result:**
 
-> Add a short note describing the live hosts discovered in your subnet.
+> Add a short description of the live hosts discovered during the Ping Scan.
 
 **Screenshot:**
 
@@ -68,13 +104,15 @@ Use your own local subnet rather than the example subnet if it is different.
 
 ---
 
-### 04 — Number of Live Hosts
+## Step 4. Record the Number of Live Hosts
 
-Record the total number of live hosts discovered by the Ping Scan.
+Record the total number of live hosts identified by the Ping Scan.
 
 **Result:**
 
-- Live hosts: `Add your result`
+```text
+Live hosts: Add your result
+```
 
 **Screenshot:**
 
@@ -82,9 +120,9 @@ Record the total number of live hosts discovered by the Ping Scan.
 
 ---
 
-### 05 — IP Addresses of Live Hosts
+## Step 5. Record IP Addresses of Live Hosts
 
-Record the IP addresses of all live hosts discovered during the scan.
+Document the IP addresses returned by the Ping Scan.
 
 **Result:**
 
@@ -98,9 +136,9 @@ Add live host IP addresses here
 
 ---
 
-### 06 — MAC Addresses of Live Hosts
+## Step 6. Identify MAC Addresses
 
-Record the MAC addresses of the live hosts. Use `ipconfig /all` where necessary to identify the local machine's MAC address.
+Use the scan results and, where necessary, Command Prompt to identify the MAC address of the local system.
 
 ```cmd
 ipconfig /all
@@ -114,24 +152,26 @@ Add MAC addresses here
 
 **Screenshot:**
 
-> Add your screenshot showing the MAC addresses here.
+> Add your screenshot showing the MAC address information here.
 
 ---
 
-### 07 — Display & Save Network Topology
+## Step 7. Display & Save Network Topology
 
-In Zenmap:
+Zenmap was used to display the discovered network topology.
+
+Procedure:
 
 1. Open the **Topology** tab.
-2. Turn on the **Legend**.
-3. Review the topology and host relationships.
+2. Enable the **Legend**.
+3. Review the discovered hosts and network relationships.
 4. Select **Save Graphic**.
-5. Choose **PDF** as the file type.
-6. Save the topology PDF to the desktop.
+5. Choose **PDF** as the output format.
+6. Save the topology PDF.
 
 **Result:**
 
-> Add a short note confirming that the Zenmap network topology was displayed and saved as a PDF.
+> Add a short note confirming that the Zenmap topology was displayed and saved successfully as a PDF.
 
 **Topology Screenshot:**
 
@@ -143,29 +183,80 @@ In Zenmap:
 
 ---
 
-## 🧠 What I Learned
+# 📊 Evidence Checklist
 
-- How Zenmap provides a graphical interface for performing Nmap network scans.
-- How to use `ipconfig` to identify a local IP address and LAN subnet.
-- How a Ping Scan can be used to discover live hosts on a network.
-- How to identify the IP and MAC addresses associated with discovered hosts.
-- How to use Zenmap's Topology view to visualize discovered hosts and save the result as a PDF.
-- The importance of performing network scanning only on networks and systems where scanning is authorised.
+| ✅ Evidence | Status |
+|---|---|
+| Zenmap installation | ⬜ |
+| `ipconfig` output | ⬜ |
+| Ping Scan result | ⬜ |
+| Number of live hosts | ⬜ |
+| Live host IP addresses | ⬜ |
+| MAC address information | ⬜ |
+| Zenmap Topology view | ⬜ |
+| Saved topology PDF | ⬜ |
 
-## 🔒 Security & Ethical Use
+---
 
-This project is for educational and authorised security testing only. Network scanning should be performed only on systems and networks that are owned, provided for training, or explicitly authorised for testing.
+# 💡 What I Learned
+
+Through this project, I learned how to use Zenmap and Nmap for basic network discovery and visualization.
+
+### 1. Network Identification
+
+I learned how to use `ipconfig` to identify the local IPv4 address and understand the subnet used by the computer.
+
+### 2. Host Discovery
+
+I learned how a Ping Scan can be used to identify live hosts within a network range without performing a full port scan.
+
+### 3. IP & MAC Information
+
+I learned how to document the IP addresses of discovered hosts and use local network information to identify MAC addresses where available.
+
+### 4. Network Topology
+
+I learned how Zenmap's Topology view can provide a graphical representation of discovered hosts and their relationships.
+
+### 5. Security Documentation
+
+I learned that recording commands, scan results, screenshots, and supporting evidence makes a cybersecurity project easier to understand, review, and reproduce.
+
+---
+
+# 🔐 Security & Ethical Use
+
+This project is for **educational and authorised security testing only**.
+
+Network scanning should only be performed against systems and networks that are owned, provided for training, or explicitly authorised for testing. Scanning third-party networks without permission may be unlawful or disruptive.
+
+---
+
+# 🔗 Tools & Resources
+
+- **Nmap / Zenmap:** https://nmap.org/download.html
+- **Command Prompt:** Windows networking utility used to inspect local network configuration
+
+---
+
+# 👤 Author
+
+**Collins**  
+Cybersecurity Learner | NetworkWalks Batch B083
+
+---
 
 ## 📌 Project Information
 
 | Item | Details |
 |---|---|
-| Training Program | NetworkWalks Cybersecurity & Ethical Hacking |
+| Program Name | NetworkWalks Cybersecurity & Ethical Hacking |
 | Batch | B083 |
 | Week | 02 |
 | Project | W2-PM5 |
 | Project Title | Network Scanning with Zenmap |
 | Author | Collins |
+| Repository | GitHub |
 
 ---
 
