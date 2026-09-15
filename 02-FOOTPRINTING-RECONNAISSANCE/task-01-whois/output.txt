@@ -1,0 +1,11 @@
+┌──(kali㉿kali)-[~]
+└─$ whois networkwalks.com
+Domain Name: NETWORKWALKS.COM
+Registrar: GoDaddy.com, LLC
+Creation Date: 2019-11-06
+Registrar Registration Expiration Date: 2027-11-06
+Name Server: NS6135.HOSTGATOR.COM
+Name Server: NS6136.HOSTGATOR.COM
+DNSSEC: unsigned
+Registrant Name: Registration Private
+Registrant Organization: Domains By Proxy, LLC
