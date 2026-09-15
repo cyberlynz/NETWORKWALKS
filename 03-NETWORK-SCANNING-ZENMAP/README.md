@@ -78,7 +78,7 @@ LAN Subnet: Add your result
 
 **Screenshot:**
 
-> Add your `ipconfig` screenshot here.
+> !(ipconfig screenshot.PNG).
 
 ---
 
