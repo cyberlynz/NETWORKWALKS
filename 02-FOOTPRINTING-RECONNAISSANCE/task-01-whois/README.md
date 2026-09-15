@@ -1,17 +1,17 @@
-# 01 — WHOIS
+# Task 1 — WHOIS
 
 ## Requirement
-Collect domain registration information using WHOIS.
+
+Query the public domain registration record to find registration details, dates and name servers.
 
 ## Command
+
 ```bash
 whois networkwalks.com
 ```
 
-## Result
-WHOIS returned domain registration details including GoDaddy as the registrar, registration/expiry dates, domain status, and nameservers. The registrant information was privacy-protected.
-
 ## Evidence
-[View command output](output.txt)
 
-[← Back to Week 02 Project](../README.md)
+![WHOIS Screenshot](https://raw.githubusercontent.com/cyberlynz/B083-W2-PM1-FOOTPRINTING-RECONNAISSANCE/main/whois-screenshot.png)
+
+Full command output: [`output.txt`](output.txt)
