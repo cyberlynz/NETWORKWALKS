@@ -72,13 +72,13 @@ Use the output to identify the local IPv4 address and determine the LAN subnet.
 **Result:**
 
 ```text
-Local IP: Add your result
-LAN Subnet: Add your result
+Local IP: 10.0.0.10
+LAN Subnet: 255.255.255.0
 ```
 
 **Screenshot:**
 
-> ![ipconfig](ipconfig-screenshot.PNG).
+> ![ipconfig](ipconfig-screenshot.png)
 
 ---
 
