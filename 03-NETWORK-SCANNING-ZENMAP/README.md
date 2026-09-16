@@ -203,11 +203,11 @@ https://networkwalks.com/zenmap-network-scanning-practice-lab/
 
 ### 
 
-![Lab 1 evidence](https://raw.githubusercontent.com/cyberlynz/NETWORKWALKS/a2be5abe0b8ce5726d6e5817f4d3a328a5228491/03-NETWORK-SCANNING-ZENMAP/lab1.PNG)
+![Lab 1 evidence](lab1.PNG)
 
 ### 
 
-![Lab 2 evidence](https://raw.githubusercontent.com/cyberlynz/NETWORKWALKS/a2be5abe0b8ce5726d6e5817f4d3a328a5228491/03-NETWORK-SCANNING-ZENMAP/lab2.PNG)
+![Lab 2 evidence](lab2.PNG)
 
 ---
 
