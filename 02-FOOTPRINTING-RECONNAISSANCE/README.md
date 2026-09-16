@@ -149,3 +149,9 @@ This project is for educational and authorised security testing only. Reconnaiss
 | Project Title | Footprinting & Reconnaissance Attacks with Multiple Kali Tools |
 | Target | `networkwalks.com` |
 | Author | Collins |
+
+## 🔗 Related Projects
+
+- [← Back to NETWORKWALKS](../README.md)
+- [W2-PM5 — Network Scanning with Zenmap](../03-NETWORK-SCANNING-ZENMAP/README.md)
+- [W2-PM-FINAL — Penetration Testing Report](../04-PENTESTING-REPORT/README.md)
