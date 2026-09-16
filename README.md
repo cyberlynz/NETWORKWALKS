@@ -4,13 +4,13 @@ A collection of cybersecurity projects, practical labs, technical exercises, and
 
 ## 📂 Internship Projects
 
-- [**02 — Footprinting & Reconnaissance**](02-FOOTPRINTING-RECONNAISSANCE/README.md)  
+- [**01 — Footprinting & Reconnaissance**](01-FOOTPRINTING-RECONNAISSANCE/README.md)  
   W2-PM1: Reconnaissance using multiple Kali Linux tools.
 
-- [**03 — Network Scanning with Zenmap**](03-NETWORK-SCANNING-ZENMAP/README.md)  
-  W2-PM5: Local network discovery, host identification, MAC addresses, and topology mapping.
+- [**02 — Network Scanning with Zenmap**](02-NETWORK-SCANNING-ZENMAP/README.md)  
+  W2-PM5: Local network discovery, host identification, MAC addresses, topology mapping, and lab questions.
 
-- [**04 — Penetration Testing Report**](04-PENTESTING-REPORT/README.md)  
+- [**03 — Penetration Testing Report**](03-PENTESTING-REPORT/README.md)  
   W2-PM-FINAL: Consolidated Week 02 report covering footprinting, reconnaissance, and network scanning.
 
 ## ⚠️ Ethical Use
