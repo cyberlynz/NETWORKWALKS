@@ -269,14 +269,9 @@ Network scanning should only be performed against systems and networks that are 
 
 - **Nmap / Zenmap:** https://nmap.org/download.html
 - **NetworkWalks Zenmap Lab:** https://networkwalks.com/zenmap-network-scanning-practice-lab/
-- **Command Prompt:** Windows utility used to inspect local network configuration
+- **Command Prompt**
 
 ---
-
-# 👤 Author
-
-**Collins**  
-Cybersecurity Learner | NetworkWalks Batch B083
 
 ---
 
@@ -290,7 +285,6 @@ Cybersecurity Learner | NetworkWalks Batch B083
 | Project | W2-PM5 |
 | Project Title | Network Scanning with Zenmap |
 | Author | Collins |
-| Repository | GitHub |
 
 ---
 
