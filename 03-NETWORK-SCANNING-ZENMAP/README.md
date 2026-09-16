@@ -62,7 +62,6 @@ ipconfig
 ```text
 Local IP: 10.0.0.10
 LAN Subnet: 255.255.255.0
-Network: 10.0.0.0/24
 ```
 
 **Note:** Identifying the local subnet provided the correct network range to use for the Zenmap scan.
@@ -157,9 +156,9 @@ Zenmap's **Topology** view was used to visualize the discovered hosts.
 
 After completing the network scanning tasks, the NetworkWalks lab page was used to answer the required questions.
 
-**Lab Page:** https://networkwalks.com/zenmap-network-scanning-practice-lab/
+**Zenmap Test Page:** https://networkwalks.com/zenmap-network-scanning-practice-lab/
 
-**Note:** Lab 1 and Lab 2 screenshots provide supporting evidence of the completed practical assessment.
+**Note:** Practice lab screenshots provide supporting evidence of the completed practical assessment.
 
 ![Lab 1 evidence](lab1.PNG)
 
@@ -180,7 +179,7 @@ After completing the network scanning tasks, the NetworkWalks lab page was used 
 | Zenmap Topology view | ✅ |
 | Saved topology PDF | ✅ |
 | NetworkWalks lab questions | ✅ |
-| Lab 1 and Lab 2 evidence | ✅ |
+| Zenmap Test evidence | ✅ |
 
 # 💡 What I Learned
 
@@ -195,13 +194,10 @@ I learned how a Ping Scan can be used to identify live hosts within a network ra
 ### 3. IP & MAC Information
 I learned how to document the IP addresses of discovered hosts and identify MAC addresses returned by the scan.
 
-### 4. Network Topology
-I learned how Zenmap's Topology view can provide a graphical representation of discovered hosts and their relationships.
-
-### 5. Practical Assessment
+### 4. Practical Assessment
 I learned how practical scanning activities can be followed by lab questions that test understanding of the results and concepts covered in the exercise.
 
-### 6. Security Documentation
+### 5. Security Documentation
 I learned that recording commands, scan results, screenshots, and supporting evidence makes a cybersecurity project easier to understand and reproduce.
 
 # 🔐 Security & Ethical Use
@@ -214,7 +210,7 @@ Network scanning should only be performed against systems and networks that are 
 
 - **Nmap / Zenmap:** https://nmap.org/download.html
 - **NetworkWalks Zenmap Lab:** https://networkwalks.com/zenmap-network-scanning-practice-lab/
-- **Command Prompt:** Windows utility used to inspect local network configuration
+- **Command Prompt:** 
 
 # 📌 Project Information
 
