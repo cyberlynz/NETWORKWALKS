@@ -199,13 +199,13 @@ After completing the network scanning tasks, the NetworkWalks lab page was used 
 
 https://networkwalks.com/zenmap-network-scanning-practice-lab/
 
-**Note:** This step records completion of the practical lab questions that follow the Zenmap scanning exercise. The supporting evidence is provided below using the lab screenshots.
+**Note:** This step shows the completion of the practical lab questions that follow the Zenmap scanning exercise. The supporting screenshots are provided below:
 
-### Lab Evidence 1
+### 
 
 ![Lab 1 evidence](https://raw.githubusercontent.com/cyberlynz/NETWORKWALKS/a2be5abe0b8ce5726d6e5817f4d3a328a5228491/03-NETWORK-SCANNING-ZENMAP/lab1.PNG)
 
-### Lab Evidence 2
+### 
 
 ![Lab 2 evidence](https://raw.githubusercontent.com/cyberlynz/NETWORKWALKS/a2be5abe0b8ce5726d6e5817f4d3a328a5228491/03-NETWORK-SCANNING-ZENMAP/lab2.PNG)
 
@@ -222,9 +222,8 @@ https://networkwalks.com/zenmap-network-scanning-practice-lab/
 | Live host IP addresses | ✅ |
 | MAC address information | ✅ |
 | Zenmap Topology view | ✅ |
-| Saved topology PDF | ✅ |
 | NetworkWalks lab questions | ✅ |
-| Lab question evidence | ✅ |
+| Lab question screenshot | ✅ |
 
 ---
 
