@@ -19,7 +19,7 @@
 
 This project covers practical **network scanning with Zenmap**, the graphical interface for Nmap.
 
-The exercise focused on identifying the local IP address and LAN subnet, discovering live hosts, recording their IP and MAC addresses, and using Zenmap's **Topology** view to visualize and save the discovered network.
+The exercise focused on identifying the local IP address and LAN subnet, discovering live hosts, recording their IP and MAC addresses, using Zenmap's **Topology** view, and completing the questions provided on the NetworkWalks lab page.
 
 ---
 
@@ -32,6 +32,7 @@ The exercise focused on identifying the local IP address and LAN subnet, discove
 - Identify MAC addresses returned by the scan.
 - Use Zenmap Topology to visualize the network.
 - Save the network topology as a PDF.
+- Complete the NetworkWalks lab questions.
 - Document the work with screenshots and evidence.
 
 ---
@@ -41,6 +42,8 @@ The exercise focused on identifying the local IP address and LAN subnet, discove
 ## Step 1. Download & Install Zenmap
 
 Zenmap was installed on the Windows system and used as the graphical interface for Nmap network scanning.
+
+**Note:** This step established the graphical scanning environment used for the remaining tasks.
 
 **Official Nmap download:** https://nmap.org/download.html
 
@@ -70,6 +73,8 @@ LAN Subnet: 255.255.255.0
 Network: 10.0.0.0/24
 ```
 
+**Note:** Identifying the local subnet provided the correct network range to use for the Zenmap scan.
+
 **Screenshot:**
 
 ![IP configuration](ipconfig-screenshot.png)
@@ -95,6 +100,8 @@ The scan identified four hosts that were up.
 10.0.0.10
 ```
 
+**Note:** The Ping Scan was used for host discovery to determine which IP addresses were active on the local network.
+
 **Screenshot:**
 
 ![Zenmap Ping Scan](ping-screenshot.PNG)
@@ -111,6 +118,8 @@ The Ping Scan reported:
 
 This includes the local machine at `10.0.0.10`.
 
+**Note:** Recording the host count provides a quick summary of the devices responding within the scanned subnet.
+
 ---
 
 ## Step 5. IP Addresses of Live Hosts
@@ -123,6 +132,8 @@ The scan returned the following live host IP addresses:
 | Host 2 | `10.0.0.2` |
 | Host 3 | `10.0.0.3` |
 | Host 4 | `10.0.0.10` |
+
+**Note:** These addresses identify the live hosts detected by the Ping Scan and can be used for further authorised network investigation.
 
 ---
 
@@ -138,6 +149,8 @@ The Zenmap scan displayed MAC address information for the discovered hosts.
 | `10.0.0.2` | `08:00:27:4C:1D:4B` |
 | `10.0.0.3` | `52:54:00:12:35:00` |
 | `10.0.0.10` | `00:0C:29:C0:94:8F` |
+
+**Note:** MAC addresses provide hardware-level identifiers for the interfaces observed during the scan. Two hosts in this scan reported the same MAC address.
 
 **Screenshot:**
 
@@ -158,6 +171,8 @@ Zenmap's **Topology** view was used to visualize the discovered hosts.
 5. Choose **PDF** as the output format.
 6. Save the topology PDF.
 
+**Note:** The topology view provides a graphical representation of the discovered network and creates an additional form of evidence alongside the scan output.
+
 **Result:**
 
 The network topology was displayed in Zenmap and successfully saved as a PDF.
@@ -176,6 +191,26 @@ The network topology was displayed in Zenmap and successfully saved as a PDF.
 
 ---
 
+## Step 8. Complete the NetworkWalks Lab Questions
+
+After completing the network scanning tasks, the NetworkWalks lab page was used to answer the required questions.
+
+**Lab Page:**
+
+https://networkwalks.com/zenmap-network-scanning-practice-lab/
+
+**Note:** This step records completion of the practical lab questions that follow the Zenmap scanning exercise. The supporting evidence is provided below using the lab screenshots.
+
+### Lab Evidence 1
+
+![Lab 1 evidence](https://raw.githubusercontent.com/cyberlynz/NETWORKWALKS/a2be5abe0b8ce5726d6e5817f4d3a328a5228491/03-NETWORK-SCANNING-ZENMAP/lab1.PNG)
+
+### Lab Evidence 2
+
+![Lab 2 evidence](https://raw.githubusercontent.com/cyberlynz/NETWORKWALKS/a2be5abe0b8ce5726d6e5817f4d3a328a5228491/03-NETWORK-SCANNING-ZENMAP/lab2.PNG)
+
+---
+
 # 📊 Evidence Checklist
 
 | ✅ Evidence | Status |
@@ -188,12 +223,14 @@ The network topology was displayed in Zenmap and successfully saved as a PDF.
 | MAC address information | ✅ |
 | Zenmap Topology view | ✅ |
 | Saved topology PDF | ✅ |
+| NetworkWalks lab questions | ✅ |
+| Lab question evidence | ✅ |
 
 ---
 
 # 💡 What I Learned
 
-Through this project, I learned how to use Zenmap and Nmap for basic network discovery and visualization.
+Through this project, I learned how to use Zenmap and Nmap for basic network discovery, host identification, MAC address collection, topology visualization, and practical lab assessment.
 
 ### 1. Network Identification
 
@@ -211,7 +248,11 @@ I learned how to document the IP addresses of discovered hosts and identify MAC 
 
 I learned how Zenmap's Topology view can provide a graphical representation of discovered hosts and their relationships.
 
-### 5. Security Documentation
+### 5. Practical Assessment
+
+I learned how practical scanning activities can be followed by lab questions that test understanding of the results and concepts covered in the exercise.
+
+### 6. Security Documentation
 
 I learned that recording commands, scan results, screenshots, and supporting evidence makes a cybersecurity project easier to understand and reproduce.
 
@@ -228,6 +269,7 @@ Network scanning should only be performed against systems and networks that are 
 # 🔗 Tools & Resources
 
 - **Nmap / Zenmap:** https://nmap.org/download.html
+- **NetworkWalks Zenmap Lab:** https://networkwalks.com/zenmap-network-scanning-practice-lab/
 - **Command Prompt:** Windows utility used to inspect local network configuration
 
 ---
