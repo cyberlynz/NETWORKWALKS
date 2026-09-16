@@ -55,7 +55,7 @@ Zenmap was installed on the Windows system for graphical Nmap scanning.
 
 **Screenshot:**
 
-> Add your Zenmap installation screenshot here.
+> ![Zenmap](nmap1.PNG)
 
 ---
 
@@ -111,12 +111,8 @@ Record the total number of live hosts identified by the Ping Scan.
 **Result:**
 
 ```text
-Live hosts: Add your result
+ 4 hosts are live (including my PC)
 ```
-
-**Screenshot:**
-
-> Add your screenshot showing the live host count here.
 
 ---
 
@@ -127,12 +123,15 @@ Document the IP addresses returned by the Ping Scan.
 **Result:**
 
 ```text
-Add live host IP addresses here
+10.0.0.1 
+10.0.0.2 
+10.0.0.3 
+10.0.0.10
 ```
 
 **Screenshot:**
 
-> Add your screenshot showing the live host IP addresses here.
+> ![host](ping-screenshot.png)
 
 ---
 
@@ -147,12 +146,15 @@ ipconfig /all
 **Result:**
 
 ```text
-Add MAC addresses here
+ 52:54:00:12:35:00
+ 08:00:27:4C:1D:4B
+ 52:54:00:12:35:00
+ 00:0C:29:C0:94:8F
 ```
 
 **Screenshot:**
 
-> Add your screenshot showing the MAC address information here.
+> ![MAC address](mac-screenshot.png)
 
 ---
 
@@ -175,7 +177,7 @@ Procedure:
 
 **Topology Screenshot:**
 
-> Add your Zenmap topology screenshot here.
+> ![Zenmap](topology-screenshot.png)
 
 **Topology PDF:**
 
