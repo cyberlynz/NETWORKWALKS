@@ -111,12 +111,6 @@ I entered the recovered password into the protected PDF and confirmed that the d
 > **Note:** The same steps above were repeated for the other two protected PDF files. The recovered passwords from the three PDF cracking results were: **PDF 1 — `good-luck`**, **PDF 2 — `password1`**, and **PDF 3 — `1qaz2wsx`**.
 ---
 
-# 🔄 Repeated Practice
-
-> The same password-recovery steps were repeated for the other two protected PDF files. The recovered passwords from the JTR results were **PDF 1 — `good-luck`**, **PDF 2 — `password1`**, and **PDF 3 — `1qaz2wsx`**.
-
----
-
 # 🔐 Security & Ethical Use
 
 I performed this practical as part of a controlled cybersecurity training exercise.
