@@ -13,32 +13,35 @@
 
 ## 📌 Introduction
 
-As part of my Week 03 NetworkWalks cybersecurity training, I completed two practical modules focused on password cracking:
+During Week 03 of my NetworkWalks cybersecurity training, I worked on two practical exercises focused on password recovery:
 
 - **W3-PM1 — Password Cracking with JTR**
 - **W3-PM2 — Password Cracking with NetworkWalks Tools**
 
-For this practical, I worked with the supplied password-protected PDF **`My Locked PDF1.pdf`**. My objective was to understand how a protected PDF hash can be extracted, processed by password-cracking tools, and used to recover the password in a controlled lab environment.
-
-I also verified the recovered password by using it to open the protected PDF.
+For the exercises, I worked with the supplied `My Locked PDF1.pdf`. I first examined how the protected PDF could be processed to obtain the information required for password recovery. I then used the assigned tools to perform the recovery process and checked the result by opening the document with the recovered password.
 
 ## 🎯 Objectives
 
-During this practical, I aimed to:
+By completing these practicals, I aimed to:
 
-- Understand the basic password-cracking workflow.
-- Use **John the Ripper (JTR)** and **Johnny GUI**.
-- Extract a crackable PDF hash.
-- Use the **NetworkWalks Hash Calculator**.
-- Use the **NetworkWalks Password Cracker**.
-- Verify the recovered password against the protected PDF.
-- Record what I learned from the practical.
+- Set up and use John the Ripper and Johnny.
+- Extract a usable PDF hash from a protected document.
+- Load a hash file into Johnny and initiate a password attack.
+- Use the NetworkWalks Hash Calculator and Password Cracker.
+- Confirm whether the recovered password successfully opened the PDF.
+- Gain practical experience with password-security testing in an authorized lab.
 
 ---
 
 # 🔴 W3-PM1 — Password Cracking with JTR
 
-## Tools I Used
+## Background
+
+Before starting the practical, I reviewed how John the Ripper is used in password-security testing. I also learned that **Johnny** provides a graphical interface for working with John the Ripper.
+
+The practical required me to recover the password of the supplied protected PDF using JTR and Johnny on a Windows PC.
+
+### Tools I Used
 
 - John the Ripper
 - Johnny GUI
@@ -90,7 +93,7 @@ I opened Johnny and used the **Open password file** option to load **`hash1.txt`
 
 I started a new password-cracking attack from Johnny.
 
-At this stage, I observed that the time required for cracking can depend on factors such as password complexity and computer performance.
+During this stage, I noted that the time required for cracking can vary depending on factors such as password complexity and computer performance.
 
 **Evidence:** `06-johnny-attack-running.png`
 
@@ -100,7 +103,7 @@ After the attack completed, the lab demonstration showed the recovered password 
 
 **`password1`**
 
-I then entered the recovered password into the protected PDF and confirmed that the document opened successfully.
+I entered the recovered password into the protected PDF and confirmed that the document opened successfully.
 
 **Evidence:** `07-jtr-password-recovered.png`  
 **Evidence:** `08-pdf-opened-with-password.png`
@@ -109,7 +112,13 @@ I then entered the recovered password into the protected PDF and confirmed that 
 
 # 🔵 W3-PM2 — Password Cracking with NetworkWalks Tools
 
-## Tools I Used
+## Background
+
+For the second practical, I worked with two NetworkWalks web-based tools: the **Hash Calculator** and **Password Cracker**.
+
+Instead of using a locally installed cracking application, this exercise allowed me to follow the password-recovery process through a web browser. The main stages were obtaining the PDF hash, submitting it to the password-cracking tool, and checking the recovered password.
+
+### Tools I Used
 
 - NetworkWalks Hash Calculator
 - NetworkWalks Password Cracker
@@ -121,7 +130,7 @@ I then entered the recovered password into the protected PDF and confirmed that 
 
 ### 1. Preparing the PDF
 
-For the second practical, I used the same supplied **`My Locked PDF1.pdf`**.
+For this practical, I used the supplied **`My Locked PDF1.pdf`**.
 
 **Evidence:** `09-networkwalks-locked-pdf.png`
 
@@ -207,40 +216,27 @@ Password Attack    NW Password Cracker
 
 # 🧠 What I Learned
 
-### 1. I learned how the password-cracking workflow works
+This practical gave me hands-on experience with the different stages involved in password recovery.
 
-This practical helped me understand that the process starts by obtaining the information required by the cracking tool rather than simply trying to open the protected PDF directly.
-
-### 2. I learned how PDF hashes are used
-
-I learned how a protected PDF can have a crackable hash extracted from it and how that hash can then be supplied to a password-cracking tool.
-
-### 3. I learned how to use John the Ripper and Johnny
-
-Using both JTR and Johnny helped me understand the relationship between the underlying John the Ripper tool and its graphical interface.
-
-### 4. I compared local and browser-based tools
-
-The practical gave me experience with both a locally installed JTR workflow and the NetworkWalks browser-based tools. Both followed the same general process of obtaining the hash and attempting password recovery.
-
-### 5. I observed the importance of password complexity
-
-The practical showed me that password complexity can affect the time required to recover a password.
-
-### 6. I understood why strong passwords are important
-
-Recovering the lab password showed me why predictable passwords should not be used to protect sensitive documents.
+- I learned how to prepare a protected PDF for the cracking process by obtaining its required hash.
+- I became familiar with loading a hash file into Johnny and starting an attack with John the Ripper.
+- I gained experience using the NetworkWalks Hash Calculator and Password Cracker through a web browser.
+- I saw that different tools can follow the same general password-recovery process while providing different interfaces.
+- I observed that password complexity and computer performance can affect the time required for an attack.
+- I understood more clearly why predictable passwords can create security risks for protected documents.
 
 ---
 
 # ✅ Results
 
-| Practical | Tool | My Result |
+I completed both practical modules and verified the result by opening the protected PDF with the recovered password.
+
+| Practical | Tool | Result |
 |---|---|---|
-| W3-PM1 | John the Ripper / Johnny | I recovered the PDF password |
-| W3-PM2 | NetworkWalks Hash Calculator | I extracted the PDF hash |
-| W3-PM2 | NetworkWalks Password Cracker | I recovered the PDF password |
-| Verification | PDF reader | I successfully opened the protected PDF |
+| W3-PM1 | John the Ripper / Johnny | PDF password recovered |
+| W3-PM2 | NetworkWalks Hash Calculator | PDF hash extracted |
+| W3-PM2 | NetworkWalks Password Cracker | PDF password recovered |
+| Verification | PDF reader | Protected PDF opened successfully |
 
 **Recovered lab password:** `password1`
 
@@ -252,7 +248,7 @@ Recovering the lab password showed me why predictable passwords should not be us
 
 I performed this practical as part of a controlled cybersecurity training exercise.
 
-I understand that password-cracking techniques should only be used against files, systems, or accounts that I own or have explicit authorization to test. The purpose of this exercise was to learn about password security and password-recovery techniques in an authorized lab environment.
+The techniques covered in this project should only be used against files, systems, or accounts that I own or have explicit authorization to test. I carried out the exercise in the provided lab environment for learning and security-awareness purposes.
 
 ---
 
