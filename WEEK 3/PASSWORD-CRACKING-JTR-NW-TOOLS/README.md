@@ -62,13 +62,13 @@ The lab provided the following resources:
 
 After installing Johnny, I opened its configuration and selected the location of **`john.exe`** in the JTR `run` folder.
 
-**Evidence:** `01-johnny-configuration.png`
+![Johnny configuration](./01-johnny-configuration.png)
 
 ### 2. Preparing the Protected PDF
 
 I downloaded the supplied **`My Locked PDF1.pdf`** and confirmed that the document was password protected.
 
-**Evidence:** `02-pdf-locked.png`
+![Password-protected PDF](./02-pdf-locked.png)
 
 ### 3. Extracting the PDF Hash
 
@@ -80,14 +80,15 @@ The extracted value began with:
 
 I copied the complete hash and saved it in a file named **`hash1.txt`**.
 
-**Evidence:** `03-pdf-hash-extracted.png`  
-**Evidence:** `04-hash1-txt.png`
+![PDF hash extraction](./03-pdf-hash-extracted.png)
+
+![Saved hash file](./04-hash1-txt.png)
 
 ### 4. Loading the Hash File in Johnny
 
 I opened Johnny and used the **Open password file** option to load **`hash1.txt`**.
 
-**Evidence:** `05-johnny-password-file.png`
+![Loading hash1 into Johnny](./05-johnny-password-file.png)
 
 ### 5. Starting the Password Attack
 
@@ -95,7 +96,7 @@ I started a new password-cracking attack from Johnny.
 
 During this stage, I noted that the time required for cracking can vary depending on factors such as password complexity and computer performance.
 
-**Evidence:** `06-johnny-attack-running.png`
+![Johnny password attack](./06-johnny-attack-running.png)
 
 ### 6. Checking the Recovered Password
 
