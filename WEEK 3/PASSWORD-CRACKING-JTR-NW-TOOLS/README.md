@@ -140,6 +140,6 @@ The techniques covered in this project should only be used against files, system
 | Week | 03 |
 | Module | W3-PM1 |
 | Main Task | Password Cracking with JTR |
-| Target File | `My Locked PDF1.pdf` |
+| Target File | `Password-protected PDF Files` |
 | Platform | Windows PC |
 | Author | Collins |
