@@ -100,7 +100,7 @@ During this stage, I noted that the time required for cracking can vary dependin
 
 After the attack completed, the lab demonstration showed the recovered password as:
 
-**`password1`**
+**`good-luck`**
 
 I entered the recovered password into the protected PDF and confirmed that the document opened successfully.
 
