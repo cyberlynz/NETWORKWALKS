@@ -21,7 +21,7 @@ During Week 03 of my NetworkWalks cybersecurity training, I completed a practica
 
 - **W3-PM1 — Password Cracking with JTR**
 
-For the exercises, I worked with the supplied `My Locked PDF1.pdf`. I first examined how the protected PDF could be processed to obtain the information required for password recovery. I then used the assigned tools to perform the recovery process and checked the result by opening the document with the recovered password.
+For the exercises, I worked with the supplied `password-protected PDF files`. I first examined how the protected PDF could be processed to obtain the information required for password recovery. I then used the assigned tools to perform the recovery process and checked the result by opening the document with the recovered password.
 
 ## 🎯 Objectives
 
@@ -39,7 +39,7 @@ By completing these practicals, I aimed to:
 
 ## Background
 
-Before starting the practical, I reviewed how John the Ripper is used in password-security testing. I also learned that **Johnny** provides a graphical interface for working with John the Ripper.
+Before starting the practical, I reviewed how John the Ripper is used in password security testing. I also learned that **Johnny** provides a graphical interface for working with John the Ripper.
 
 The practical required me to recover the password of the supplied protected PDF using JTR and Johnny on a Windows PC.
 
@@ -48,7 +48,7 @@ The practical required me to recover the password of the supplied protected PDF 
 - John the Ripper
 - Johnny GUI
 - Windows PC
-- `My Locked PDF1.pdf`
+- Password-protected PDF Files
 - PDF hash extractor
 
 ## My Practical Steps
@@ -68,7 +68,7 @@ After installing Johnny, I opened its configuration and selected the location of
 
 ### 2. Preparing the Protected PDF
 
-I downloaded the supplied **`My Locked PDF1.pdf`** and confirmed that the document was password protected.
+I downloaded the supplied **`My Locked PDF1.pdf`** and confirmed that the document was password-protected.
 
 ![Password-protected PDF](./02-pdf-locked.png)
 
@@ -94,7 +94,7 @@ I opened Johnny and used the **Open password file** option to load **`hash1.txt`
 
 ### 5. Starting the Password Attack
 
-I started a new password-cracking attack from Johnny.
+I started a new password-cracking attack on Johnny.
 
 During this stage, I noted that the time required for cracking can vary depending on factors such as password complexity and computer performance.
 
@@ -112,7 +112,7 @@ I entered the recovered password into the protected PDF and confirmed that the d
 
 *I entered the recovered password and submitted it. The PDF then opened successfully and displayed the result.*
 
-> **Note:** The same steps above were repeated for the other two protected PDF files. The recovered passwords from the three PDF cracking results were: **PDF 1 — `good-luck`**, **PDF 2 — `password1`**, and **PDF 3 — `1qaz2wsx`**.
+> **Note:** The same steps above were repeated for the other two protected PDF files. The recovered passwords from the three PDF cracking results were: **My Locked PDF1 — `good-luck`**, **My Locked PDF2 — `password1`**, and **My Locked PDF3 — `1qaz2wsx`**.
 ---
 
 # 🔐 Security & Ethical Use
