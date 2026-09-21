@@ -110,6 +110,8 @@ I entered the recovered password into the protected PDF and confirmed that the d
 
 *I entered the recovered password and submitted it. The PDF then opened successfully and displayed the result.*
 
+> **Note:** The same steps above were repeated for the other two protected PDF files to recover their passwords.
+
 ---
 
 # 🔵 W3-PM2 — Password Cracking with NetworkWalks Tools
