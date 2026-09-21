@@ -70,9 +70,13 @@ https://openwall.info/wiki/john/johnny
 
 After installing Johnny, the configuration is opened and the location of **`john.exe`** from the JTR `run` folder is selected.
 
+**Evidence:** `01-johnny-configuration.png`
+
 ### 2. Prepare the Protected PDF
 
 The encrypted lab PDF **`My Locked PDF1.pdf`** is downloaded to the workstation.
+
+**Evidence:** `02-pdf-locked.png`
 
 ### 3. Extract the PDF Hash
 
@@ -86,15 +90,22 @@ The complete hash is copied and saved to a text file named:
 
 `hash1.txt`
 
+**Evidence:** `03-pdf-hash-extracted.png`  
+**Evidence:** `04-hash1-txt.png`
+
 ### 4. Load the Password File in Johnny
 
 Johnny is reopened and the **Open password file** option is used to load `hash1.txt`.
+
+**Evidence:** `05-johnny-password-file.png`
 
 ### 5. Start the Attack
 
 A new attack is started from Johnny.
 
 The lab notes that cracking time can depend on computer performance and password complexity.
+
+**Evidence:** `06-johnny-attack-running.png`
 
 ### 6. Verify the Recovered Password
 
@@ -105,6 +116,9 @@ The supplied lab demonstration shows the recovered password as:
 `password1`
 
 and the protected PDF opens successfully.
+
+**Evidence:** `07-jtr-password-recovered.png`  
+**Evidence:** `08-pdf-opened-with-password.png`
 
 ---
 
@@ -135,6 +149,8 @@ Download the supplied:
 
 `My Locked PDF1.pdf`
 
+**Evidence:** `09-networkwalks-locked-pdf.png`
+
 ### 2. Open the Hash Calculator
 
 NetworkWalks Hash Calculator:  
@@ -150,6 +166,8 @@ The tool returns a PDF hash beginning with:
 
 The full hash is copied.
 
+**Evidence:** `10-networkwalks-hash-calculator.png`
+
 ### 4. Open the Password Cracker
 
 NetworkWalks Password Cracker:  
@@ -160,6 +178,8 @@ https://networkwalks.com/password-cracker/
 Paste the complete `$pdf$...` hash into the password-cracking interface and start the attack.
 
 The tool attempts candidate passwords until a matching password is found.
+
+**Evidence:** `11-networkwalks-password-cracker.png`
 
 ### 6. Verify the Result
 
@@ -172,6 +192,9 @@ Recovered password:
 `password1`
 
 The password is then entered into the encrypted PDF and the document opens successfully.
+
+**Evidence:** `12-password-cracked-successfully.png`  
+**Evidence:** `13-pdf-opened-with-password.png`
 
 ---
 
@@ -233,59 +256,6 @@ The lab notes that the time required can vary according to computer performance 
 ### 6. Password security matters
 
 The successful recovery of the lab password demonstrates why common or predictable passwords should not be used to protect sensitive files.
-
----
-
-# 📸 Evidence
-
-The repository should contain screenshots documenting the practical work.
-
-Suggested evidence filenames:
-
-```text
-01-pdf-locked.png
-02-pdf-hash-extracted.png
-03-hash1-txt.png
-04-johnny-password-file.png
-05-johnny-attack-running.png
-06-jtr-password-recovered.png
-07-networkwalks-hash-calculator.png
-08-networkwalks-password-cracker.png
-09-password-cracked-successfully.png
-10-pdf-opened-with-password.png
-```
-
-### Screenshot documentation
-
-#### 01 — Locked PDF
-Show the protected PDF before recovery.
-
-#### 02 — PDF Hash Extracted
-Show the extracted PDF hash beginning with `$pdf$`.
-
-#### 03 — `hash1.txt`
-Show the saved hash file.
-
-#### 04 — Johnny Password File
-Show `hash1.txt` loaded into Johnny.
-
-#### 05 — JTR Attack
-Show the active cracking process.
-
-#### 06 — JTR Password Recovered
-Show the recovered password/result in Johnny.
-
-#### 07 — NetworkWalks Hash Calculator
-Show the PDF uploaded and the extracted hash.
-
-#### 08 — NetworkWalks Password Cracker
-Show the hash pasted into the password-cracking tool.
-
-#### 09 — Successful Crack
-Show the **PASSWORD CRACKED SUCCESSFULLY** result.
-
-#### 10 — PDF Opened
-Show the protected document opened after entering the recovered password.
 
 ---
 
