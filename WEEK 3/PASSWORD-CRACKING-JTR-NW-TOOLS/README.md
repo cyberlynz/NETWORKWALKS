@@ -1,3 +1,5 @@
+<div align="center">
+
 # 🔴 W3-PM1 — Password Cracking with JTR
 
 **NetworkWalks Cybersecurity & Ethical Hacking — Batch B083**  
@@ -8,6 +10,8 @@
 ![NetworkWalks](https://img.shields.io/badge/NetworkWalks-B083-green)
 ![Windows](https://img.shields.io/badge/Platform-Windows%2010-0078D6)
 ![Ethical Hacking](https://img.shields.io/badge/Ethical%20Hacking-Lab-black)
+
+</div>
 
 ---
 
