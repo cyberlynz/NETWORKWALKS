@@ -105,8 +105,9 @@ After the attack completed, the lab demonstration showed the recovered password 
 
 I entered the recovered password into the protected PDF and confirmed that the document opened successfully.
 
-**Evidence:** `07-jtr-password-recovered.png`  
-**Evidence:** `08-pdf-opened-with-password.png`
+![Password verification](./password-verification-steps.webp)
+
+*I entered the recovered password and submitted it. The PDF then opened successfully and displayed the result.*
 
 ---
 
