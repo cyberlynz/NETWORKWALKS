@@ -19,7 +19,7 @@ The task was to recover the password of the supplied protected PDF file **`My Lo
 - **NetworkWalks Hash Calculator**
 - **NetworkWalks Password Cracker**
 
-The lab guide explains that the workflow is to extract the PDF hash first, copy the complete **`$pdf$`** hash, submit it to the Password Cracker, and then verify the recovered password by opening the protected PDF. fileciteturn0file0L18-L27
+The lab guide explains that the workflow is to extract the PDF hash first, copy the complete **`$pdf$`** hash, submit it to the Password Cracker, and then verify the recovered password by opening the protected PDF. 
 
 ---
 
@@ -46,7 +46,7 @@ The practical objectives were to:
 | Windows Laptop | Lab platform |
 | `My Locked PDF1.pdf` | Supplied protected PDF |
 
-The lab guide specifically states that both NetworkWalks tools run in a web browser and do not require local installation. fileciteturn0file0L18-L20
+The lab guide specifically states that both NetworkWalks tools run in a web browser and do not require local installation. 
 
 ---
 
@@ -59,7 +59,7 @@ I downloaded the supplied **`My Locked PDF1.pdf`** from the NetworkWalks passwor
 **Lab page:**  
 https://networkwalks.com/project-task-lab-password-cracking-with-networkwalks-tools/
 
-The lab task identifies **`My Locked PDF1.pdf`** as the file to be cracked. fileciteturn0file0L23-L26
+The lab task identifies **`My Locked PDF1.pdf`** as the file to be cracked. 
 
 ### Step 2 — Open the NetworkWalks Hash Calculator
 
@@ -72,7 +72,7 @@ https://networkwalks.com/hash-calculator/
 
 I uploaded the protected PDF to the Hash Calculator.
 
-The tool processed the file and produced a PDF hash beginning with **`$pdf$`**. The lab guide instructs the user to upload the locked PDF and obtain this PDF hash. fileciteturn0file0L35-L40
+The tool processed the file and produced a PDF hash beginning with **`$pdf$`**. The lab guide instructs the user to upload the locked PDF and obtain this PDF hash. 
 
 **Evidence — Step 3:**
 
@@ -82,7 +82,7 @@ The tool processed the file and produced a PDF hash beginning with **`$pdf$`**. 
 
 I copied the complete hash value, starting from **`$pdf$`**, without leaving out any part of the extracted value.
 
-The lab specifically emphasizes copying the full hash beginning with **`$pdf$`**. fileciteturn0file0L42-L44
+The lab specifically emphasizes copying the full hash beginning with **`$pdf$`**. 
 
 ### Step 5 — Open the NetworkWalks Password Cracker
 
@@ -161,7 +161,7 @@ Open Protected PDF
 Verify Access
 ```
 
-This sequence follows the task instructions in the supplied lab guide. fileciteturn0file0L30-L40 fileciteturn0file0L42-L60
+This sequence follows the task instructions in the supplied lab guide.  
 
 ---
 
@@ -175,7 +175,7 @@ This practical helped me understand the complete password-recovery process for a
 - I observed that password complexity can affect cracking time.
 - I verified the recovered password by opening the protected PDF.
 
-The lab also explains the difference between encryption and hashing: encryption is described as reversible with the proper key, while hashing is described as a one-way process used to produce a message digest. fileciteturn0file0L68-L70
+The lab also explains the difference between encryption and hashing: encryption is described as reversible with the proper key, while hashing is described as a one-way process used to produce a message digest. 
 
 ---
 
