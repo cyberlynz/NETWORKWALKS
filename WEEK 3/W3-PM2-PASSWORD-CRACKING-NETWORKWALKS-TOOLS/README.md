@@ -167,17 +167,9 @@ This sequence follows the task instructions in the supplied lab guide.
 
 ## 🧠 What I Learned
 
-This practical helped me understand the complete password-recovery process for a protected PDF.
+This practical helped me understand the complete password-recovery process for a protected PDF. I learned how to extract a PDF hash, submit it to a password-cracking tool, and verify the recovered password by opening the protected file.
 
-- I learned how a protected PDF can be processed to obtain a usable hash.
-- I practiced extracting and copying a complete PDF hash.
-- I used a web-based password-cracking tool to perform a dictionary attack.
-- I observed that password complexity can affect cracking time.
-- I verified the recovered password by opening the protected PDF.
-
-The lab also explains the difference between encryption and hashing: encryption is described as reversible with the proper key, while hashing is described as a one-way process used to produce a message digest. 
-
----
+The exercise also showed me how weak or predictable passwords can be vulnerable to dictionary attacks and reinforced the importance of using strong, unique passwords when protecting sensitive files.
 
 ## ✅ Results
 
