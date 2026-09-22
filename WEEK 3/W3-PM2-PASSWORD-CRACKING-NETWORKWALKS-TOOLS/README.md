@@ -115,21 +115,17 @@ The password was successfully recovered during the attack.
 
 ![Step 7 — Password Recovered](./evidence/03-password-cracked.png)
 
-### Step 8 — Enter the Recovered Password
+### Step 8 — Enter the Recovered Password & Verify the PDF
 
 The recovered password was:
 
 **`password1`**
 
-I entered the recovered password into the protected PDF to verify that it worked.
+I entered the recovered password into the protected PDF, and the PDF opened successfully. This confirmed that the recovered password was correct and completed the practical.
 
 **Evidence — Step 8:**
 
 ![Step 8 — Password Entered and PDF Opened](./evidence/04-pdf-verified.png)
-
-### Step 9 — Verify the PDF
-
-After entering the recovered password, the PDF opened successfully. This confirmed that I had recovered the correct password and completed the practical successfully.
 
 ---
 
