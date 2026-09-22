@@ -157,20 +157,6 @@ I also verified the recovered passwords for the other supplied PDF files by ente
 
 ---
 
-## ✅ Results
-
-| Stage | Result |
-|---|---|
-| Protected PDF Processing | Successful |
-| PDF Hash Extraction | Successful |
-| Complete Hash Submission | Successful |
-| Password Cracking | Successful |
-| Recovered Password | `password1` |
-| PDF Verification | Successful |
-| Process Replicated for Other PDFs | Successful |
-
----
-
 ## 🔐 Security & Ethical Use
 
 I completed this practical as part of my authorized cybersecurity training.
