@@ -18,49 +18,24 @@
 
 For **Week 03 | Project Module 2**, I completed a practical on **Password Cracking with NetworkWalks Tools**.
 
-The task was to recover the password of the supplied protected PDF file **password-protected PDF files** using two NetworkWalks browser-based tools:
+The task was to recover the password of **password-protected PDF files** using two NetworkWalks browser-based tools:
 
 - **NetworkWalks Hash Calculator**
 - **NetworkWalks Password Cracker**
 
-I followed the lab instructions by first extracting the PDF hash, copying the complete **`$pdf<div align="center">
-
-# 🔵 W3-PM2 — Password Cracking with NetworkWalks Tools
-
-**NetworkWalks Cybersecurity & Ethical Hacking — Batch B083**  
-**Week 03 | Project Module 2**
-
-![Cybersecurity](https://img.shields.io/badge/Cybersecurity-Password%20Cracking-blue)
-![NetworkWalks](https://img.shields.io/badge/NetworkWalks-B083-green)
-![Web Tools](https://img.shields.io/badge/Tools-Web%20Based-orange)
-![Ethical Hacking](https://img.shields.io/badge/Ethical%20Hacking-Lab-black)
-
-</div>
-
----
-
-## 📌 Introduction
-
-For **Week 03 | Project Module 2**, I completed a practical on **Password Cracking with NetworkWalks Tools**.
-
-The task was to recover the password of the supplied protected PDF file **password-protected PDF files** using two NetworkWalks browser-based tools:
-
-- **NetworkWalks Hash Calculator**
-- **NetworkWalks Password Cracker**
-
-** hash, submitting it to the Password Cracker, and then verifying the recovered password by opening the protected PDF.
+I first extracted the PDF hash, copied the complete **`$pdf$`** hash, submitted it to the Password Cracker, and then verified the recovered password by opening the protected PDF.
 
 ---
 
 ## 🎯 Objectives
 
-The practical objectives were to:
+The objectives of this practical were to:
 
-- Understand the basic password-recovery workflow for a protected PDF.
-- Extract the PDF hash with the NetworkWalks Hash Calculator.
+- Understand the basic password-recovery process for a protected PDF.
+- Extract a PDF hash using the NetworkWalks Hash Calculator.
 - Copy the complete hash beginning with **`$pdf$`**.
 - Submit the hash to the NetworkWalks Password Cracker.
-- Run the dictionary attack and observe the cracking process.
+- Run a dictionary attack and observe the cracking process.
 - Verify the recovered password by opening the protected PDF.
 
 ---
@@ -73,7 +48,7 @@ The practical objectives were to:
 | NetworkWalks Password Cracker | Recover the password from the hash |
 | Web Browser | Access the NetworkWalks web tools |
 | Windows Laptop | Lab platform |
-| **password-protected PDF files** | Supplied protected PDF |
+| Password-protected PDF files | Target files |
 
 I used both NetworkWalks tools directly through my web browser, so I did not need to install them locally.
 
@@ -81,14 +56,14 @@ I used both NetworkWalks tools directly through my web browser, so I did not nee
 
 # 🛡️ Practical Steps
 
-### Step 1 — Download the Encrypted PDF
+### Step 1 — Download the Password-Protected PDF
 
 I downloaded the supplied **password-protected PDF files** from the NetworkWalks password-cracking lab page.
 
 **Lab page:**  
 https://networkwalks.com/project-task-lab-password-cracking-with-networkwalks-tools/
 
-I used the supplied password-protected PDF files as the target for this practical.
+I used the supplied protected PDF as the target for this practical.
 
 ### Step 2 — Open the NetworkWalks Hash Calculator
 
@@ -97,114 +72,11 @@ I opened the NetworkWalks Hash Calculator in my browser.
 **Tool:**  
 https://networkwalks.com/hash-calculator/
 
-### Step 3 — Upload the Locked PDF
+### Step 3 — Upload the Password-Protected PDF
 
 I uploaded the protected PDF to the Hash Calculator.
 
-After processing the file, the tool produced a PDF hash beginning with **`$pdf<div align="center">
-
-# 🔵 W3-PM2 — Password Cracking with NetworkWalks Tools
-
-**NetworkWalks Cybersecurity & Ethical Hacking — Batch B083**  
-**Week 03 | Project Module 2**
-
-![Cybersecurity](https://img.shields.io/badge/Cybersecurity-Password%20Cracking-blue)
-![NetworkWalks](https://img.shields.io/badge/NetworkWalks-B083-green)
-![Web Tools](https://img.shields.io/badge/Tools-Web%20Based-orange)
-![Ethical Hacking](https://img.shields.io/badge/Ethical%20Hacking-Lab-black)
-
-</div>
-
----
-
-## 📌 Introduction
-
-For **Week 03 | Project Module 2**, I completed a practical on **Password Cracking with NetworkWalks Tools**.
-
-The task was to recover the password of the supplied protected PDF file **password-protected PDF files** using two NetworkWalks browser-based tools:
-
-- **NetworkWalks Hash Calculator**
-- **NetworkWalks Password Cracker**
-
-I followed the lab instructions by first extracting the PDF hash, copying the complete **`$pdf<div align="center">
-
-# 🔵 W3-PM2 — Password Cracking with NetworkWalks Tools
-
-**NetworkWalks Cybersecurity & Ethical Hacking — Batch B083**  
-**Week 03 | Project Module 2**
-
-![Cybersecurity](https://img.shields.io/badge/Cybersecurity-Password%20Cracking-blue)
-![NetworkWalks](https://img.shields.io/badge/NetworkWalks-B083-green)
-![Web Tools](https://img.shields.io/badge/Tools-Web%20Based-orange)
-![Ethical Hacking](https://img.shields.io/badge/Ethical%20Hacking-Lab-black)
-
-</div>
-
----
-
-## 📌 Introduction
-
-For **Week 03 | Project Module 2**, I completed a practical on **Password Cracking with NetworkWalks Tools**.
-
-The task was to recover the password of the supplied protected PDF file **password-protected PDF files** using two NetworkWalks browser-based tools:
-
-- **NetworkWalks Hash Calculator**
-- **NetworkWalks Password Cracker**
-
-** hash, submitting it to the Password Cracker, and then verifying the recovered password by opening the protected PDF.
-
----
-
-## 🎯 Objectives
-
-The practical objectives were to:
-
-- Understand the basic password-recovery workflow for a protected PDF.
-- Extract the PDF hash with the NetworkWalks Hash Calculator.
-- Copy the complete hash beginning with **`$pdf$`**.
-- Submit the hash to the NetworkWalks Password Cracker.
-- Run the dictionary attack and observe the cracking process.
-- Verify the recovered password by opening the protected PDF.
-
----
-
-## 🛠️ Tools Used
-
-| Tool | Purpose |
-|---|---|
-| NetworkWalks Hash Calculator | Extract the PDF hash |
-| NetworkWalks Password Cracker | Recover the password from the hash |
-| Web Browser | Access the NetworkWalks web tools |
-| Windows Laptop | Lab platform |
-| **password-protected PDF files** | Supplied protected PDF |
-
-I used both NetworkWalks tools directly through my web browser, so I did not need to install them locally.
-
----
-
-# 🛡️ Practical Steps
-
-### Step 1 — Download the Encrypted PDF
-
-I downloaded the supplied **password-protected PDF files** from the NetworkWalks password-cracking lab page.
-
-**Lab page:**  
-https://networkwalks.com/project-task-lab-password-cracking-with-networkwalks-tools/
-
-I used the supplied password-protected PDF files as the target for this practical.
-
-### Step 2 — Open the NetworkWalks Hash Calculator
-
-I opened the NetworkWalks Hash Calculator in my browser.
-
-**Tool:**  
-https://networkwalks.com/hash-calculator/
-
-### Step 3 — Upload the Locked PDF
-
-I uploaded the protected PDF to the Hash Calculator.
-
-**. This gave me the hash I needed for the next stage.
+After processing the file, the tool produced a PDF hash beginning with **`$pdf$`**. This gave me the hash I needed for the next stage.
 
 **Evidence — Step 3:**
 
@@ -214,227 +86,11 @@ I uploaded the protected PDF to the Hash Calculator.
 
 I copied the complete hash value, starting from **`$pdf$`**, without leaving out any part of the extracted value.
 
-I made sure to copy the complete hash, including the **`$pdf<div align="center">
-
-# 🔵 W3-PM2 — Password Cracking with NetworkWalks Tools
-
-**NetworkWalks Cybersecurity & Ethical Hacking — Batch B083**  
-**Week 03 | Project Module 2**
-
-![Cybersecurity](https://img.shields.io/badge/Cybersecurity-Password%20Cracking-blue)
-![NetworkWalks](https://img.shields.io/badge/NetworkWalks-B083-green)
-![Web Tools](https://img.shields.io/badge/Tools-Web%20Based-orange)
-![Ethical Hacking](https://img.shields.io/badge/Ethical%20Hacking-Lab-black)
-
-</div>
-
----
-
-## 📌 Introduction
-
-For **Week 03 | Project Module 2**, I completed a practical on **Password Cracking with NetworkWalks Tools**.
-
-The task was to recover the password of the supplied protected PDF file **password-protected PDF files** using two NetworkWalks browser-based tools:
-
-- **NetworkWalks Hash Calculator**
-- **NetworkWalks Password Cracker**
-
-I followed the lab instructions by first extracting the PDF hash, copying the complete **`$pdf<div align="center">
-
-# 🔵 W3-PM2 — Password Cracking with NetworkWalks Tools
-
-**NetworkWalks Cybersecurity & Ethical Hacking — Batch B083**  
-**Week 03 | Project Module 2**
-
-![Cybersecurity](https://img.shields.io/badge/Cybersecurity-Password%20Cracking-blue)
-![NetworkWalks](https://img.shields.io/badge/NetworkWalks-B083-green)
-![Web Tools](https://img.shields.io/badge/Tools-Web%20Based-orange)
-![Ethical Hacking](https://img.shields.io/badge/Ethical%20Hacking-Lab-black)
-
-</div>
-
----
-
-## 📌 Introduction
-
-For **Week 03 | Project Module 2**, I completed a practical on **Password Cracking with NetworkWalks Tools**.
-
-The task was to recover the password of the supplied protected PDF file **password-protected PDF files** using two NetworkWalks browser-based tools:
-
-- **NetworkWalks Hash Calculator**
-- **NetworkWalks Password Cracker**
-
-** hash, submitting it to the Password Cracker, and then verifying the recovered password by opening the protected PDF.
-
----
-
-## 🎯 Objectives
-
-The practical objectives were to:
-
-- Understand the basic password-recovery workflow for a protected PDF.
-- Extract the PDF hash with the NetworkWalks Hash Calculator.
-- Copy the complete hash beginning with **`$pdf$`**.
-- Submit the hash to the NetworkWalks Password Cracker.
-- Run the dictionary attack and observe the cracking process.
-- Verify the recovered password by opening the protected PDF.
-
----
-
-## 🛠️ Tools Used
-
-| Tool | Purpose |
-|---|---|
-| NetworkWalks Hash Calculator | Extract the PDF hash |
-| NetworkWalks Password Cracker | Recover the password from the hash |
-| Web Browser | Access the NetworkWalks web tools |
-| Windows Laptop | Lab platform |
-| **password-protected PDF files** | Supplied protected PDF |
-
-I used both NetworkWalks tools directly through my web browser, so I did not need to install them locally.
-
----
-
-# 🛡️ Practical Steps
-
-### Step 1 — Download the Encrypted PDF
-
-I downloaded the supplied **password-protected PDF files** from the NetworkWalks password-cracking lab page.
-
-**Lab page:**  
-https://networkwalks.com/project-task-lab-password-cracking-with-networkwalks-tools/
-
-I used the supplied password-protected PDF files as the target for this practical.
-
-### Step 2 — Open the NetworkWalks Hash Calculator
-
-I opened the NetworkWalks Hash Calculator in my browser.
-
-**Tool:**  
-https://networkwalks.com/hash-calculator/
-
-### Step 3 — Upload the Locked PDF
-
-I uploaded the protected PDF to the Hash Calculator.
-
-After processing the file, the tool produced a PDF hash beginning with **`$pdf<div align="center">
-
-# 🔵 W3-PM2 — Password Cracking with NetworkWalks Tools
-
-**NetworkWalks Cybersecurity & Ethical Hacking — Batch B083**  
-**Week 03 | Project Module 2**
-
-![Cybersecurity](https://img.shields.io/badge/Cybersecurity-Password%20Cracking-blue)
-![NetworkWalks](https://img.shields.io/badge/NetworkWalks-B083-green)
-![Web Tools](https://img.shields.io/badge/Tools-Web%20Based-orange)
-![Ethical Hacking](https://img.shields.io/badge/Ethical%20Hacking-Lab-black)
-
-</div>
-
----
-
-## 📌 Introduction
-
-For **Week 03 | Project Module 2**, I completed a practical on **Password Cracking with NetworkWalks Tools**.
-
-The task was to recover the password of the supplied protected PDF file **password-protected PDF files** using two NetworkWalks browser-based tools:
-
-- **NetworkWalks Hash Calculator**
-- **NetworkWalks Password Cracker**
-
-I followed the lab instructions by first extracting the PDF hash, copying the complete **`$pdf<div align="center">
-
-# 🔵 W3-PM2 — Password Cracking with NetworkWalks Tools
-
-**NetworkWalks Cybersecurity & Ethical Hacking — Batch B083**  
-**Week 03 | Project Module 2**
-
-![Cybersecurity](https://img.shields.io/badge/Cybersecurity-Password%20Cracking-blue)
-![NetworkWalks](https://img.shields.io/badge/NetworkWalks-B083-green)
-![Web Tools](https://img.shields.io/badge/Tools-Web%20Based-orange)
-![Ethical Hacking](https://img.shields.io/badge/Ethical%20Hacking-Lab-black)
-
-</div>
-
----
-
-## 📌 Introduction
-
-For **Week 03 | Project Module 2**, I completed a practical on **Password Cracking with NetworkWalks Tools**.
-
-The task was to recover the password of the supplied protected PDF file **password-protected PDF files** using two NetworkWalks browser-based tools:
-
-- **NetworkWalks Hash Calculator**
-- **NetworkWalks Password Cracker**
-
-** hash, submitting it to the Password Cracker, and then verifying the recovered password by opening the protected PDF.
-
----
-
-## 🎯 Objectives
-
-The practical objectives were to:
-
-- Understand the basic password-recovery workflow for a protected PDF.
-- Extract the PDF hash with the NetworkWalks Hash Calculator.
-- Copy the complete hash beginning with **`$pdf$`**.
-- Submit the hash to the NetworkWalks Password Cracker.
-- Run the dictionary attack and observe the cracking process.
-- Verify the recovered password by opening the protected PDF.
-
----
-
-## 🛠️ Tools Used
-
-| Tool | Purpose |
-|---|---|
-| NetworkWalks Hash Calculator | Extract the PDF hash |
-| NetworkWalks Password Cracker | Recover the password from the hash |
-| Web Browser | Access the NetworkWalks web tools |
-| Windows Laptop | Lab platform |
-| **password-protected PDF files** | Supplied protected PDF |
-
-I used both NetworkWalks tools directly through my web browser, so I did not need to install them locally.
-
----
-
-# 🛡️ Practical Steps
-
-### Step 1 — Download the Encrypted PDF
-
-I downloaded the supplied **password-protected PDF files** from the NetworkWalks password-cracking lab page.
-
-**Lab page:**  
-https://networkwalks.com/project-task-lab-password-cracking-with-networkwalks-tools/
-
-I used the supplied password-protected PDF files as the target for this practical.
-
-### Step 2 — Open the NetworkWalks Hash Calculator
-
-I opened the NetworkWalks Hash Calculator in my browser.
-
-**Tool:**  
-https://networkwalks.com/hash-calculator/
-
-### Step 3 — Upload the Locked PDF
-
-I uploaded the protected PDF to the Hash Calculator.
-
-**. This gave me the hash I needed for the next stage.
-
-**Evidence — Step 3:**
-
-![Step 3 — PDF Hash Extracted](./evidence/01-hash-extracted.png)
-
-### Step 4 — Copy the Complete Hash
-
-I copied the complete hash value, starting from **`$pdf$`**, without leaving out any part of the extracted value.
-
-** prefix, so that I could submit the full value to the Password Cracker.
+I made sure to copy the entire hash because the Password Cracker requires the complete value for the attack.
 
 ### Step 5 — Open the NetworkWalks Password Cracker
 
-I opened the NetworkWalks Password Cracker.
+I opened the NetworkWalks Password Cracker in my browser.
 
 **Tool:**  
 https://networkwalks.com/password-cracker/
@@ -443,39 +99,37 @@ https://networkwalks.com/password-cracker/
 
 I pasted the extracted PDF hash into the Password Cracker and started the attack.
 
-At this stage, I started the attack and allowed the tool to test different password candidates against the submitted hash.
+At this stage, I allowed the tool to test different password candidates against the submitted hash.
 
 **Evidence — Step 6:**
 
 ![Step 6 — Hash Submitted to Password Cracker](./evidence/02-password-cracker-hash.png)
 
-### Step 7 — Wait for the Result
+### Step 7 — Wait for the Password to Be Recovered
 
-I waited for the Password Cracker to complete the attack.
+I waited for the Password Cracker to complete the attack and observed the password-recovery process.
 
-I waited for the tool to complete the cracking process and observed the password-recovery attempt.
+The password was successfully recovered during the attack.
 
 **Evidence — Step 7:**
 
-![Step 7 — Password Cracked Successfully](./evidence/03-password-cracked.png)
+![Step 7 — Password Recovered](./evidence/03-password-cracked.png)
 
 ### Step 8 — Enter the Recovered Password
 
-The password was recovered successfully as:
+The recovered password was:
 
 **`password1`**
 
-The tool returned **`password1`** as the recovered password, which I then used to test access to the protected PDF.
+I entered the recovered password into the protected PDF to verify that it worked.
 
 **Evidence — Step 8:**
 
-![Step 8 — Protected PDF Opened](./evidence/04-pdf-verified.png)
+![Step 8 — Password Entered and PDF Opened](./evidence/04-pdf-verified.png)
 
 ### Step 9 — Verify the PDF
 
-I entered the recovered password into the protected PDF and confirmed that the PDF opened successfully.
-
-After entering the recovered password, the PDF opened successfully, confirming that the password recovery was successful.
+After entering the recovered password, the PDF opened successfully. This confirmed that I had recovered the correct password and completed the practical successfully.
 
 ---
 
@@ -483,13 +137,16 @@ After entering the recovered password, the PDF opened successfully, confirming t
 
 - **PDF Hash Extraction:** I learned how to extract a PDF hash from a password-protected file using the NetworkWalks Hash Calculator. This helped me understand the first step required before attempting password recovery.
 
-- **Working with PDF Hashes:** I learned the importance of copying the complete hash, including the `$pdf$` prefix, because the full hash is required by the Password Cracker for the attack.
+- **Working with PDF Hashes:** I learned the importance of copying the complete hash, including the **`$pdf$`** prefix, because the full hash is required by the Password Cracker for the attack.
 
 - **Dictionary Attacks:** I learned how a password-cracking tool can test different password combinations against a recovered hash until a matching password is found. This helped me understand how dictionary-based password attacks work in practice.
 
 - **Password Strength:** I learned that simple and predictable passwords can be easier to recover through cracking attempts. This reinforced the importance of using strong and less predictable passwords to protect files.
 
-- **Password Verification:** I learned that recovering a password is not the final step; it is important to verify the result by entering the recovered password and confirming that the protected PDF opens successfully.
+- **Password Verification:** I learned that recovering a password is not the final step. I also need to verify the result by entering the recovered password and confirming that the protected PDF opens successfully.
+
+---
+
 ## ✅ Results
 
 | Stage | Result |
@@ -505,9 +162,9 @@ After entering the recovered password, the PDF opened successfully, confirming t
 
 ## 🔐 Security & Ethical Use
 
-I completed this practical as part of my authorized cybersecurity training exercise.
+I completed this practical as part of my authorized cybersecurity training.
 
-Password-recovery and cracking techniques should only be used against files, systems, or accounts that are owned by the tester or where explicit permission has been granted.
+I understand that password-recovery and cracking techniques should only be used against files, systems, or accounts that I own or have explicit permission to test.
 
 ---
 
