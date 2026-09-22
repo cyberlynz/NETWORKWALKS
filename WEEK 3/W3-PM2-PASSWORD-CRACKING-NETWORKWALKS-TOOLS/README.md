@@ -56,8 +56,6 @@ I used both NetworkWalks tools directly through my web browser, so I did not nee
 
 # 🛡️ Practical Steps
 
-> **Note:** The steps below were demonstrated using one of the supplied password-protected PDFs. I replicated the same process for the **other supplied PDF files**, repeating the hash extraction, hash submission, password-cracking, and password verification stages for each file.
-
 ### Step 1 — Download the Password-Protected PDF
 
 I downloaded the supplied **password-protected PDF files** from the NetworkWalks password-cracking lab page.
@@ -138,6 +136,10 @@ I entered the recovered password into the protected PDF, and the PDF opened succ
 ![Step 8 — Password Entered and PDF Opened](./evidence/04-pdf-verified.png)
 
 I also verified the recovered passwords for the other supplied PDF files by entering them into their respective protected PDFs and confirming that they opened successfully.
+
+---
+
+> **Note:** The same password-cracking steps were replicated for the **other supplied PDF files**. The screenshots in this README demonstrate the process for one PDF, while the same workflow was performed for the remaining PDFs.
 
 ---
 
