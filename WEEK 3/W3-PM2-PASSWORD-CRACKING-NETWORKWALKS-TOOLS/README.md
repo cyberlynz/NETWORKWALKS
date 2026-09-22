@@ -137,8 +137,6 @@ I entered the recovered password into the protected PDF, and the PDF opened succ
 
 I also verified the recovered passwords for the other supplied PDF files by entering them into their respective protected PDFs and confirming that they opened successfully.
 
----
-
 > **Note:** The same password-cracking steps were replicated for the **other supplied PDF files**. The screenshots in this README demonstrate the process for one PDF, while the same workflow was performed for the remaining PDFs.
 
 ---
