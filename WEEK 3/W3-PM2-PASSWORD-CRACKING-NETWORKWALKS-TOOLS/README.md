@@ -54,7 +54,7 @@ The lab guide specifically states that both NetworkWalks tools run in a web brow
 
 ---
 
-# 🧪 Practical Steps
+# 🛡️ Practical Steps
 
 ### Step 1 — Download the Encrypted PDF
 
