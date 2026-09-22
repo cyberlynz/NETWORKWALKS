@@ -56,6 +56,8 @@ I used both NetworkWalks tools directly through my web browser, so I did not nee
 
 # 🛡️ Practical Steps
 
+> **Note:** The steps below were demonstrated using one of the supplied password-protected PDFs. I replicated the same process for the **other supplied PDF files**, repeating the hash extraction, hash submission, password-cracking, and password verification stages for each file.
+
 ### Step 1 — Download the Password-Protected PDF
 
 I downloaded the supplied **password-protected PDF files** from the NetworkWalks password-cracking lab page.
@@ -63,7 +65,7 @@ I downloaded the supplied **password-protected PDF files** from the NetworkWalks
 **Lab page:**  
 https://networkwalks.com/project-task-lab-password-cracking-with-networkwalks-tools/
 
-I used the supplied protected PDF as the target for this practical.
+I used the supplied protected PDFs as the targets for this practical.
 
 ### Step 2 — Open the NetworkWalks Hash Calculator
 
@@ -82,11 +84,15 @@ After processing the file, the tool produced a PDF hash beginning with **`$pdf$`
 
 ![Step 3 — PDF Hash Extracted](./evidence/01-hash-extracted.png)
 
+I repeated this hash-extraction process for each of the other supplied PDF files.
+
 ### Step 4 — Copy the Complete Hash
 
 I copied the complete hash value, starting from **`$pdf$`**, without leaving out any part of the extracted value.
 
 I made sure to copy the entire hash because the Password Cracker requires the complete value for the attack.
+
+I repeated this step for each PDF after extracting its corresponding hash.
 
 ### Step 5 — Open the NetworkWalks Password Cracker
 
@@ -105,6 +111,8 @@ At this stage, I allowed the tool to test different password candidates against 
 
 ![Step 6 — Hash Submitted to Password Cracker](./evidence/02-password-cracker-hash.png)
 
+I repeated the same process using the hash extracted from each of the other supplied PDFs.
+
 ### Step 7 — Wait for the Password to Be Recovered
 
 I waited for the Password Cracker to complete the attack and observed the password-recovery process.
@@ -115,9 +123,11 @@ The password was successfully recovered during the attack.
 
 ![Step 7 — Password Recovered](./evidence/03-password-cracked.png)
 
+The password-recovery process was repeated for the other supplied PDF files.
+
 ### Step 8 — Enter the Recovered Password & Verify the PDF
 
-The recovered password was:
+The recovered password for the demonstrated PDF was:
 
 **`password1`**
 
@@ -126,6 +136,8 @@ I entered the recovered password into the protected PDF, and the PDF opened succ
 **Evidence — Step 8:**
 
 ![Step 8 — Password Entered and PDF Opened](./evidence/04-pdf-verified.png)
+
+I also verified the recovered passwords for the other supplied PDF files by entering them into their respective protected PDFs and confirming that they opened successfully.
 
 ---
 
@@ -136,6 +148,8 @@ I entered the recovered password into the protected PDF, and the PDF opened succ
 - **Working with PDF Hashes:** I learned the importance of copying the complete hash, including the **`$pdf$`** prefix, because the full hash is required by the Password Cracker for the attack.
 
 - **Dictionary Attacks:** I learned how a password-cracking tool can test different password combinations against a recovered hash until a matching password is found. This helped me understand how dictionary-based password attacks work in practice.
+
+- **Repeating the Process:** I learned that the same password-recovery workflow can be applied to multiple protected PDF files by extracting and submitting the appropriate hash for each file.
 
 - **Password Strength:** I learned that simple and predictable passwords can be easier to recover through cracking attempts. This reinforced the importance of using strong and less predictable passwords to protect files.
 
@@ -153,6 +167,7 @@ I entered the recovered password into the protected PDF, and the PDF opened succ
 | Password Cracking | Successful |
 | Recovered Password | `password1` |
 | PDF Verification | Successful |
+| Process Replicated for Other PDFs | Successful |
 
 ---
 
