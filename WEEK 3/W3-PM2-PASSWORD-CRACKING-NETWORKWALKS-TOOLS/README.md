@@ -115,39 +115,6 @@ The lab guide identifies successful opening of the PDF as completion of the exer
 
 ---
 
-## 🖼️ Practical Evidence
-
-The evidence was organized from the screenshots contained in the supplied NetworkWalks lab guide.
-
-### Evidence 01 — PDF Hash Extracted
-
-Shows the protected PDF being processed by the NetworkWalks Hash Calculator and the resulting **`$pdf$`** hash.
-
-![Hash Extracted](./evidence/01-hash-extracted.png)
-
-### Evidence 02 — Hash Submitted to Password Cracker
-
-Shows the extracted hash pasted into the NetworkWalks Password Cracker before starting the attack.
-
-![Password Cracker Hash](./evidence/02-password-cracker-hash.png)
-
-### Evidence 03 — Password Recovered
-
-Shows the Password Cracker reporting a successful match and displaying:
-
-**`password1`**
-
-![Password Cracked](./evidence/03-password-cracked.png)
-
-### Evidence 04 — PDF Verification
-
-Shows the protected PDF being opened after entering the recovered password.
-
-![PDF Verified](./evidence/04-pdf-verified.png)
-
-### Combined Evidence Board
-
-![W3-PM2 NetworkWalks Evidence](./evidence/W3-PM2-NetworkWalks-Evidence.png)
 
 ---
 
