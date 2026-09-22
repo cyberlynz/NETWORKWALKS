@@ -14,7 +14,7 @@
 
 For **Week 03 | Project Module 2**, I completed a practical on **Password Cracking with NetworkWalks Tools**.
 
-The task was to recover the password of the supplied protected PDF file **`My Locked PDF1.pdf`** using two NetworkWalks browser-based tools:
+The task was to recover the password of the supplied protected PDF file ****password-protected PDF files**** using two NetworkWalks browser-based tools:
 
 - **NetworkWalks Hash Calculator**
 - **NetworkWalks Password Cracker**
@@ -44,7 +44,7 @@ The practical objectives were to:
 | NetworkWalks Password Cracker | Recover the password from the hash |
 | Web Browser | Access the NetworkWalks web tools |
 | Windows Laptop | Lab platform |
-| `My Locked PDF1.pdf` | Supplied protected PDF |
+| **password-protected PDF files** | Supplied protected PDF |
 
 The lab guide specifically states that both NetworkWalks tools run in a web browser and do not require local installation. 
 
@@ -54,12 +54,12 @@ The lab guide specifically states that both NetworkWalks tools run in a web brow
 
 ### Step 1 — Download the Encrypted PDF
 
-I downloaded the supplied **`My Locked PDF1.pdf`** from the NetworkWalks password-cracking lab page.
+I downloaded the supplied ****password-protected PDF files**** from the NetworkWalks password-cracking lab page.
 
 **Lab page:**  
 https://networkwalks.com/project-task-lab-password-cracking-with-networkwalks-tools/
 
-The lab task identifies **`My Locked PDF1.pdf`** as the file to be cracked. 
+The lab task identifies ****password-protected PDF files**** as the file to be cracked. 
 
 ### Step 2 — Open the NetworkWalks Hash Calculator
 
@@ -181,6 +181,6 @@ Password-recovery and cracking techniques should only be used against files, sys
 | Week | 03 |
 | Module | W3-PM2 |
 | Main Task | Password Cracking with NetworkWalks Tools |
-| Target File | `My Locked PDF1.pdf` |
+| Target File | **password-protected PDF files** |
 | Platform | Windows Laptop / Web Browser |
 | Author | Collins |
