@@ -167,10 +167,15 @@ This sequence follows the task instructions in the supplied lab guide.
 
 ## 🧠 What I Learned
 
-This practical helped me understand the complete password-recovery process for a protected PDF. I learned how to extract a PDF hash, submit it to a password-cracking tool, and verify the recovered password by opening the protected file.
+- **PDF Hash Extraction:** I learned how to extract a PDF hash from a password-protected file using the NetworkWalks Hash Calculator. This helped me understand the first step required before attempting password recovery.
 
-The exercise also showed me how weak or predictable passwords can be vulnerable to dictionary attacks and reinforced the importance of using strong, unique passwords when protecting sensitive files.
+- **Working with PDF Hashes:** I learned the importance of copying the complete hash, including the `$pdf$` prefix, because the full hash is required by the Password Cracker for the attack.
 
+- **Dictionary Attacks:** I learned how a password-cracking tool can test different password combinations against a recovered hash until a matching password is found. This helped me understand how dictionary-based password attacks work in practice.
+
+- **Password Strength:** I learned that simple and predictable passwords can be easier to recover through cracking attempts. This reinforced the importance of using strong and less predictable passwords to protect files.
+
+- **Password Verification:** I learned that recovering a password is not the final step; it is important to verify the result by entering the recovered password and confirming that the protected PDF opens successfully.
 ## ✅ Results
 
 | Stage | Result |
