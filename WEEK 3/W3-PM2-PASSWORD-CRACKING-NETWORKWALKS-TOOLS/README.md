@@ -131,40 +131,6 @@ The lab guide identifies successful opening of the PDF as completion of the exer
 
 ---
 
-## 🔄 Workflow
-
-```text
-Protected PDF
-     │
-     ▼
-NetworkWalks Hash Calculator
-     │
-     ▼
-Extract $pdf$ Hash
-     │
-     ▼
-Copy Complete Hash
-     │
-     ▼
-NetworkWalks Password Cracker
-     │
-     ▼
-Start Dictionary Attack
-     │
-     ▼
-Password Recovered
-     │
-     ▼
-Open Protected PDF
-     │
-     ▼
-Verify Access
-```
-
-This sequence follows the task instructions in the supplied lab guide.  
-
----
-
 ## 🧠 What I Learned
 
 - **PDF Hash Extraction:** I learned how to extract a PDF hash from a password-protected file using the NetworkWalks Hash Calculator. This helped me understand the first step required before attempting password recovery.
