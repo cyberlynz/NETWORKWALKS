@@ -10,8 +10,10 @@ NetworkWalks Week 3 projects and practical labs.
 ### 🔵 W3-PM2 — Password Cracking with NetworkWalks Tools
 [Open W3-PM2 Project](./W3-PM2-PASSWORD-CRACKING-NETWORKWALKS-TOOLS/README.md)
 
-### 🔷 HexStrike MCP Server Setup with Claude Desktop
-[Open HexStrike MCP Setup Report](./HEXSTRIKE-MCP-SERVER-SETUP/README.md)
+## Optional
 
-### 🟠 Optional Module — JTR Password Cracking with AI
-[Open AI-Assisted JTR Report](./OPTIONAL-JTR-PASSWORD-CRACKING-AI/README.md)
+### 🔷 HexStrike MCP Server Setup with Claude Desktop
+[Open HexStrike MCP Setup Report](./Optional/HEXSTRIKE-MCP-SERVER-SETUP/README.md)
+
+### 🟠 JTR Password Cracking with AI
+[Open AI-Assisted JTR Report](./Optional/JTR-PASSWORD-CRACKING-AI/README.md)
