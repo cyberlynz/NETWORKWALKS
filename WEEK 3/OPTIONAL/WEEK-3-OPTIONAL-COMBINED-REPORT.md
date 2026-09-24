@@ -8,7 +8,7 @@
 
 ---
 
-## 1. Introduction
+## Introduction
 
 As part of my Week 3 practical activities with NetworkWalks, I worked on an optional exercise that combined **HexStrike-AI MCP**, **Claude Desktop**, and **John the Ripper (JTR)** in a Kali Linux virtual machine.
 
@@ -18,7 +18,7 @@ The purpose of combining the two activities was to understand how an AI interfac
 
 ---
 
-## 2. Objectives
+## Objectives
 
 The main objectives of this practical were to:
 
@@ -37,7 +37,7 @@ The main objectives of this practical were to:
 
 ---
 
-## 3. Tools and Environment
+## Tools and Environment
 
 | Tool / Component | Purpose |
 |---|---|
@@ -53,9 +53,9 @@ The main objectives of this practical were to:
 
 ---
 
-# 4. Practical Procedure
+# Practical Procedure
 
-## 4.1 Preparing the Kali Linux Environment
+## Preparing the Kali Linux Environment
 
 I used my Kali Linux virtual machine as the environment for the practical. I carried out the setup directly inside the VM so that the required applications, Python environment, MCP server, and password-recovery tools could operate together.
 
@@ -65,7 +65,7 @@ I used my Kali Linux virtual machine as the environment for the practical. I car
 
 ---
 
-## 4.2 Installing Claude Desktop
+## Installing Claude Desktop
 
 I installed Claude Desktop in Kali Linux using the repository installation method provided in the NetworkWalks lab instructions.
 
@@ -100,7 +100,7 @@ Once the installation was complete, I opened Claude Desktop and signed in.
 
 ---
 
-## 4.3 Downloading HexStrike-AI
+## Downloading HexStrike-AI
 
 Next, I downloaded the HexStrike-AI project from GitHub. I cloned the repository and changed into the project directory:
 
@@ -117,7 +117,7 @@ This gave me the HexStrike-AI project files required for the MCP setup.
 
 ---
 
-## 4.4 Creating the Python Virtual Environment
+## Creating the Python Virtual Environment
 
 Inside the HexStrike-AI directory, I created a dedicated Python virtual environment:
 
@@ -139,7 +139,7 @@ Using a separate virtual environment allowed me to keep the HexStrike Python dep
 
 ---
 
-## 4.5 Installing HexStrike Dependencies
+## Installing HexStrike Dependencies
 
 With the virtual environment active, I installed the project dependencies using:
 
@@ -155,7 +155,7 @@ This installed the Python packages required by the HexStrike-AI project.
 
 ---
 
-## 4.6 Starting the HexStrike MCP Server
+## Starting the HexStrike MCP Server
 
 After preparing the environment, I started the HexStrike server from the project directory:
 
@@ -179,7 +179,7 @@ At this point, the server was running locally and ready for the Claude Desktop i
 
 ---
 
-## 4.7 Configuring Claude Desktop for HexStrike MCP
+## Configuring Claude Desktop for HexStrike MCP
 
 I then configured Claude Desktop to communicate with the local HexStrike MCP server.
 
@@ -208,7 +208,7 @@ This configuration defined the Python interpreter, the HexStrike MCP script, and
 
 ---
 
-## 4.8 Verifying the HexStrike MCP Connection
+## Verifying the HexStrike MCP Connection
 
 After saving the configuration, I checked Claude Desktop to verify that the **hexstrike-ai** MCP server was available.
 
@@ -220,11 +220,7 @@ This confirmed that Claude Desktop could communicate with my locally running Hex
 
 ---
 
-# 5. JTR Password-Recovery Exercise
-
-Once the HexStrike environment was working, I continued with the second part of the optional practical: using John the Ripper through the MCP environment for an authorized PDF password-recovery exercise.
-
-## 5.1 Preparing the Target PDF
+## Preparing the Target PDF
 
 I copied the supplied protected PDF to the Kali Linux Desktop so that it could be accessed locally by the HexStrike/JTR workflow.
 
@@ -240,7 +236,7 @@ The target used in the practical was the supplied NetworkWalks PDF:
 
 ---
 
-## 5.2 Checking John the Ripper
+## Checking John the Ripper
 
 Before attempting password recovery, I first verified that John the Ripper was installed and available through the HexStrike MCP environment.
 
@@ -258,7 +254,7 @@ This allowed me to confirm the JTR installation and version before proceeding.
 
 ---
 
-## 5.3 Calculating the PDF Hash
+## Calculating the PDF Hash
 
 I then asked Claude to calculate the hash information for the protected PDF using:
 
@@ -275,7 +271,7 @@ The resulting hash information was required for the password-recovery process.
 
 ---
 
-## 5.4 Performing the JTR Password-Recovery Attempt
+## Performing the JTR Password-Recovery Attempt
 
 After obtaining the hash information, I requested the password-recovery operation through the HexStrike MCP environment.
 
@@ -294,7 +290,7 @@ This instructed the environment to use John the Ripper with the `rockyou.txt` di
 
 ---
 
-## 5.5 Reviewing the Cracking Process
+## Reviewing the Cracking Process
 
 I monitored the response from the HexStrike/JTR workflow while the dictionary-based password-recovery process was running.
 
@@ -306,7 +302,7 @@ At this stage, Claude Desktop acted as the interface, HexStrike MCP handled the 
 
 ---
 
-## 5.6 Reviewing the Recovered Password
+## Reviewing the Recovered Password
 
 The JTR operation returned a password-recovery result for the supplied lab PDF.
 
@@ -318,45 +314,7 @@ I reviewed the final response to verify the recovered password and the associate
 
 ---
 
-# 6. Practical Workflow
-
-The complete workflow I followed was:
-
-```
-Kali Linux
-   ↓
-Claude Desktop Installation
-   ↓
-HexStrike-AI Download
-   ↓
-Python Virtual Environment
-   ↓
-Dependencies Installed
-   ↓
-HexStrike Server Started
-   ↓
-Claude Desktop MCP Configuration
-   ↓
-MCP Connection Verified
-   ↓
-John the Ripper Verified
-   ↓
-Protected PDF Prepared
-   ↓
-PDF Hash Extracted
-   ↓
-JTR + rockyou.txt
-   ↓
-Password-Recovery Result
-```
-
-**Screenshot 16 — Complete workflow evidence**  
-> **[INSERT SCREENSHOT HERE]**  
-> *Evidence: a final screenshot or collection showing the completed setup and practical result.*
-
----
-
-# 7. Results
+## Results
 
 The practical demonstrated the integration of an AI interface with a local cybersecurity MCP environment.
 
@@ -376,7 +334,7 @@ I was able to:
 
 ---
 
-# 8. What I Learned
+## What I Learned
 
 ### HexStrike MCP Setup
 
@@ -404,7 +362,7 @@ I also learned the importance of documenting each stage of a practical with scre
 
 ---
 
-# 9. Security and Ethical Considerations
+## Security and Ethical Considerations
 
 I carried out this practical as part of an authorized cybersecurity training exercise.
 
@@ -412,7 +370,7 @@ The techniques used in this lab should only be applied to files, systems, applic
 
 ---
 
-# 10. Conclusion
+## Conclusion
 
 This Week 3 optional practical gave me hands-on experience combining **Kali Linux, Claude Desktop, HexStrike-AI MCP, and John the Ripper** into one workflow.
 
@@ -422,7 +380,7 @@ Overall, the exercise improved my practical understanding of AI-assisted cyberse
 
 ---
 
-# 11. References
+## References
 
 - NetworkWalks Academy — HexStrike MCP Server Setup Practice Lab
 - NetworkWalks Academy — JTR Password Cracking Lab Module (AI Version)
@@ -432,7 +390,7 @@ Overall, the exercise improved my practical understanding of AI-assisted cyberse
 
 ---
 
-## 12. Project Information
+## Project Information
 
 | Item | Details |
 |---|---|
