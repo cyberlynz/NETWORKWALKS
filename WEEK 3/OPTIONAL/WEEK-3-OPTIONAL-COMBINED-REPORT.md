@@ -55,7 +55,7 @@ The main objectives of this practical were to:
 
 # Practical Procedure
 
-## Preparing the Kali Linux Environment
+## 1. Preparing the Kali Linux Environment
 
 I used my Kali Linux virtual machine as the environment for the practical. I carried out the setup directly inside the VM so that the required applications, Python environment, MCP server, and password-recovery tools could operate together.
 
@@ -65,7 +65,7 @@ I used my Kali Linux virtual machine as the environment for the practical. I car
 
 ---
 
-## Installing Claude Desktop
+## 2. Installing Claude Desktop
 
 I installed Claude Desktop in Kali Linux using the repository installation method provided in the NetworkWalks lab instructions.
 
@@ -100,7 +100,7 @@ Once the installation was complete, I opened Claude Desktop and signed in.
 
 ---
 
-## Downloading HexStrike-AI
+## 3. Downloading HexStrike-AI
 
 Next, I downloaded the HexStrike-AI project from GitHub. I cloned the repository and changed into the project directory:
 
@@ -117,7 +117,7 @@ This gave me the HexStrike-AI project files required for the MCP setup.
 
 ---
 
-## Creating the Python Virtual Environment
+## 4. Creating the Python Virtual Environment
 
 Inside the HexStrike-AI directory, I created a dedicated Python virtual environment:
 
@@ -139,7 +139,7 @@ Using a separate virtual environment allowed me to keep the HexStrike Python dep
 
 ---
 
-## Installing HexStrike Dependencies
+## 5. Installing HexStrike Dependencies
 
 With the virtual environment active, I installed the project dependencies using:
 
@@ -155,7 +155,7 @@ This installed the Python packages required by the HexStrike-AI project.
 
 ---
 
-## Starting the HexStrike MCP Server
+## 6. Starting the HexStrike MCP Server
 
 After preparing the environment, I started the HexStrike server from the project directory:
 
@@ -179,7 +179,7 @@ At this point, the server was running locally and ready for the Claude Desktop i
 
 ---
 
-## Configuring Claude Desktop for HexStrike MCP
+## 7. Configuring Claude Desktop for HexStrike MCP
 
 I then configured Claude Desktop to communicate with the local HexStrike MCP server.
 
@@ -208,7 +208,7 @@ This configuration defined the Python interpreter, the HexStrike MCP script, and
 
 ---
 
-## Verifying the HexStrike MCP Connection
+## 8. Verifying the HexStrike MCP Connection
 
 After saving the configuration, I checked Claude Desktop to verify that the **hexstrike-ai** MCP server was available.
 
@@ -220,7 +220,7 @@ This confirmed that Claude Desktop could communicate with my locally running Hex
 
 ---
 
-## Preparing the Target PDF
+## 9. Preparing the Target PDF
 
 I copied the supplied protected PDF to the Kali Linux Desktop so that it could be accessed locally by the HexStrike/JTR workflow.
 
@@ -236,7 +236,7 @@ The target used in the practical was the supplied NetworkWalks PDF:
 
 ---
 
-## Checking John the Ripper
+## 10. Checking John the Ripper
 
 Before attempting password recovery, I first verified that John the Ripper was installed and available through the HexStrike MCP environment.
 
@@ -254,7 +254,7 @@ This allowed me to confirm the JTR installation and version before proceeding.
 
 ---
 
-## Calculating the PDF Hash
+## 11. Calculating the PDF Hash
 
 I then asked Claude to calculate the hash information for the protected PDF using:
 
@@ -271,7 +271,7 @@ The resulting hash information was required for the password-recovery process.
 
 ---
 
-## Performing the JTR Password-Recovery Attempt
+## 12. Performing the JTR Password-Recovery Attempt
 
 After obtaining the hash information, I requested the password-recovery operation through the HexStrike MCP environment.
 
@@ -290,7 +290,7 @@ This instructed the environment to use John the Ripper with the `rockyou.txt` di
 
 ---
 
-## Reviewing the Cracking Process
+## 13. Reviewing the Cracking Process
 
 I monitored the response from the HexStrike/JTR workflow while the dictionary-based password-recovery process was running.
 
@@ -302,7 +302,7 @@ At this stage, Claude Desktop acted as the interface, HexStrike MCP handled the 
 
 ---
 
-## Reviewing the Recovered Password
+## 14. Reviewing the Recovered Password
 
 The JTR operation returned a password-recovery result for the supplied lab PDF.
 
