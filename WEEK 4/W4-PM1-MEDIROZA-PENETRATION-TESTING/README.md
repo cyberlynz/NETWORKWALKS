@@ -5,110 +5,60 @@
 **NetworkWalks Cybersecurity & Ethical Hacking — Batch B083**  
 **Week 04 | Penetration Testing Project**
 
-![Cybersecurity](https://img.shields.io/badge/Cybersecurity-Penetration%20Testing-blue)
-![NetworkWalks](https://img.shields.io/badge/NetworkWalks-B083-green)
-![Black Box](https://img.shields.io/badge/Testing-Black--Box-orange)
-![Ethical Hacking](https://img.shields.io/badge/Ethical%20Hacking-Lab-black)
-
 </div>
 
 ---
 
-## 📌 Introduction
+## Introduction
 
-For **Week 04**, the project is a **Penetration Testing & Vulnerability Assessment** exercise against **Mediroza General Hospital**.
+For Week 04, I worked on a **Penetration Testing & Vulnerability Assessment** project for **Mediroza General Hospital**.
 
-The project is a **full black-box penetration test** with a **5-day** timeline. The target is:
+**Target:** `https://medirozahospital.com`  
+**Testing Type:** Black-box Pentest  
+**Duration:** 5 Days
 
-`https://medirozahospital.com`
-
-The project brief states that written authorization has been provided for the security testing and that testing is limited to the target domain. Social engineering, denial of service, and testing outside the agreed scope are not allowed.
-
-This write-up documents the project brief, milestone requirements, and the reconnaissance walkthrough reviewed for the project.
-
-> **Important:** The supplied walkthrough explains the project and demonstrates initial website inspection. It does not show the actual exploitation, retrieval of the three PDFs, file cracking, discovery of salary/shareholder information, or completion of the final penetration-testing report. Those results are therefore not claimed as completed in this README.
+The project was conducted within the defined scope and with written authorization for testing. Testing was limited to the target domain, with no social engineering, denial-of-service testing, or testing outside the agreed scope.
 
 ---
 
-## 🎯 Project Objectives
+## Project Objectives
 
-The project is divided into four milestones:
+The project was divided into four milestones:
 
 | Milestone | Objective |
 |---|---|
 | **M1 — Initial Access** | Attack the website and retrieve 3 confidential patient PDF lab reports |
 | **M2 — Data Extraction** | Crack the encryption on all 3 retrieved files |
-| **M3 — Attack (cracking)** | Find staff salaries and shareholder details of the hospital |
-| **M4 — Pentest Report** | Write a professional penetration-testing report for the client |
+| **M3 — Attack (cracking)** | Find staff salaries and shareholder details |
+| **M4 — Pentest Report** | Write a professional penetration-testing report |
 
 ---
 
-## 🛡️ Scope, Rules & Authorization
+# M1 — Initial Access
 
-### Scope
+### Objective
 
-The assignment requires a **full black-box penetration test** to identify vulnerabilities, exploit them to demonstrate real impact, and document the findings in a professional report.
+Attack the website and find the **3 confidential PDF lab reports of patients**.
 
-### Rules
+### Approach
 
-Testing is limited to:
-
-- The target domain only
-- No social engineering
-- No denial of service
-- No testing outside the agreed scope
-
-### Authorization
-
-The project brief states that the client has provided **written authorization** to conduct security testing on its web infrastructure.
-
-### Timeline
-
-- **Duration:** 5 days
-- Work independently
-- Do not discuss findings with other participants until the reveal session
-
----
-
-# 🔎 Milestone 1 — Initial Access
-
-## Objective
-
-**Attack the website and find the 3 confidential PDF lab reports of patients.**
-
-**Written Permission: GRANTED**
-
-### Required Approach
-
-The M1 brief gives the following guidance:
+The project brief instructed me to:
 
 1. Conduct reconnaissance on the target.
 2. Identify exposed entry points.
 3. Analyse the behaviour of any authentication mechanisms found.
 4. Look for weaknesses in how the application handles user input.
-5. Gain unauthorised access to a restricted area of the site.
+5. Gain access to a restricted area of the site.
 
-### Deliverable
+### Website Reconnaissance
 
-**Proof of access and the 3 retrieved PDF files.**
-
----
-
-## 🌐 Website Reconnaissance Walkthrough
-
-As part of the supplied walkthrough, I inspected the publicly accessible Mediroza General Hospital website before moving into the later project milestones.
-
-### Step 1 — Open the Target Website
-
-I accessed:
+I started by accessing:
 
 `https://medirozahospital.com`
 
-The homepage displayed the hospital's main navigation and introductory content.
+I reviewed the publicly accessible pages and navigation.
 
-### Step 2 — Inspect the Main Navigation
-
-The visible navigation included:
+The main navigation showed:
 
 - Home
 - About
@@ -118,213 +68,156 @@ The visible navigation included:
 
 A **Staff Login** link was also visible.
 
-### Step 3 — Inspect the Staff Login Page
+### Staff Login
 
-The **Staff Login** page was opened.
+I opened the **Staff Login** page, which contained:
 
-The page contained:
-
-- Staff ID field
-- Password field
+- Staff ID
+- Password
 - Sign in button
 
-The page also indicated:
+The page stated **“Internal staff access only.”**
 
-**Internal staff access only.**
+No successful login was shown in the walkthrough.
 
-The walkthrough did not show a successful login.
+### Doctors Page
 
-### Step 4 — Inspect the Doctors Page
+I opened the **Doctors** page and reviewed the information displayed about the hospital's doctors.
 
-The **Doctors** page was opened.
+### Contact Page
 
-The page displayed the hospital's doctors and their information.
-
-### Step 5 — Inspect the Contact Page
-
-The **Contact and find us** page was opened.
-
-The page displayed contact information including:
+I opened the **Contact and find us** page and reviewed the displayed:
 
 - Address
 - Phone number
 - Email
 - Opening hours
 
-### Step 6 — Return to the Home Page
+### Home Page
 
-The homepage was revisited.
-
-The page included the hospital introduction:
+I returned to the homepage and reviewed the hospital introduction, including:
 
 **“Compassionate care, advanced medicine.”**
 
-It also displayed options such as:
+I also observed the **Book an appointment**, **Meet our doctors**, and **Our Departments** sections.
 
-- Book an appointment
-- Meet our doctors
+### About Page
 
-and an **Our Departments** section.
-
-### Step 7 — Inspect the About Page
-
-The **About Mediroza** page was opened.
-
-The page contained information about the hospital, including sections covering:
+I opened the **About Mediroza** page and reviewed information about:
 
 - The hospital
 - Its values
 - Accreditation
 
+### M1 Deliverable
+
+The required deliverable was:
+
+**Proof of access and the 3 retrieved PDF files.**
+
+The supplied walkthrough did not show the actual retrieval of the three PDFs.
+
 ---
 
-# 🔐 Milestone 2 — Data Extraction
+# M2 — Data Extraction
 
-## Objective
+### Objective
 
-**Crack the encryption on all 3 retrieved files.**
-
-**Written Permission: GRANTED**
+Crack the encryption on all **3 retrieved files**.
 
 ### Required Approach
 
-The M2 brief instructs the tester to:
+I was instructed to:
 
 1. Analyse the encryption on each file.
 2. Select appropriate tools and wordlists to recover the contents.
-3. Do not assume a single approach will work for all 3 files.
-4. Think carefully when one method fails and try another.
+3. Avoid assuming that one approach would work for all three files.
+4. Try another approach when one method fails.
 
 ### Deliverable
 
 **Recovered contents of all 3 files with proof of successful access.**
 
+The supplied walkthrough did not show the actual file-cracking process.
+
 ---
 
-# 🕵️ Milestone 3 — Critical Data Exposure
+# M3 — Critical Data Exposure
 
-## Objective
+### Objective
 
-**Find the critical data exposure on the client server.**
-
-**Written Permission: GRANTED**
+Find the **critical data exposure on the client server**.
 
 ### Required Approach
 
-The M3 brief instructs the tester to:
+I was instructed to:
 
-1. Conduct a thorough analysis of everything retrieved so far.
-2. Look beyond the obvious content and examine all file properties carefully.
-3. Use the finding that points to a further critical exposure on the server.
-4. AI tools are permitted and encouraged for data analysis and reporting.
+1. Thoroughly analyse everything retrieved so far.
+2. Examine all file properties carefully.
+3. Use the finding that points to a further exposure on the server.
+4. Use AI tools where appropriate for data analysis and reporting.
 
 ### Tasks
 
-The project requires finding:
-
-- The salaries of all hospital employees.
-- The shareholder details of the hospital.
+- Find the salaries of all hospital employees.
+- Find the shareholder details of the hospital.
 
 ### Deliverable
 
 **Full documented evidence of the exposure and a readable summary of the confidential data uncovered.**
 
----
-
-# 📝 Milestone 4 — Penetration Testing Report
-
-## Objective
-
-**Write a detailed penetration-testing report.**
-
-The required report structure contains five sections.
-
-### 01 — Executive Summary
-
-A concise overview covering:
-
-- The engagement
-- Key findings
-- Overall risk to the client
-
-### 02 — Scope and Methodology
-
-Document:
-
-- Target
-- Tools used
-- Approach taken
-- Any limitations encountered
-
-### 03 — Findings and Proof of Exploitation
-
-For each vulnerability:
-
-- Document the vulnerability
-- Include screenshots
-- Include evidence for every milestone
-
-### 04 — Risk Rating
-
-Rate each vulnerability as:
-
-- Critical
-- High
-- Medium
-- Low
-
-with justification.
-
-### 05 — Recommendations and Remediation
-
-Provide actionable steps for the client to fix each identified issue.
-
-### Final Deliverable
-
-A **complete professional penetration-testing report** submitted to the instructor.
+The supplied walkthrough did not show the actual discovery of this information.
 
 ---
 
-## 📚 Project Workflow Summary
+# M4 — Penetration Testing Report
 
-The Week 04 project follows this sequence:
+### Objective
 
-**Project Scope & Authorization**  
+Prepare a detailed penetration-testing report covering:
+
+### 1. Executive Summary
+A concise overview of the engagement, key findings, and overall risk.
+
+### 2. Scope and Methodology
+Document the target, tools used, approach taken, and any limitations.
+
+### 3. Findings and Proof of Exploitation
+Document each vulnerability with screenshots and evidence for every milestone.
+
+### 4. Risk Rating
+Rate each vulnerability as **Critical, High, Medium, or Low**, with justification.
+
+### 5. Recommendations and Remediation
+Provide actionable steps to address each identified issue.
+
+---
+
+## Project Workflow
+
+**Reconnaissance**  
 ↓  
 **M1 — Initial Access**  
 ↓  
-**Retrieve 3 confidential patient PDF reports**  
+**Retrieve 3 confidential patient PDFs**  
 ↓  
-**M2 — Crack the encryption on all 3 files**  
+**M2 — Crack all 3 files**  
 ↓  
-**M3 — Analyse retrieved information and identify the critical server exposure**  
+**M3 — Identify the critical server exposure**  
 ↓  
 **Find employee salaries and shareholder details**  
 ↓  
-**M4 — Document the findings in a professional penetration-testing report**
+**M4 — Prepare the penetration-testing report**
 
 ---
 
-## 🧠 What I Learned from the Project Brief and Walkthrough
+## What I Learned
 
-- I learned how a black-box penetration-testing project is structured from reconnaissance through reporting.
-- I learned that the initial stage focuses on reconnaissance, exposed entry points, authentication behaviour, input handling, and access to restricted areas.
-- I learned that the second milestone requires analysing each retrieved file individually and being prepared to use different approaches.
-- I learned that the third milestone requires looking beyond the obvious information and examining file properties carefully.
-- I learned that the final report must include scope, methodology, findings, proof of exploitation, risk ratings, and remediation recommendations.
-- I also learned the importance of staying within the defined target and testing rules throughout the engagement.
+This project helped me understand how a black-box penetration test progresses from reconnaissance to exploitation, data analysis, and reporting. I also learned the importance of documenting evidence at each stage and staying within the defined testing scope.
 
 ---
 
-## 🔐 Security & Ethical Use
-
-This project is conducted in a controlled environment for educational purposes.
-
-The project brief states that the target has been authorised for security testing by NetworkWalks. These techniques must not be applied to any system without explicit written permission from the owner.
-
----
-
-## 📋 Project Information
+## Project Information
 
 | Item | Details |
 |---|---|
@@ -332,16 +225,8 @@ The project brief states that the target has been authorised for security testin
 | Batch | B083 |
 | Week | 04 |
 | Project | Mediroza General Hospital Penetration Testing |
-| Project Type | Penetration Testing & Vulnerability Assessment |
-| Testing Type | Black-box Pentest |
-| Target | https://medirozahospital.com |
-| Client | Mediroza General Hospital |
+| Type | Black-box Pentest |
+| Target | `https://medirozahospital.com` |
 | Duration | 5 Days |
 | Author | Collins |
 
----
-
-## 📚 Source Material
-
-- NetworkWalks — Week 04 Penetration Testing Project: **Mediroza General Hospital**
-- Target: `https://medirozahospital.com`
