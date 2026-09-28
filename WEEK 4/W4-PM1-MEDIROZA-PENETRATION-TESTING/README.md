@@ -37,10 +37,6 @@ The project was divided into four milestones:
 
 # 🔎 M1 — Initial Access
 
-## Objective
-
-The first milestone was to attack the website and find the **3 confidential PDF lab reports of patients**.
-
 ### My Approach
 
 I started with reconnaissance of the target and reviewed the publicly accessible areas of the website.
@@ -111,17 +107,11 @@ I opened the **About Mediroza** page and reviewed the sections covering:
 
 ### M1 Deliverable
 
-The required deliverable for M1 was:
-
 **Proof of access and the 3 retrieved PDF files.**
 
 ---
 
 # 🔐 M2 — Data Extraction
-
-## Objective
-
-The second milestone was to **crack the encryption on all 3 retrieved files**.
 
 ### My Required Process
 
@@ -139,10 +129,6 @@ For this stage, I was required to:
 ---
 
 # 🕵️ M3 — Critical Data Exposure
-
-## Objective
-
-The third milestone was to **find the critical data exposure on the client server**.
 
 ### My Required Process
 
@@ -168,22 +154,22 @@ I was required to find:
 
 # 📝 M4 — Penetration Testing Report
 
-## Objective
-
-The final milestone was to prepare the penetration-testing report.
-
-The required structure was:
+The required report structure was:
 
 ### 1. Executive Summary
+
 A concise overview of the engagement, key findings, and overall risk.
 
 ### 2. Scope and Methodology
+
 Document the target, tools used, approach taken, and any limitations.
 
 ### 3. Findings and Proof of Exploitation
+
 Document each vulnerability with screenshots and evidence for every milestone.
 
 ### 4. Risk Rating
+
 Rate each vulnerability as:
 
 - Critical
@@ -194,6 +180,7 @@ Rate each vulnerability as:
 with justification.
 
 ### 5. Recommendations and Remediation
+
 Provide actionable steps to fix each identified issue.
 
 ---
