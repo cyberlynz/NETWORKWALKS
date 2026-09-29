@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🔴 W4-PM1 — Mediroza General Hospital Penetration Testing
+# 🔴 Week 04 — Mediroza General Hospital Penetration Testing
 
 **NetworkWalks Cybersecurity & Ethical Hacking — Batch B083**  
 **Week 04 | Penetration Testing Project**
@@ -16,270 +16,178 @@
 
 ## 📌 Introduction
 
-For Week 04, I worked on a **Penetration Testing and Vulnerability Assessment** project for **Mediroza General Hospital**.
+During Week 04 of my NetworkWalks cybersecurity training, I worked on a **Penetration Testing & Vulnerability Assessment** project for **Mediroza General Hospital**.
 
-The exercise was a **5-day black-box penetration test** against:
+**Target:** `https://medirozahospital.com`  
+**Testing Type:** Black-box Pentest  
+**Duration:** 5 Days
 
-`https://medirozahospital.com`
-
-The project came with written permission to carry out the testing. I was also required to stay within the target domain, avoid social engineering and denial-of-service testing, and not test anything outside the agreed scope.
-
-My work was divided into four milestones: gaining initial access, extracting the contents of the recovered files, investigating a further data exposure, and preparing the final penetration testing report.
-
-> **Evidence folder:** [Open Evidence](./evidence/README.md)
-
----
+The project had written authorization for testing. The scope was limited to the target domain, with no social engineering, denial-of-service testing, or testing outside the agreed scope.
 
 ## 🎯 Objectives
 
-The main objective of this project was to carry out the assigned black-box penetration test on Mediroza General Hospital, demonstrate the impact of the weaknesses I found, document the evidence, and prepare a final penetration testing report.
+The project was divided into four milestones:
 
----
-
-## 📋 Scope and Rules
-
-| Item | Details |
-|---|---|
-| Client | Mediroza General Hospital |
-| Target | `https://medirozahospital.com` |
-| Testing Type | Black-box Pentest |
-| Project Type | Penetration Testing & Vulnerability Assessment |
-| Duration | 5 Days |
-| Authorization | Written permission granted |
-| Scope | Target domain only |
-| Restrictions | No social engineering, no denial of service, no testing outside scope |
+- **M1 — Initial Access:** Attack the website and retrieve 3 confidential patient PDF lab reports.
+- **M2 — Data Extraction:** Crack the encryption on all 3 retrieved files.
+- **M3 — Attack (cracking):** Find staff salaries and shareholder details of the hospital.
+- **M4 — Pentest Report:** Write a professional penetration-testing report for the client.
 
 ---
 
 # 🔎 M1 — Initial Access
 
-For the first milestone, I was required to attack the website and retrieve **three confidential patient PDF lab reports**.
-
 ### My Approach
 
-I started by looking at the target from a black-box point of view. The first part was reconnaissance and checking what was exposed by the application.
+I started with reconnaissance of the target and reviewed the publicly accessible areas of the website.
 
-The project instructions required me to:
+### 1. Opening the Target Website
 
-- Conduct reconnaissance on the target.
-- Identify exposed entry points.
-- Analyse any authentication mechanisms I found.
-- Look for weaknesses in how the application handles user input.
-- Gain access to a restricted area of the site.
+I accessed:
 
-Once access was obtained, I needed to retrieve the three patient PDF lab reports.
+`https://medirozahospital.com`
 
-### Evidence to Capture
+I reviewed the homepage and the available navigation.
 
-**Evidence 01 — Target reconnaissance**
+The site showed:
 
-> `[SCREENSHOT PLACEHOLDER]`  
-> Capture the reconnaissance result showing information relevant to the target.
+- Home
+- About
+- Doctors
+- Contact
+- Patient Portal
+- Staff Login
 
-**Evidence 02 — Exposed entry point**
+### 2. Checking Staff Login
 
-> `[SCREENSHOT PLACEHOLDER]`  
-> Show the entry point or exposed area that led to further testing.
+I opened the **Staff Login** page.
 
-**Evidence 03 — Authentication mechanism**
+The page contained:
 
-> `[SCREENSHOT PLACEHOLDER]`  
-> Capture the login or authentication page/response that was examined.
+- Staff ID
+- Password
+- Sign in
 
-**Evidence 04 — Input handling**
+It also showed the message:
 
-> `[SCREENSHOT PLACEHOLDER]`  
-> Show the relevant request, response, or application behaviour used during input testing.
+**Internal staff access only.**
 
-**Evidence 05 — Restricted area access**
+### 3. Checking the Doctors Page
 
-> `[SCREENSHOT PLACEHOLDER]`  
-> Show proof that the restricted area was reached.
+I opened the **Doctors** page and reviewed the information displayed about the hospital's doctors.
 
-**Evidence 06–08 — Three retrieved PDF files**
+### 4. Checking the Contact Page
 
-> `[SCREENSHOT PLACEHOLDER]`  
-> Add one screenshot for each of the three recovered patient PDF files.
+I opened the **Contact and find us** page and reviewed the available:
+
+- Address
+- Phone number
+- Email
+- Opening hours
+
+### 5. Returning to the Home Page
+
+I returned to the homepage and reviewed the main content, including:
+
+- Book an appointment
+- Meet our doctors
+- Our Departments
+
+The page also displayed the introduction:
+
+**“Compassionate care, advanced medicine.”**
+
+### 6. Checking the About Page
+
+I opened the **About Mediroza** page and reviewed the sections covering:
+
+- The hospital
+- Its values
+- Accreditation
 
 ### M1 Deliverable
 
-The required deliverable for M1 was **proof of access and the three retrieved PDF files**.
+**Proof of access and the 3 retrieved PDF files.**
 
 ---
 
 # 🔐 M2 — Data Extraction
 
-For M2, I was required to **crack the encryption on all three retrieved PDF files** and recover their contents.
+### My Required Process
 
-### My Approach
+For this stage, I was required to:
 
-I first analysed the protection used on each file instead of assuming that the same method would work for all three.
-
-The project instructions required me to:
-
-- Analyse the encryption on each file.
-- Select suitable tools and wordlists.
-- Try another method when the first one failed.
-- Prove that I successfully recovered the contents.
-
-### Evidence to Capture
-
-**Evidence 09 — PDF 1 encryption analysis**
-
-> `[SCREENSHOT PLACEHOLDER]`  
-> Show the protection/encryption details identified for PDF 1.
-
-**Evidence 10 — PDF 1 password recovery**
-
-> `[SCREENSHOT PLACEHOLDER]`  
-> Show the tool or terminal output proving successful recovery for PDF 1.
-
-**Evidence 11 — PDF 1 successfully opened**
-
-> `[SCREENSHOT PLACEHOLDER]`  
-> Show the recovered PDF opened successfully.
-
-**Evidence 12 — PDF 2 encryption analysis**
-
-> `[SCREENSHOT PLACEHOLDER]`
-
-**Evidence 13 — PDF 2 password recovery**
-
-> `[SCREENSHOT PLACEHOLDER]`
-
-**Evidence 14 — PDF 2 successfully opened**
-
-> `[SCREENSHOT PLACEHOLDER]`
-
-**Evidence 15 — PDF 3 encryption analysis**
-
-> `[SCREENSHOT PLACEHOLDER]`
-
-**Evidence 16 — PDF 3 password recovery**
-
-> `[SCREENSHOT PLACEHOLDER]`
-
-**Evidence 17 — PDF 3 successfully opened**
-
-> `[SCREENSHOT PLACEHOLDER]`
+1. Analyse the encryption on each file.
+2. Select appropriate tools and wordlists to recover the contents.
+3. Avoid assuming that one approach would work for all 3 files.
+4. Try another approach when one method failed.
 
 ### M2 Deliverable
 
-The required deliverable was **the recovered contents of all three files with proof of successful access**.
+**Recovered contents of all 3 files with proof of successful access.**
 
 ---
 
 # 🕵️ M3 — Critical Data Exposure
 
-For M3, I had to go through the information I had already recovered and look for anything that could lead to another critical exposure on the server.
+### My Required Process
 
-### My Approach
+I was required to:
 
-I was instructed to examine the recovered files carefully, including their properties and metadata, rather than only reading the visible contents.
+1. Analyse everything retrieved so far.
+2. Examine the file properties carefully.
+3. Follow the finding that pointed to another critical exposure on the server.
+4. Use AI tools for data analysis and reporting where appropriate.
 
-The two specific tasks were to find:
+### Tasks
+
+I was required to find:
 
 - The salaries of all hospital employees.
 - The shareholder details of the hospital.
 
-The project also stated that AI tools were permitted and encouraged for data analysis and reporting.
-
-### Evidence to Capture
-
-**Evidence 18 — File properties / metadata**
-
-> `[SCREENSHOT PLACEHOLDER]`  
-> Show the file property or metadata that points to the further exposure.
-
-**Evidence 19 — Staff salary exposure**
-
-> `[SCREENSHOT PLACEHOLDER]`  
-> Show the evidence that demonstrates exposure of staff salary information.
-
-**Evidence 20 — Shareholder details exposure**
-
-> `[SCREENSHOT PLACEHOLDER]`  
-> Show the evidence that demonstrates exposure of shareholder information.
-
 ### M3 Deliverable
 
-The required deliverable was **full documented evidence of the exposure and a readable summary of the confidential information uncovered**.
-
-> **Note:** When adding screenshots to this public repository, sensitive patient, staff, or shareholder information should be redacted or masked where appropriate. Keep the evidence focused on proving the finding.
+**Full documented evidence of the exposure and a readable summary of the confidential data uncovered.**
 
 ---
 
 # 📝 M4 — Penetration Testing Report
 
-The final milestone was to prepare the detailed penetration testing report.
-
-I was expected to structure the report around the following sections:
+The required report structure was:
 
 ### 1. Executive Summary
 
-A short summary of the engagement, the main findings, and the overall risk identified during the assessment.
+A concise overview of the engagement, key findings, and overall risk.
 
 ### 2. Scope and Methodology
 
-This section should explain the target, tools used, approach followed, and any limitations encountered during the test.
+Document the target, tools used, approach taken, and any limitations.
 
 ### 3. Findings and Proof of Exploitation
 
-Each finding should be documented with the relevant screenshots and supporting evidence from the milestones.
+Document each vulnerability with screenshots and evidence for every milestone.
 
 ### 4. Risk Rating
 
-Each identified vulnerability should be rated as:
+Rate each vulnerability as:
 
 - Critical
 - High
 - Medium
 - Low
 
-The rating should include a clear reason for the level assigned.
+with justification.
 
 ### 5. Recommendations and Remediation
 
-Each finding should have practical steps that the client can take to fix or reduce the risk.
-
-### Evidence to Capture
-
-**Evidence 21 — Final report**
-
-> `[SCREENSHOT PLACEHOLDER]`  
-> Add a screenshot showing the completed final report or the final report submission.
+Provide actionable steps to fix each identified issue.
 
 ---
 
 ## 🧠 What I Learned
 
-This project gave me a practical way to follow a penetration test from the beginning to the reporting stage.
-
-I had to think about the target from a black-box perspective, identify possible entry points, test the application, recover protected files, inspect the information I found, and then document the results properly.
-
-One thing I took from the project is that finding one weakness can sometimes lead to another issue, so I need to pay attention to details in the evidence I collect and not stop at the first successful access.
-
-I also learned that evidence collection is important throughout the assessment because the final report depends on being able to clearly show what I found and how I proved it.
-
----
-
-## 🔐 Ethical Use
-
-This work was carried out as part of the authorised NetworkWalks training project. The provided brief states that testing was authorised and limited to the specified target and rules.
-
-These techniques should only be used where there is explicit permission from the system owner.
-
----
-
-## 📚 Project Reference
-
-The project brief supplied for Week 04 defines:
-
-- The Mediroza General Hospital target.
-- The black-box testing scope.
-- The four project milestones.
-- The required deliverables for each milestone.
-- The final penetration testing report structure.
+This project helped me understand the structure of a black-box penetration test, starting with reconnaissance and moving through access, data extraction, further analysis, and final reporting. I also learned the importance of collecting clear evidence throughout the assessment and working strictly within the defined scope.
 
 ---
 
@@ -290,11 +198,12 @@ The project brief supplied for Week 04 defines:
 | Training Program | NetworkWalks Cybersecurity & Ethical Hacking |
 | Batch | B083 |
 | Week | 04 |
-| Module | W4-PM1 |
 | Project | Mediroza General Hospital Penetration Testing |
+| Type | Penetration Testing & Vulnerability Assessment |
 | Testing Type | Black-box Pentest |
 | Target | `https://medirozahospital.com` |
 | Duration | 5 Days |
 | Author | Collins |
+
 
 ---
