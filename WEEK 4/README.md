@@ -99,42 +99,35 @@ These became the main directories I needed to inspect further during M1.
 
 ![Nikto reconnaissance and directory enumeration](./01-nikto-reconnaissance.png)
 
-## Vulnerability Identified
+## Authentication & User Input Testing
 
-**Finding:**  
-____________________________________________
+I then moved to the staff authentication page:
 
-**Why it is exploitable:**  
-____________________________________________
+`https://medirozahospital.com/staff/login.php`
 
-## How I Got In
+The page presented a staff login interface requiring a Staff ID and Password.
 
-1. ____________________________________________
-2. ____________________________________________
-3. ____________________________________________
+I tested the login functionality and looked for weaknesses in how the application handled user input. I made multiple attempts using **SQL injection testing**, but none of the attempts produced a successful authentication bypass or other useful result.
 
-## Where I Landed
+### Result of This Testing
 
-**Restricted area:**  
-____________________________________________
+- **Authentication bypass:** Not achieved.
+- **SQL injection:** No useful result from the attempts made.
+- **Restricted-area access:** Not obtained through this testing path.
 
-**Patient PDF 1:**  
-____________________________________________
-
-**Patient PDF 2:**  
-____________________________________________
-
-**Patient PDF 3:**  
-____________________________________________
+At this point, the SQL injection approach did not provide a way into the restricted area, so I recorded the result and continued looking for another path during the assessment.
 
 ## Evidence
 
-The screenshots for M1 should show the reconnaissance, exposed entry point, authentication/input testing, the restricted area, and the three retrieved PDFs.
+**Staff Login:** `02-staff-login.png`
 
-## Deliverable
+**Authentication / SQL injection testing:** `03-authentication-sqli-testing.png`
 
-- [ ] Proof of access
-- [ ] The 3 retrieved PDF files
+The screenshots show the login page and the testing carried out against the authentication mechanism.
+
+## M1 Deliverable
+
+The M1 objective remains to obtain proof of access and the 3 confidential patient PDF lab reports.
 
 ---
 
