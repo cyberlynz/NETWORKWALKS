@@ -119,15 +119,12 @@ At this point, the SQL injection approach did not provide a way into the restric
 
 ## Evidence
 
-**Staff Login:** `02-staff-login.png`
+**Staff Login, Authentication & SQL Injection Testing:**  
+`02-staff-login-authentication-sqli-testing.png`
 
-**Authentication / SQL injection testing:** `03-authentication-sqli-testing.png`
+![Staff Login, Authentication & SQL Injection Testing](./02-staff-login-authentication-sqli-testing.png)
 
-The screenshots show the login page and the testing carried out against the authentication mechanism.
-
-## M1 Deliverable
-
-The M1 objective remains to obtain proof of access and the 3 confidential patient PDF lab reports.
+The screenshot combines the staff login page, the invalid login response, and the SQL injection input test.
 
 ---
 
