@@ -67,7 +67,7 @@ The brief directs me to:
 - Look for weaknesses in how the application handles user input.
 - Gain unauthorised access to a restricted area of the site.
 
-## Step 1 — Reconnaissance
+## Reconnaissance
 
 I started my reconnaissance with **Nikto v2.6.1** against:
 
@@ -97,7 +97,7 @@ The scan also showed these paths in `/robots.txt`:
 
 ---
 
-## Step 2 — Staff Login Testing
+## Staff Login Testing
 
 I followed the `/staff/` entry point and tested:
 
@@ -126,7 +126,7 @@ The staff login did not provide access, so I moved on to the next exposed entry 
 
 ---
 
-## Step 3 — Patient Portal Testing
+## Patient Portal Testing
 
 I then tested the Patient Portal identified during reconnaissance:
 
@@ -148,7 +148,7 @@ The evidence combines the Patient Portal login, the input test, and the successf
 
 ---
 
-## Step 4 — Retrieve the Patient Reports
+## Retrieve the Patient Reports
 
 After gaining access to the patient portal, I reached the **My lab reports** page.
 
