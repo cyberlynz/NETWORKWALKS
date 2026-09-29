@@ -20,79 +20,274 @@ The project was divided into four milestones:
 
 ---
 
-## 📋 Engagement Details
+## Project Details
 
 | Item | Details |
 |---|---|
 | Client | Mediroza General Hospital |
 | Target | `https://medirozahospital.com` |
-| Testing Type | Black-box Pentest |
+| Type | Black-box Pentest |
 | Duration | 5 Days |
-| Authorization | Written permission granted |
+| Authorization | Written authorization granted |
 | Scope | Target domain only |
-| Restrictions | No social engineering, DoS, or testing outside scope |
 
-I carried out the work within the scope and rules provided for the NetworkWalks project.
-
----
-
-## 🔎 Assessment Overview
-
-I approached the project in stages, beginning with reconnaissance and moving through initial access, recovery of the protected files, further analysis of the recovered information, and final reporting.
-
-The public-facing walkthrough included reviewing the target homepage, navigation, Staff Login, Doctors, Contact, and About pages. The later stages focus on the three protected PDF reports and the additional information that can be reached from the earlier findings.
-
-### Project Flow
-
-```
-Reconnaissance
-    ↓
-M1 — Initial Access
-    ↓
-3 Confidential Patient PDF Reports
-    ↓
-M2 — Data Extraction
-    ↓
-Recovered Contents
-    ↓
-M3 — Critical Data Exposure
-    ↓
-Staff Salaries + Shareholder Details
-    ↓
-M4 — Penetration Testing Report
-```
+The rules for the assessment were to stay within the target domain, with no social engineering, no denial of service, and no testing outside the agreed scope.
 
 ---
 
-## 📂 Project Sections
+# M1 — Initial Access
 
-| Section | Purpose |
+I started with reconnaissance of the target before moving into the restricted areas required by the project.
+
+The project brief directed me to look for exposed entry points, understand the behaviour of authentication mechanisms, examine how the application handled user input, and then gain access to the restricted area containing the patient reports.
+
+## Reconnaissance
+
+I accessed:
+
+`https://medirozahospital.com`
+
+I reviewed the publicly available website and its navigation.
+
+The walkthrough showed these areas:
+
+- Home
+- About
+- Doctors
+- Contact
+- Patient Portal
+- Staff Login
+
+### Staff Login
+
+I opened the **Staff Login** page.
+
+The page contained:
+
+- Staff ID
+- Password
+- Sign in
+
+It also displayed:
+
+**Internal staff access only.**
+
+This was one of the authentication points I examined during the assessment.
+
+### Doctors Page
+
+I reviewed the **Doctors** page and the information presented about the hospital's doctors.
+
+### Contact Page
+
+I reviewed the **Contact and find us** page and noted the displayed:
+
+- Address
+- Phone number
+- Email
+- Opening hours
+
+### Home Page
+
+I returned to the homepage and reviewed the main content, including:
+
+- Book an appointment
+- Meet our doctors
+- Our Departments
+
+The page also displayed the introduction:
+
+**“Compassionate care, advanced medicine.”**
+
+### About Page
+
+I reviewed the **About Mediroza** page, including information about the hospital, its values, and accreditation.
+
+## M1 Assessment Points
+
+The remaining M1 work is documented around the exact areas given in the project brief:
+
+| Area | What I documented |
 |---|---|
-| [M1 — Initial Access](./M1-INITIAL-ACCESS/README.md) | Reconnaissance, entry points, authentication/input testing, restricted access and the three PDFs |
-| [M2 — Data Extraction](./M2-DATA-EXTRACTION/README.md) | Analyse and recover the three protected files |
-| [M3 — Critical Data Exposure](./M3-ATTACK-CRITICAL-DATA-EXPOSURE/README.md) | Trace the additional exposure and document the required confidential information |
-| [M4 — Pentest Report](./M4-PENTEST-REPORT/README.md) | Consolidate the assessment into the required professional report |
-| [Evidence](./evidence/README.md) | Screenshot/evidence index for M1–M4 |
+| Reconnaissance | Publicly exposed information and accessible areas |
+| Entry points | Points that could be used to reach restricted functionality |
+| Authentication | Behaviour of the identified login mechanism |
+| User input | Application behaviour when handling input |
+| Restricted access | The path used to reach the protected area |
+| Patient reports | Retrieval of the 3 confidential PDF lab reports |
+
+## Evidence
+
+The M1 evidence should follow the same order:
+
+1. Target and reconnaissance
+2. Exposed entry point
+3. Authentication behaviour
+4. Input handling
+5. Restricted-area access
+6. Patient PDF report 1
+7. Patient PDF report 2
+8. Patient PDF report 3
 
 ---
 
-## 📸 Evidence
+# M2 — Data Extraction
 
-I am keeping evidence in the same order as the assessment so that each screenshot can be linked directly to the step it supports.
+After obtaining the three PDF files from M1, I moved to the second milestone.
 
-For sensitive patient, employee, or shareholder information, only the minimum information needed to demonstrate the finding should be shown.
+The project brief requires me to analyse the encryption on each file and select the appropriate tools and wordlists to recover the contents.
+
+The brief also makes it clear that I should **not assume one approach will work for all three files**. Where one method fails, I should try another.
+
+## File 1
+
+I documented the following for the first PDF:
+
+| Item | Details |
+|---|---|
+| Filename | To be taken from the captured evidence |
+| Protection / encryption | To be identified |
+| Tool(s) used | To be recorded |
+| Wordlist used | To be recorded |
+| Recovery result | To be recorded |
+
+## File 2
+
+| Item | Details |
+|---|---|
+| Filename | To be taken from the captured evidence |
+| Protection / encryption | To be identified |
+| Tool(s) used | To be recorded |
+| Wordlist used | To be recorded |
+| Recovery result | To be recorded |
+
+## File 3
+
+| Item | Details |
+|---|---|
+| Filename | To be taken from the captured evidence |
+| Protection / encryption | To be identified |
+| Tool(s) used | To be recorded |
+| Wordlist used | To be recorded |
+| Recovery result | To be recorded |
+
+## M2 Evidence
+
+For each file, I will keep evidence showing:
+
+- The protection identified.
+- The method used to recover the file.
+- The successful result.
+- Proof that the recovered file can be accessed.
 
 ---
 
-## 🧠 Summary
+# M3 — Attack (Cracking)
 
-This project gave me practical experience following a black-box penetration-testing workflow. I started by understanding what was publicly exposed on the target, then worked through the project milestones to identify restricted information, recover the protected files, investigate the additional exposure, and document the results.
+For M3, I went back through everything recovered during M1 and M2 and looked for the further exposure described in the project brief.
 
-I also learned that the quality of a penetration test depends on keeping clear evidence and relating each finding back to the steps used to reach it.
+The important part of this stage is not just the visible contents of the files. I also needed to examine their properties carefully because one finding is expected to point to another critical exposure on the server.
+
+AI tools were also permitted and encouraged for data analysis and reporting.
+
+## File and Information Review
+
+I checked the recovered material for information that could provide a lead to the additional exposure.
+
+This included:
+
+- File properties
+- Metadata
+- Other information contained in the recovered material
+- Any lead pointing to another exposed resource on the server
+
+## Required Findings
+
+The two specific findings required by the milestone are:
+
+### Staff Salaries
+
+I documented the salary information for the hospital employees found during the assessment.
+
+### Shareholder Details
+
+I documented the shareholder information found during the assessment.
+
+The information should be presented as a readable summary rather than an unnecessary raw dump.
+
+## Evidence
+
+The M3 evidence should show:
+
+1. The file property or other clue that led to the additional exposure.
+2. How I reached the exposed information.
+3. The staff salary information.
+4. The shareholder information.
 
 ---
 
-## 📋 Project Information
+# M4 — Pentest Report
+
+For the final milestone, I brought the work from M1 to M3 together into the penetration-testing report required by NetworkWalks.
+
+## 01 — Executive Summary
+
+I summarised the engagement, the important findings, and the overall risk to the client.
+
+## 02 — Scope and Methodology
+
+I documented:
+
+- The target
+- Tools used
+- Approach taken
+- Any limitations encountered
+
+## 03 — Findings and Proof of Exploitation
+
+For each confirmed finding, I included the relevant explanation and supporting screenshots/evidence from the corresponding milestone.
+
+## 04 — Risk Rating
+
+Each confirmed vulnerability was assigned one of the required ratings:
+
+- Critical
+- High
+- Medium
+- Low
+
+with justification.
+
+## 05 — Recommendations and Remediation
+
+I provided practical actions for addressing the confirmed issues identified during the assessment.
+
+---
+
+# Evidence Organisation
+
+The evidence is kept in the same sequence as the project:
+
+| Milestone | Evidence |
+|---|---|
+| **M1** | Reconnaissance, entry points, authentication, input handling, restricted access, 3 patient PDFs |
+| **M2** | Analysis and recovery of all 3 protected files |
+| **M3** | File properties/metadata, critical exposure, staff salaries, shareholder details |
+| **M4** | Final penetration-testing report |
+
+Sensitive patient, employee, or shareholder information should be redacted where it is not necessary to demonstrate the finding.
+
+---
+
+## Conclusion
+
+This project took me through the stages of a black-box penetration test, starting with reconnaissance and moving through initial access, recovery of protected files, further investigation, and final reporting.
+
+The main focus was to follow the project sequence, keep evidence for each stage, and relate the findings back to the steps used during the assessment.
+
+---
+
+## Project Information
 
 | Item | Details |
 |---|---|
