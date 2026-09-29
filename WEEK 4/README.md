@@ -1,10 +1,38 @@
 <div align="center">
 
-# 🏥 Mediroza General Hospital — Penetration Testing Project
+# 🏥 Penetration Testing Project — Mediroza General Hospital
 
-**NetworkWalks Cybersecurity & Ethical Hacking — Batch B083 | Week 04**
+**NetworkWalks Cybersecurity & Ethical Hacking — Batch B083**  
+**Week 04 | Project Module**
 
 </div>
+
+---
+
+## 📌 Project Overview
+
+For Week 04, I am carrying out a **full black-box penetration test** against **Mediroza General Hospital**.
+
+The assessment is a **5-day engagement** focused on gaining initial access, recovering three confidential patient PDF lab reports, analysing and cracking the protection on those files, investigating a further critical data exposure, and documenting the work in a professional penetration-testing report.
+
+| Item | Details |
+|---|---|
+| Client | Mediroza General Hospital |
+| Target | [medirozahospital.com](https://medirozahospital.com) |
+| Project Type | Penetration Testing & Vulnerability Assessment |
+| Testing Type | Black-box Pentest |
+| Duration | 5 Days |
+| Authorization | Written permission granted |
+| Scope | Target domain only |
+
+### Rules of Engagement
+
+I am keeping the testing within the agreed scope:
+
+- Target domain only
+- No social engineering
+- No denial of service
+- No testing outside the agreed scope
 
 ---
 
@@ -19,27 +47,17 @@ The project was divided into four milestones:
 
 ---
 
-## 📋 Project Details
+# 🔎 M1 — Initial Access
 
-| Item | Details |
-|---|---|
-| Client | Mediroza General Hospital |
-| Target | `https://medirozahospital.com` |
-| Project Type | Penetration Testing & Vulnerability Assessment |
-| Testing | Black-box Pentest |
-| Duration | 5 Days |
-| Authorization | Written authorization granted |
-| Scope | Target domain only |
+**Written Permission: GRANTED**
 
-The assessment was restricted to the target domain. The project rules did not allow social engineering, denial-of-service testing, or testing outside the agreed scope.
+## What I need to do
 
----
+Attack the website, identify the exposed entry points and weaknesses, gain access to the restricted area, and retrieve the **3 confidential patient PDF lab reports**.
 
-# M1 — Initial Access
+## Hints from the Project Brief
 
-I started with reconnaissance because the first milestone required me to understand what was exposed on the target before attempting to reach the restricted area.
-
-The project brief directed me to:
+The brief directed me to:
 
 - Conduct reconnaissance on the target.
 - Identify exposed entry points.
@@ -47,15 +65,15 @@ The project brief directed me to:
 - Look for weaknesses in how the application handles user input.
 - Gain unauthorised access to a restricted area of the site.
 
-### Target Reconnaissance
+## Recon Notes
 
-I accessed:
+I started by accessing:
 
 `https://medirozahospital.com`
 
-From the supplied walkthrough, I reviewed the public-facing website and its navigation.
+I reviewed the public-facing website and the available navigation before moving further into the assessment.
 
-The visible navigation included:
+The walkthrough showed:
 
 - Home
 - About
@@ -64,11 +82,18 @@ The visible navigation included:
 - Patient Portal
 - Staff Login
 
+I also inspected the website for exposed paths and application resources. During the reconnaissance shown in the walkthrough, paths including:
+
+- `/old`
+- `/robots.txt`
+- `/staff`
+- `/patient`
+
+were examined as potential sources of information or entry points.
+
 ### Staff Login
 
-I opened the **Staff Login** page.
-
-The page contained:
+The **Staff Login** page contained:
 
 - Staff ID
 - Password
@@ -78,100 +103,77 @@ It also displayed:
 
 **Internal staff access only.**
 
-This identified an authentication mechanism that formed part of the M1 assessment.
+This provided an authentication mechanism to investigate as part of M1.
 
-### Doctors Page
+### Public Pages Reviewed
 
-I opened the Doctors page and reviewed the information presented about the hospital's doctors.
+**Doctors** — I reviewed the information presented about the hospital's doctors.
 
-### Contact Page
+**Contact** — I reviewed the displayed address, phone number, email and opening hours.
 
-I opened the Contact and find us page and reviewed the information displayed there, including:
+**Home** — I reviewed the main page content, including **Book an appointment**, **Meet our doctors**, and **Our Departments**.
 
-- Address
-- Phone number
-- Email
-- Opening hours
+**About** — I reviewed information about the hospital, its values and accreditation.
 
-### Home Page
+## Vulnerability Identified
 
-I returned to the homepage and reviewed the main content, including:
+**Finding:** __________________________________________
 
-- Book an appointment
-- Meet our doctors
-- Our Departments
+Once confirmed, I will document the actual weakness identified, why it worked, and how it allowed access to the restricted area.
 
-The homepage also displayed the statement:
+## Steps Taken
 
-**“Compassionate care, advanced medicine.”**
+1. _________________________________________________
+2. _________________________________________________
+3. _________________________________________________
+4. _________________________________________________
 
-### About Page
+## Evidence
 
-I opened the About Mediroza page and reviewed the sections covering:
+I will include screenshots showing:
 
-- The hospital
-- Its values
-- Accreditation
+- Reconnaissance results
+- The exposed entry point
+- Authentication behaviour
+- User-input testing
+- Successful access to the restricted area
+- The 3 retrieved patient PDF lab reports
 
-### M1 Testing
+## Result
 
-After the initial reconnaissance, I focused on the specific areas required by the brief:
+**Access obtained:** __________________________________
 
-**Exposed entry points:** I documented the entry points identified during reconnaissance.
+**Patient PDF 1:** ___________________________________
 
-**Authentication:** I examined the behaviour of the identified authentication mechanism.
+**Patient PDF 2:** ___________________________________
 
-**User input:** I checked how the application handled the relevant input.
+**Patient PDF 3:** ___________________________________
 
-**Restricted access:** I documented the path used to reach the restricted area.
+## Deliverable
 
-**Patient reports:** The required outcome was retrieval of the 3 confidential patient PDF lab reports.
-
-### M1 Evidence
-
-The evidence for M1 should follow the order of the work:
-
-| # | Evidence | Purpose |
-|---|---|---|
-| 01 | `01-reconnaissance.png` | Reconnaissance |
-| 02 | `02-exposed-entry-point.png` | Exposed entry point |
-| 03 | `03-authentication.png` | Authentication behaviour |
-| 04 | `04-input-testing.png` | User-input handling |
-| 05 | `05-restricted-area.png` | Restricted-area access |
-| 06 | `06-patient-report-1.png` | Patient PDF 1 |
-| 07 | `07-patient-report-2.png` | Patient PDF 2 |
-| 08 | `08-patient-report-3.png` | Patient PDF 3 |
-
-**Deliverable:** Proof of access and the 3 retrieved PDF files.
+- [ ] Proof of access
+- [ ] 3 retrieved patient PDF lab reports
 
 ---
 
-# M2 — Data Extraction
+# 🔐 M2 — Data Extraction
 
-After retrieving the three PDF files, I moved to the second milestone.
+**Written Permission: GRANTED**
 
-The task was to **crack the encryption on all 3 retrieved files**.
+## What I need to do
 
-The brief gave four specific instructions:
+Crack the encryption on all **3 retrieved files** from M1 and recover their contents.
 
-1. Analyse the encryption on each file.
-2. Select appropriate tools and wordlists to recover the contents.
-3. Do not assume a single approach will work for all 3 files.
-4. Think carefully when one method fails and try another.
+## Hints from the Project Brief
 
-I therefore treated each file separately rather than assuming the same recovery process would work for all three.
+The brief instructed me to:
 
-### PDF 1
+- Analyse the encryption on each file.
+- Select appropriate tools and wordlists to recover the contents.
+- Do not assume a single approach will work for all 3 files.
+- Think carefully when one method fails and try another.
 
-| Item | Details |
-|---|---|
-| Filename | |
-| Encryption / protection | |
-| Tool(s) used | |
-| Wordlist used | |
-| Recovery result | |
-
-### PDF 2
+## File 1
 
 | Item | Details |
 |---|---|
@@ -179,9 +181,15 @@ I therefore treated each file separately rather than assuming the same recovery 
 | Encryption / protection | |
 | Tool(s) used | |
 | Wordlist used | |
-| Recovery result | |
+| Outcome | |
 
-### PDF 3
+### Evidence
+
+- Encryption/protection analysis
+- Recovery attempt
+- Successful access to the recovered file
+
+## File 2
 
 | Item | Details |
 |---|---|
@@ -189,179 +197,177 @@ I therefore treated each file separately rather than assuming the same recovery 
 | Encryption / protection | |
 | Tool(s) used | |
 | Wordlist used | |
-| Recovery result | |
+| Outcome | |
 
-### M2 Evidence
+### Evidence
 
-For each file, I documented:
+- Encryption/protection analysis
+- Recovery attempt
+- Successful access to the recovered file
 
-- The protection identified.
-- The tool or approach used.
-- The wordlist used where applicable.
-- The recovery result.
-- Proof that the recovered file could be accessed.
+## File 3
 
-| # | Evidence | Purpose |
-|---|---|---|
-| 09 | `09-pdf1-analysis.png` | PDF 1 encryption/protection analysis |
-| 10 | `10-pdf1-recovery.png` | PDF 1 recovery |
-| 11 | `11-pdf1-verified.png` | PDF 1 successful access |
-| 12 | `12-pdf2-analysis.png` | PDF 2 encryption/protection analysis |
-| 13 | `13-pdf2-recovery.png` | PDF 2 recovery |
-| 14 | `14-pdf2-verified.png` | PDF 2 successful access |
-| 15 | `15-pdf3-analysis.png` | PDF 3 encryption/protection analysis |
-| 16 | `16-pdf3-recovery.png` | PDF 3 recovery |
-| 17 | `17-pdf3-verified.png` | PDF 3 successful access |
+| Item | Details |
+|---|---|
+| Filename | |
+| Encryption / protection | |
+| Tool(s) used | |
+| Wordlist used | |
+| Outcome | |
 
-**Deliverable:** Recovered contents of all 3 files with proof of successful access.
+### Evidence
+
+- Encryption/protection analysis
+- Recovery attempt
+- Successful access to the recovered file
+
+## Result
+
+**PDF 1:** __________________________________________
+
+**PDF 2:** __________________________________________
+
+**PDF 3:** __________________________________________
+
+## Deliverable
+
+- [ ] Contents of all 3 files recovered
+- [ ] Proof of successful access for each file
 
 ---
 
-# M3 — Attack (Cracking)
+# 🕵️ M3 — Attack (Cracking)
 
-For M3, I went back through everything I had retrieved during M1 and M2.
+**Written Permission: GRANTED**
 
-The brief specifically required me to:
+## What I need to do
+
+Find the **critical data exposure on the client server**.
+
+The M3 stage builds on the information recovered during M1 and M2, so I need to go back over what I already have and look for the lead to the additional exposure.
+
+## Hints from the Project Brief
+
+The brief instructed me to:
 
 - Conduct a thorough analysis of everything retrieved so far.
 - Look beyond the obvious content.
 - Examine all file properties carefully.
 - Follow the finding that points to a further critical exposure on the server.
+- AI tools are permitted and encouraged for data analysis and reporting.
 
-AI tools were also permitted and encouraged for data analysis and reporting.
+## Tasks
 
-### Reviewing the Retrieved Files
+- [ ] Find the salaries of all hospital employees.
+- [ ] Find the shareholder details of the hospital.
 
-I examined the recovered files and their properties for information that could provide the next lead.
+## Going Back Over What I Have
 
-The review included:
+I will examine the retrieved files and their properties carefully, including:
 
-- File properties
 - Metadata
-- Other information contained in the recovered material
-- Anything that could point to another exposed resource on the server
+- Author or creator information
+- Embedded paths
+- Comments
+- Hidden fields
+- Other file properties that may provide a useful lead
 
-### Critical Data Exposure
+The purpose is to identify the finding that points toward the further exposure on the server.
 
-The next step was to follow the lead from the retrieved information to the further exposure on the server.
+## What It Turned Out To Be
 
-I documented:
+**Exposure identified:** __________________________________
 
-- What the lead was.
-- Where it came from.
-- How it pointed to the additional exposure.
-- What information was exposed.
+**How I found it:** ______________________________________
 
-### Staff Salaries
+**Why it matters:** ______________________________________
 
-The first M3 task was to find the salaries of all hospital employees.
+## What I Found
 
-I recorded the information found and kept supporting evidence.
-
-### Shareholder Details
-
-The second M3 task was to find the shareholder details of the hospital.
-
-I recorded the information found and kept supporting evidence.
-
-The final information should be presented as a readable summary rather than an unnecessary raw dump.
-
-### M3 Evidence
-
-| # | Evidence | Purpose |
-|---|---|---|
-| 18 | `18-file-properties.png` | File properties / metadata |
-| 19 | `19-critical-exposure.png` | Finding leading to the further exposure |
-| 20 | `20-staff-salaries.png` | Staff salary evidence |
-| 21 | `21-shareholder-details.png` | Shareholder details evidence |
-
-**Deliverable:** Full documented evidence of the exposure and a readable summary of the confidential data uncovered.
-
----
-
-# M4 — Pentest Report
-
-For the final milestone, I brought the work from M1 to M3 together into one professional penetration-testing report.
-
-The required report structure was:
-
-## 01 — Executive Summary
-
-A concise overview of the engagement, key findings, and overall risk to the client.
-
-## 02 — Scope and Methodology
-
-I documented:
-
-- The target.
-- The tools used.
-- The approach taken.
-- Any limitations encountered.
-
-## 03 — Findings and Proof of Exploitation
-
-I documented each confirmed vulnerability with:
-
-- The finding.
-- How it was identified.
-- The relevant exploitation or access path.
-- Supporting screenshots and evidence.
-
-## 04 — Risk Rating
-
-Each confirmed vulnerability was rated:
-
-- Critical
-- High
-- Medium
-- Low
-
-with justification.
-
-## 05 — Recommendations and Remediation
-
-I documented actionable steps the client could take to address each confirmed issue.
-
-### M4 Evidence
-
-`22-final-report.png`
-
-**Deliverable:** A complete professional penetration-testing report submitted to the instructor.
-
----
-
-# 📸 Evidence Index
-
-All evidence is kept in this README so the project can be followed from beginning to end without separate milestone folders.
-
-| Evidence | Stage |
+| Data | Summary |
 |---|---|
-| 01–08 | M1 — Initial Access |
-| 09–17 | M2 — Data Extraction |
-| 18–21 | M3 — Attack (Cracking) |
-| 22 | M4 — Pentest Report |
+| Staff salaries | |
+| Shareholder details | |
 
-For screenshots containing patient, employee, or shareholder information, unnecessary sensitive information should be redacted before the screenshots are published.
+I will keep the final information as a readable summary rather than a raw dump.
 
----
+## Evidence
 
-# 🧠 What I Learned
+I will include screenshots or command output showing:
 
-This project helped me understand the flow of a black-box penetration test from reconnaissance to final reporting.
+1. The relevant file property or other clue.
+2. How the clue led to the further exposure.
+3. The exposed staff salary information.
+4. The exposed shareholder information.
 
-I learned that the first stage is not just about finding a login page. I needed to look at the publicly exposed parts of the application, identify possible entry points, examine authentication and input handling, and then use the findings to reach the restricted information required by the project.
+## Deliverable
 
-The second stage showed me why protected files need to be analysed individually. The project specifically required me to be prepared to change approach when one recovery method did not work.
-
-The third stage required a deeper review of information already collected. Instead of stopping after recovering the files, I had to examine their properties and look for the clue that could lead to another exposure.
-
-Finally, I learned the importance of keeping evidence organised throughout the assessment so that the final report can clearly connect each finding to the work that produced it.
+- [ ] Full evidence of the exposure
+- [ ] Readable summary of the confidential information uncovered
 
 ---
 
-## 🔐 Ethical Use
+# 📝 M4 — Pentest Report
 
-This assessment was carried out as part of an authorised NetworkWalks training exercise. The techniques documented here are intended for authorised testing only.
+**Milestone 4**
+
+## What I need to do
+
+Bring the work from **M1 through M3** together into one professional penetration-testing report for the client.
+
+## Report Structure
+
+| # | Section | What I will document |
+|---|---|---|
+| 01 | **Executive Summary** | Concise overview of the engagement, key findings and overall risk to the client |
+| 02 | **Scope and Methodology** | Target, tools used, approach taken and any limitations encountered |
+| 03 | **Findings and Proof of Exploitation** | Each vulnerability with screenshots and evidence for every milestone |
+| 04 | **Risk Rating** | Critical, High, Medium or Low with justification |
+| 05 | **Recommendations and Remediation** | Actionable steps the client should take to fix each identified issue |
+
+## Findings Summary
+
+| Milestone | Vulnerability / Finding | Risk | Notes |
+|---|---|---|---|
+| M1 | | | |
+| M2 | | | |
+| M3 | | | |
+
+## Evidence
+
+I will reference the evidence collected throughout M1, M2 and M3 so that each finding can be traced back to the step where it was identified and demonstrated.
+
+## Deliverable
+
+- [ ] Complete professional penetration-testing report
+- [ ] All supporting evidence from M1–M3 included or referenced
+
+---
+
+# 📊 Overall Project Progress
+
+| Milestone | Deliverable | Status |
+|---|---|---|
+| **M1** | Proof of access + 3 patient PDFs | ⬜ |
+| **M2** | Recovered contents of all 3 files | ⬜ |
+| **M3** | Evidence of exposure + readable summary | ⬜ |
+| **M4** | Final penetration-testing report | ⬜ |
+
+---
+
+## 🧠 What I Learned
+
+I used this project to practise following a penetration-testing workflow from reconnaissance through access, file analysis, further investigation and reporting.
+
+One of the main lessons from the project is that the information obtained during one stage can become the lead for the next stage. M3 especially requires me to go back over the files from M2 and examine their properties rather than stopping at the obvious contents.
+
+I also learned the importance of keeping evidence in the same order as the work so that the final report can clearly show how each finding was identified and demonstrated.
+
+---
+
+## 🔒 Security & Ethical Use
+
+This project is being carried out in a controlled and authorised training environment. The techniques documented here are for authorised security testing only and should not be applied to systems without explicit permission from the owner.
 
 ---
 
@@ -372,8 +378,11 @@ This assessment was carried out as part of an authorised NetworkWalks training e
 | Training Program | NetworkWalks Cybersecurity & Ethical Hacking |
 | Batch | B083 |
 | Week | 04 |
-| Project | Mediroza General Hospital Penetration Testing |
-| Target | `https://medirozahospital.com` |
-| Testing Type | Black-box Pentest |
-| Duration | 5 Days |
+| Project | W4-PM |
+| Project Title | Penetration Testing Project — Mediroza General Hospital |
+| Target | `medirozahospital.com` |
 | Author | Collins |
+
+---
+
+[← Back to NETWORKWALKS](../README.md)
