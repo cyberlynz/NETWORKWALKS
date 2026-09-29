@@ -326,4 +326,32 @@ This project is being carried out in a controlled, authorised training environme
 
 ---
 
-[← Back to NETWORKWALKS](../README.md)
+[← Back to NETWORKWALKS](../README.md)## Authentication & Input Testing
+
+I then tested the staff login endpoint:
+
+`https://medirozahospital.com/staff/login.php`
+
+The login page requires a **Staff ID** and **Password**.
+
+I made multiple login attempts to observe how the authentication mechanism responded. An unsuccessful attempt returned:
+
+**“Invalid username or password”**
+
+I also tested the Staff ID input for **SQL injection**. The input was not accepted as a successful authentication bypass, and my SQL injection attempts did not produce a useful result.
+
+### Result
+
+- Authentication bypass: **Not achieved**
+- SQL injection: **No useful result from the attempts made**
+- Restricted access through this login: **Not obtained**
+
+### Evidence
+
+| Evidence | What it shows |
+|---|---|
+| Staff Login | Login interface and required fields |
+| Invalid Login | Application response to an unsuccessful login |
+| SQL Injection Test | SQL injection input entered in the Staff ID field |
+
+
