@@ -334,24 +334,24 @@ I then tested the staff login endpoint:
 
 The login page requires a **Staff ID** and **Password**.
 
-I made multiple login attempts to observe how the authentication mechanism responded. An unsuccessful attempt returned:
+I made multiple login attempts to observe the authentication response. An unsuccessful attempt returned:
 
 **“Invalid username or password”**
 
-I also tested the Staff ID input for **SQL injection**. The input was not accepted as a successful authentication bypass, and my SQL injection attempts did not produce a useful result.
+I also tested the **Staff ID** input for SQL injection. The attempts did not result in a successful authentication bypass or produce a useful result.
 
 ### Result
 
-- Authentication bypass: **Not achieved**
-- SQL injection: **No useful result from the attempts made**
-- Restricted access through this login: **Not obtained**
+- **Authentication bypass:** Not achieved
+- **SQL injection:** No useful result from the attempts made
+- **Access through the staff login:** Not obtained
 
 ### Evidence
 
-| Evidence | What it shows |
-|---|---|
-| Staff Login | Login interface and required fields |
-| Invalid Login | Application response to an unsuccessful login |
-| SQL Injection Test | SQL injection input entered in the Staff ID field |
+**02 — Staff Login, Authentication & SQL Injection Testing**
+
+![Staff login, authentication response and SQL injection testing](./02-staff-login-authentication-sqli-testing.png)
+
+The combined screenshot shows the login page, the invalid login response, and the SQL injection input test.
 
 
