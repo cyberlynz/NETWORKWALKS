@@ -1,49 +1,47 @@
 # Evidence — Mediroza General Hospital
 
-This directory contains the supporting screenshots for the Week 04 project.
+This folder contains the supporting screenshots for my Week 04 Mediroza penetration-testing project.
 
 ## M1 — Initial Access
 
 | # | Filename | Purpose |
 |---|---|---|
-| 01 | `01-target-homepage.png` | Target homepage |
-| 02 | `02-public-navigation.png` | Public navigation |
-| 03 | `03-staff-login.png` | Staff Login page |
-| 04 | `04-entry-point.png` | Identified entry point |
-| 05 | `05-authentication-testing.png` | Authentication behaviour |
-| 06 | `06-input-testing.png` | Input testing |
-| 07 | `07-restricted-area.png` | Restricted-area access |
-| 08 | `08-patient-report-1.png` | Patient PDF 1 |
-| 09 | `09-patient-report-2.png` | Patient PDF 2 |
-| 10 | `10-patient-report-3.png` | Patient PDF 3 |
+| 01 | `01-reconnaissance.png` | Reconnaissance |
+| 02 | `02-exposed-entry-point.png` | Exposed entry point |
+| 03 | `03-authentication.png` | Authentication behaviour |
+| 04 | `04-input-testing.png` | Input handling |
+| 05 | `05-restricted-area.png` | Restricted-area access |
+| 06 | `06-patient-report-1.png` | Patient PDF 1 |
+| 07 | `07-patient-report-2.png` | Patient PDF 2 |
+| 08 | `08-patient-report-3.png` | Patient PDF 3 |
 
 ## M2 — Data Extraction
 
 | # | Filename | Purpose |
 |---|---|---|
-| 11 | `11-pdf1-analysis.png` | PDF 1 protection analysis |
-| 12 | `12-pdf1-recovery.png` | PDF 1 recovery |
-| 13 | `13-pdf1-verified.png` | PDF 1 verification |
-| 14 | `14-pdf2-analysis.png` | PDF 2 protection analysis |
-| 15 | `15-pdf2-recovery.png` | PDF 2 recovery |
-| 16 | `16-pdf2-verified.png` | PDF 2 verification |
-| 17 | `17-pdf3-analysis.png` | PDF 3 protection analysis |
-| 18 | `18-pdf3-recovery.png` | PDF 3 recovery |
-| 19 | `19-pdf3-verified.png` | PDF 3 verification |
+| 09 | `09-pdf1-analysis.png` | PDF 1 analysis |
+| 10 | `10-pdf1-recovery.png` | PDF 1 recovery |
+| 11 | `11-pdf1-verified.png` | PDF 1 verification |
+| 12 | `12-pdf2-analysis.png` | PDF 2 analysis |
+| 13 | `13-pdf2-recovery.png` | PDF 2 recovery |
+| 14 | `14-pdf2-verified.png` | PDF 2 verification |
+| 15 | `15-pdf3-analysis.png` | PDF 3 analysis |
+| 16 | `16-pdf3-recovery.png` | PDF 3 recovery |
+| 17 | `17-pdf3-verified.png` | PDF 3 verification |
 
-## M3 — Critical Data Exposure
-
-| # | Filename | Purpose |
-|---|---|---|
-| 20 | `20-file-properties.png` | File properties / metadata |
-| 21 | `21-critical-exposure.png` | Additional server exposure |
-| 22 | `22-staff-salaries.png` | Staff salary evidence |
-| 23 | `23-shareholder-details.png` | Shareholder evidence |
-
-## M4 — Final Report
+## M3 — Attack (Cracking)
 
 | # | Filename | Purpose |
 |---|---|---|
-| 24 | `24-final-report.png` | Final report / submission |
+| 18 | `18-file-properties.png` | File properties / metadata |
+| 19 | `19-critical-exposure.png` | Finding that led to the exposure |
+| 20 | `20-staff-salaries.png` | Staff salary evidence |
+| 21 | `21-shareholder-details.png` | Shareholder evidence |
 
-Only include screenshots needed to prove the work. Redact unnecessary patient, employee, or shareholder information before publishing.
+## M4 — Pentest Report
+
+| # | Filename | Purpose |
+|---|---|---|
+| 22 | `22-final-report.png` | Final report / submission evidence |
+
+Only screenshots needed to demonstrate the work should be included. Sensitive information that is not required for proof should be redacted before publication.
