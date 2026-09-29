@@ -1,15 +1,15 @@
 <div align="center">
 
-# 🏥 W4 — Mediroza General Hospital Penetration Testing
+# 🏥 W4-PM — Mediroza General Hospital Penetration Testing
 
 **NetworkWalks Cybersecurity & Ethical Hacking — Batch B083**  
-**Week 04**
+**Week 04 | Project Module**
 
 </div>
 
 ---
 
-## Objectives
+## 🎯 Objectives
 
 The project was divided into four milestones:
 
@@ -20,7 +20,7 @@ The project was divided into four milestones:
 
 ---
 
-## 1. Project Scope
+## 📋 Engagement Details
 
 | Item | Details |
 |---|---|
@@ -28,26 +28,36 @@ The project was divided into four milestones:
 | Target | `https://medirozahospital.com` |
 | Testing Type | Black-box Pentest |
 | Duration | 5 Days |
+| Authorization | Written permission granted |
+| Scope | Target domain only |
+| Restrictions | No social engineering, DoS, or testing outside scope |
 
-The assessment was authorised and limited to the target domain. Social engineering, denial of service, and testing outside the agreed scope were not permitted.
+The engagement was carried out in the authorised NetworkWalks training environment.
 
 ---
 
-# 2. M1 — Initial Access
+# 🔎 M1 — Initial Access
 
-I began by carrying out reconnaissance against the target to identify exposed entry points and understand the application's accessible areas.
+I began with reconnaissance of the target and reviewed the publicly accessible parts of the website before moving toward the restricted areas.
 
-The project brief specifically directed me to examine authentication behaviour and how the application handled user input before attempting to reach the restricted area containing the patient reports.
+The project brief required me to:
 
-### Reconnaissance
+- Conduct reconnaissance.
+- Identify exposed entry points.
+- Analyse authentication behaviour.
+- Look for weaknesses in user-input handling.
+- Gain access to a restricted area.
+- Retrieve the three confidential patient PDF lab reports.
 
-I first accessed:
+## Reconnaissance
+
+I accessed:
 
 `https://medirozahospital.com`
 
-I reviewed the publicly accessible website and its available navigation.
+During the walkthrough, I reviewed the site's main navigation and publicly accessible pages.
 
-The site exposed the following areas during the walkthrough:
+The navigation included:
 
 - Home
 - About
@@ -58,179 +68,133 @@ The site exposed the following areas during the walkthrough:
 
 ### Staff Login
 
-I opened the **Staff Login** page and observed:
+I opened the **Staff Login** page and observed a **Staff ID** field, **Password** field, and **Sign in** button. The page also displayed:
 
-- Staff ID
-- Password
-- Sign in
+> Internal staff access only.
 
-The page also displayed **“Internal staff access only.”**
+### Other Pages Reviewed
 
-### Other Publicly Accessible Pages
+**Doctors:** I reviewed the information presented about the hospital's doctors.
 
-I also reviewed the:
+**Contact:** I reviewed the displayed address, phone number, email, and opening hours.
 
-**Doctors** page, where information about the hospital's doctors was displayed.
+**Home:** I reviewed the main page content, including **Book an appointment**, **Meet our doctors**, and **Our Departments**.
 
-**Contact and find us** page, where the site's address, phone number, email, and opening hours were displayed.
-
-**Home** page, including the hospital introduction, **Book an appointment**, **Meet our doctors**, and **Our Departments**.
-
-**About Mediroza** page, including information about the hospital, its values, and accreditation.
+**About:** I reviewed information covering the hospital, its values, and accreditation.
 
 ### M1 Evidence
 
-Evidence for this milestone should show the reconnaissance results, identified entry point, authentication behaviour, input testing, restricted-area access, and the three retrieved patient PDFs.
+The evidence for this milestone should document the reconnaissance, exposed entry point, authentication behaviour, input testing, restricted-area access, and retrieval of the three PDF reports.
 
 ---
 
-# 3. M2 — Data Extraction
+# 🔐 M2 — Data Extraction
 
-After obtaining the three files from M1, I moved to the second milestone.
+After retrieving the three files, I moved to the file-recovery stage.
 
-The brief required me to analyse the protection used on each file, select appropriate tools and wordlists, and avoid assuming that the same method would work for all three files.
+The brief required me to analyse the protection used by each file and select appropriate tools and wordlists. It also specifically required me to avoid assuming that the same method would work for all three files.
 
-I therefore treated each file separately and changed the approach where necessary.
+For each file, I documented:
 
-### File Analysis
-
-| File | Protection / Encryption | Tool(s) | Wordlist | Result |
-|---|---|---|---|---|
-| PDF 1 | To be documented from evidence | To be documented | To be documented | To be documented |
-| PDF 2 | To be documented from evidence | To be documented | To be documented | To be documented |
-| PDF 3 | To be documented from evidence | To be documented | To be documented | To be documented |
+| Item | Details |
+|---|---|
+| Filename | To be recorded from evidence |
+| Protection / Encryption | To be identified from evidence |
+| Tool(s) Used | To be recorded from evidence |
+| Wordlist | To be recorded from evidence |
+| Recovery Result | To be recorded from evidence |
 
 ### M2 Evidence
 
-Evidence should show the protection identified for each PDF, the recovery process used, and successful access to all three files.
+Evidence should show:
+
+- The protection identified on each file.
+- The recovery method used.
+- Successful access to each recovered file.
 
 ---
 
-# 4. M3 — Attack: Critical Data Exposure
+# 🕵️ M3 — Attack: Critical Data Exposure
 
-For M3, I reviewed everything collected from the earlier stages rather than treating the milestone as a completely separate task.
+For M3, I analysed the information collected during the earlier stages to identify a further exposure on the client server.
 
-The brief specifically instructed me to examine the retrieved files and their properties carefully because one finding was expected to lead to another exposure on the server.
+The brief specifically required me to look beyond the obvious content and examine the properties of the retrieved files carefully. One finding should lead to the additional server exposure.
 
-I was also permitted to use AI tools for data analysis and reporting.
+### Investigation
 
-### Required Investigation
+I reviewed:
 
-I analysed:
+- Retrieved file contents.
+- File properties and metadata.
+- Any information that could point to another exposed resource on the server.
 
-- The information recovered from M2
-- File properties and metadata
-- Any information that could point to another exposed resource on the server
-
-### Required Findings
+### Required Data
 
 The milestone required me to find:
 
-- Staff salaries
-- Shareholder details
+- Staff salaries.
+- Shareholder details.
 
-### Data Summary
+### Results
 
-| Data | Result |
+| Data | Finding |
 |---|---|
-| Staff salaries | To be documented from evidence |
-| Shareholder details | To be documented from evidence |
+| Staff salaries | To be documented from captured evidence |
+| Shareholder details | To be documented from captured evidence |
 
 ### M3 Evidence
 
-Evidence should show the file property or other finding that led to the exposure, followed by proof of the exposed salary and shareholder information.
+Evidence should show the finding that led from the retrieved files to the additional exposure, followed by proof of the salary and shareholder information.
 
 ---
 
-# 5. Findings and Risk Rating
+# 📝 M4 — Penetration Testing Report
 
-The final report requires each identified vulnerability to be documented with supporting evidence and assigned a risk rating of **Critical, High, Medium, or Low**, with justification.
+The final milestone was to consolidate the assessment into a professional report.
 
-| Finding | Evidence | Risk |
-|---|---|---|
-| M1 — Initial access weakness | M1 evidence | To be assessed from evidence |
-| M2 — File protection weakness | M2 evidence | To be assessed from evidence |
-| M3 — Critical data exposure | M3 evidence | To be assessed from evidence |
+The report structure required by the project brief is:
 
-I will only assign the final ratings after reviewing the actual evidence for each finding.
+### 01 — Executive Summary
+Summary of the engagement, key findings, and overall risk.
 
----
+### 02 — Scope and Methodology
+Target, tools used, approach taken, and limitations.
 
-# 6. Recommendations and Remediation
+### 03 — Findings and Proof of Exploitation
+Each confirmed vulnerability with screenshots and supporting evidence.
 
-For each confirmed vulnerability, the final report should include practical remediation steps addressing the underlying issue and reducing the possibility of the same exposure happening again.
+### 04 — Risk Rating
+Each vulnerability rated **Critical, High, Medium, or Low**, with justification.
 
-The recommendations will be based on the confirmed findings rather than assumptions.
-
----
-
-# 7. Final Report Structure
-
-My completed M4 report will contain:
-
-### Executive Summary
-A concise summary of the engagement, confirmed findings, and overall risk.
-
-### Scope and Methodology
-The target, tools used, testing approach, and any limitations.
-
-### Findings and Proof of Exploitation
-Each confirmed vulnerability with the supporting screenshots and evidence.
-
-### Risk Rating
-A justified rating for each vulnerability.
-
-### Recommendations and Remediation
-Actions the client can take to address each confirmed issue.
+### 05 — Recommendations and Remediation
+Actionable recommendations for addressing each finding.
 
 ---
 
-# 8. Evidence Structure
+# 📸 Evidence Index
 
-The supporting evidence should follow the project workflow:
+The evidence is arranged to follow the actual project workflow.
 
-```
-M1 — Initial Access
-├── Reconnaissance
-├── Exposed entry point
-├── Authentication
-├── Input testing
-├── Restricted-area access
-├── Patient PDF 1
-├── Patient PDF 2
-└── Patient PDF 3
+| Section | Evidence |
+|---|---|
+| **M1** | Reconnaissance, exposed entry point, authentication, input testing, restricted-area access, three patient PDFs |
+| **M2** | Protection analysis, recovery process, successful access for all three files |
+| **M3** | File properties/metadata, staff salary exposure, shareholder details |
+| **M4** | Final penetration-testing report |
 
-M2 — Data Extraction
-├── PDF 1 analysis
-├── PDF 1 recovery
-├── PDF 1 verification
-├── PDF 2 analysis
-├── PDF 2 recovery
-├── PDF 2 verification
-├── PDF 3 analysis
-├── PDF 3 recovery
-└── PDF 3 verification
-
-M3 — Critical Data Exposure
-├── File properties / metadata
-├── Staff salaries
-└── Shareholder details
-
-M4 — Final Report
-└── Completed penetration-testing report
-```
+Sensitive information should be redacted where necessary before screenshots are published in a public repository.
 
 ---
 
-## Conclusion
+# 🧠 Summary
 
-In this project, I followed the assessment from reconnaissance and initial access through file recovery, further investigation, and final reporting.
+This project took me through a complete black-box penetration-testing workflow: starting with reconnaissance, identifying exposed areas, gaining access to restricted information, recovering protected files, investigating additional exposure, and documenting the findings.
 
-The main focus was not only finding weaknesses but also documenting the path from the initial entry point to the information exposed and supporting each finding with clear evidence.
+I kept the assessment focused on the defined target and used evidence from each stage to support the final report.
 
 ---
 
-## Project Information
+## 📚 Project Information
 
 | Item | Details |
 |---|---|
@@ -243,3 +207,8 @@ The main focus was not only finding weaknesses but also documenting the path fro
 | Duration | 5 Days |
 | Author | Collins |
 
+---
+
+## 🔗 Related
+
+- [← Back to NETWORKWALKS](../../README.md)
