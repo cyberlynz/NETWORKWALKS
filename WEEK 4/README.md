@@ -179,17 +179,17 @@ I then used the **NetworkWalks Hash Calculator** to extract a crackable hash fro
 
 ### Patient Report 1
 
-Uploaded `patient_report_1.pdf` to the Hash Calculator and obtained a crackable PDF hash.
+I uploaded `patient_report_1.pdf` to the Hash Calculator and obtained a crackable PDF hash.
 
 ### Patient Report 2
 
-Repeated the same process with `patient_report_2.pdf` and obtained its crackable PDF hash.
+I repeated the same process with `patient_report_2.pdf` and obtained its crackable PDF hash.
 
 ### Patient Report 3
 
-Repeated the process with `patient_report_3.pdf` and obtained its crackable PDF hash.
+I repeated the process with `patient_report_3.pdf` and obtained its crackable PDF hash.
 
-The Hash Calculator identified each file as encrypted and generated a hash in a **pdf2john / hashcat-compatible format**.
+The tool identified each file as encrypted and generated a hash in a **pdf2john / hashcat-compatible format**.
 
 ### Result
 
@@ -197,11 +197,13 @@ The three patient PDFs were successfully processed and crackable hashes were ext
 
 ### Evidence
 
-The evidence consists of the three **NetworkWalks Hash Calculator** screenshots showing the extracted hashes for:
+**04 — Patient PDF Hash Extraction**
 
-- `patient_report_1.pdf`
-- `patient_report_2.pdf`
-- `patient_report_3.pdf`
+![Patient PDF hash extraction](./04-patient-pdf-hash-extraction.jpg)
+
+The combined screenshot shows the hash extraction results for all three patient PDFs.
+
+---
 
 # 🕵️ M3 — Critical Data Exposure
 
