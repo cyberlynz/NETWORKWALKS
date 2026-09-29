@@ -132,9 +132,7 @@ I then tested the Patient Portal identified during reconnaissance:
 
 `https://medirozahospital.com/patient/login.php`
 
-I applied the same input-testing approach used on the staff login.
-
-This time, the test was successful and I gained access to:
+I applied the same input-testing approach used on the staff login. This time, the test was successful and I gained access to:
 
 `https://medirozahospital.com/patient/portal.php`
 
@@ -142,11 +140,9 @@ This time, the test was successful and I gained access to:
 
 **03 — Patient Portal SQL Injection & Access**
 
-`03-patient-portal-sqli-access.png`
+![Patient Portal SQL injection test and successful access](./03-patient-portal-sqli-access.png)
 
-The evidence combines the Patient Portal login, the input test, and the successful portal access.
-
----
+The combined screenshot shows the Patient Portal login page, the SQL injection input, and the successful access to the portal.
 
 ## Retrieve the Patient Reports
 
