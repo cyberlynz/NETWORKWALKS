@@ -120,11 +120,8 @@ At this point, the SQL injection approach did not provide a way into the restric
 ## Evidence
 
 **Staff Login, Authentication & SQL Injection Testing:**  
-`02-staff-login-authentication-sqli-testing.png`
 
 ![Staff Login, Authentication & SQL Injection Testing](./02-staff-login-authentication-sqli-testing.png)
-
-The screenshot combines the staff login page, the invalid login response, and the SQL injection input test.
 
 ---
 
