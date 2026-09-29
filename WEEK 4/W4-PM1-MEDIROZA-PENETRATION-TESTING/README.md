@@ -3,7 +3,7 @@
 # 🏥 W4-PM — Mediroza General Hospital Penetration Testing
 
 **NetworkWalks Cybersecurity & Ethical Hacking — Batch B083**  
-**Week 04 | Project Module**
+**Week 04 | Penetration Testing Project**
 
 </div>
 
@@ -32,169 +32,67 @@ The project was divided into four milestones:
 | Scope | Target domain only |
 | Restrictions | No social engineering, DoS, or testing outside scope |
 
-The engagement was carried out in the authorised NetworkWalks training environment.
+I carried out the work within the scope and rules provided for the NetworkWalks project.
 
 ---
 
-# 🔎 M1 — Initial Access
+## 🔎 Assessment Overview
 
-I began with reconnaissance of the target and reviewed the publicly accessible parts of the website before moving toward the restricted areas.
+I approached the project in stages, beginning with reconnaissance and moving through initial access, recovery of the protected files, further analysis of the recovered information, and final reporting.
 
-The project brief required me to:
+The public-facing walkthrough included reviewing the target homepage, navigation, Staff Login, Doctors, Contact, and About pages. The later stages focus on the three protected PDF reports and the additional information that can be reached from the earlier findings.
 
-- Conduct reconnaissance.
-- Identify exposed entry points.
-- Analyse authentication behaviour.
-- Look for weaknesses in user-input handling.
-- Gain access to a restricted area.
-- Retrieve the three confidential patient PDF lab reports.
+### Project Flow
 
-## Reconnaissance
-
-I accessed:
-
-`https://medirozahospital.com`
-
-During the walkthrough, I reviewed the site's main navigation and publicly accessible pages.
-
-The navigation included:
-
-- Home
-- About
-- Doctors
-- Contact
-- Patient Portal
-- Staff Login
-
-### Staff Login
-
-I opened the **Staff Login** page and observed a **Staff ID** field, **Password** field, and **Sign in** button. The page also displayed:
-
-> Internal staff access only.
-
-### Other Pages Reviewed
-
-**Doctors:** I reviewed the information presented about the hospital's doctors.
-
-**Contact:** I reviewed the displayed address, phone number, email, and opening hours.
-
-**Home:** I reviewed the main page content, including **Book an appointment**, **Meet our doctors**, and **Our Departments**.
-
-**About:** I reviewed information covering the hospital, its values, and accreditation.
-
-### M1 Evidence
-
-The evidence for this milestone should document the reconnaissance, exposed entry point, authentication behaviour, input testing, restricted-area access, and retrieval of the three PDF reports.
+```
+Reconnaissance
+    ↓
+M1 — Initial Access
+    ↓
+3 Confidential Patient PDF Reports
+    ↓
+M2 — Data Extraction
+    ↓
+Recovered Contents
+    ↓
+M3 — Critical Data Exposure
+    ↓
+Staff Salaries + Shareholder Details
+    ↓
+M4 — Penetration Testing Report
+```
 
 ---
 
-# 🔐 M2 — Data Extraction
+## 📂 Project Sections
 
-After retrieving the three files, I moved to the file-recovery stage.
-
-The brief required me to analyse the protection used by each file and select appropriate tools and wordlists. It also specifically required me to avoid assuming that the same method would work for all three files.
-
-For each file, I documented:
-
-| Item | Details |
+| Section | Purpose |
 |---|---|
-| Filename | To be recorded from evidence |
-| Protection / Encryption | To be identified from evidence |
-| Tool(s) Used | To be recorded from evidence |
-| Wordlist | To be recorded from evidence |
-| Recovery Result | To be recorded from evidence |
-
-### M2 Evidence
-
-Evidence should show:
-
-- The protection identified on each file.
-- The recovery method used.
-- Successful access to each recovered file.
+| [M1 — Initial Access](./M1-INITIAL-ACCESS/README.md) | Reconnaissance, entry points, authentication/input testing, restricted access and the three PDFs |
+| [M2 — Data Extraction](./M2-DATA-EXTRACTION/README.md) | Analyse and recover the three protected files |
+| [M3 — Critical Data Exposure](./M3-ATTACK-CRITICAL-DATA-EXPOSURE/README.md) | Trace the additional exposure and document the required confidential information |
+| [M4 — Pentest Report](./M4-PENTEST-REPORT/README.md) | Consolidate the assessment into the required professional report |
+| [Evidence](./evidence/README.md) | Screenshot/evidence index for M1–M4 |
 
 ---
 
-# 🕵️ M3 — Attack: Critical Data Exposure
+## 📸 Evidence
 
-For M3, I analysed the information collected during the earlier stages to identify a further exposure on the client server.
+I am keeping evidence in the same order as the assessment so that each screenshot can be linked directly to the step it supports.
 
-The brief specifically required me to look beyond the obvious content and examine the properties of the retrieved files carefully. One finding should lead to the additional server exposure.
-
-### Investigation
-
-I reviewed:
-
-- Retrieved file contents.
-- File properties and metadata.
-- Any information that could point to another exposed resource on the server.
-
-### Required Data
-
-The milestone required me to find:
-
-- Staff salaries.
-- Shareholder details.
-
-### Results
-
-| Data | Finding |
-|---|---|
-| Staff salaries | To be documented from captured evidence |
-| Shareholder details | To be documented from captured evidence |
-
-### M3 Evidence
-
-Evidence should show the finding that led from the retrieved files to the additional exposure, followed by proof of the salary and shareholder information.
+For sensitive patient, employee, or shareholder information, only the minimum information needed to demonstrate the finding should be shown.
 
 ---
 
-# 📝 M4 — Penetration Testing Report
+## 🧠 Summary
 
-The final milestone was to consolidate the assessment into a professional report.
+This project gave me practical experience following a black-box penetration-testing workflow. I started by understanding what was publicly exposed on the target, then worked through the project milestones to identify restricted information, recover the protected files, investigate the additional exposure, and document the results.
 
-The report structure required by the project brief is:
-
-### 01 — Executive Summary
-Summary of the engagement, key findings, and overall risk.
-
-### 02 — Scope and Methodology
-Target, tools used, approach taken, and limitations.
-
-### 03 — Findings and Proof of Exploitation
-Each confirmed vulnerability with screenshots and supporting evidence.
-
-### 04 — Risk Rating
-Each vulnerability rated **Critical, High, Medium, or Low**, with justification.
-
-### 05 — Recommendations and Remediation
-Actionable recommendations for addressing each finding.
+I also learned that the quality of a penetration test depends on keeping clear evidence and relating each finding back to the steps used to reach it.
 
 ---
 
-# 📸 Evidence Index
-
-The evidence is arranged to follow the actual project workflow.
-
-| Section | Evidence |
-|---|---|
-| **M1** | Reconnaissance, exposed entry point, authentication, input testing, restricted-area access, three patient PDFs |
-| **M2** | Protection analysis, recovery process, successful access for all three files |
-| **M3** | File properties/metadata, staff salary exposure, shareholder details |
-| **M4** | Final penetration-testing report |
-
-Sensitive information should be redacted where necessary before screenshots are published in a public repository.
-
----
-
-# 🧠 Summary
-
-This project took me through a complete black-box penetration-testing workflow: starting with reconnaissance, identifying exposed areas, gaining access to restricted information, recovering protected files, investigating additional exposure, and documenting the findings.
-
-I kept the assessment focused on the defined target and used evidence from each stage to support the final report.
-
----
-
-## 📚 Project Information
+## 📋 Project Information
 
 | Item | Details |
 |---|---|
@@ -209,6 +107,4 @@ I kept the assessment focused on the defined target and used evidence from each 
 
 ---
 
-## 🔗 Related
-
-- [← Back to NETWORKWALKS](../../README.md)
+[← Back to NETWORKWALKS](../../README.md)
