@@ -59,7 +59,7 @@ Attack the website and find the **3 confidential PDF lab reports of patients**.
 
 ## Hints
 
-The brief points me to:
+The brief directs me to:
 
 - Conduct reconnaissance on the target.
 - Identify exposed entry points.
@@ -67,7 +67,7 @@ The brief points me to:
 - Look for weaknesses in how the application handles user input.
 - Gain unauthorised access to a restricted area of the site.
 
-## Recon Notes
+## Step 1 — Reconnaissance
 
 I started my reconnaissance with **Nikto v2.6.1** against:
 
@@ -75,55 +75,104 @@ I started my reconnaissance with **Nikto v2.6.1** against:
 
 The scan identified:
 
-| Item | Result |
-|---|---|
-| Target IP | `199.188.201.16` |
-| Port | `443` |
-| Web Server | LiteSpeed |
+- **Target IP:** `199.188.201.16`
+- **Port:** `443`
+- **Web Server:** LiteSpeed
 
-### Directory Enumeration
-
-Nikto found directory indexing on:
+Nikto also identified directory indexing on:
 
 - `/staff/`
 - `/patient/`
 - `/old/`
 
-It also reported these paths through `/robots.txt`:
+The scan also showed these paths in `/robots.txt`:
 
 - `/staff`
 - `/patient`
 - `/old`
 
-These became the main directories I needed to inspect further during M1.
+### Evidence
 
 ![Nikto reconnaissance and directory enumeration](./01-nikto-reconnaissance.png)
 
-## Authentication & User Input Testing
+---
 
-I then moved to the staff authentication page:
+## Step 2 — Staff Login Testing
+
+I followed the `/staff/` entry point and tested:
 
 `https://medirozahospital.com/staff/login.php`
 
-The page presented a staff login interface requiring a Staff ID and Password.
+The page required:
 
-I tested the login functionality and looked for weaknesses in how the application handled user input. I made multiple attempts using **SQL injection testing**, but none of the attempts produced a successful authentication bypass or other useful result.
+- Staff ID
+- Password
 
-### Result of This Testing
+I made multiple login attempts and received:
 
-- **Authentication bypass:** Not achieved.
-- **SQL injection:** No useful result from the attempts made.
-- **Restricted-area access:** Not obtained through this testing path.
+**“Invalid username or password”**
 
-At this point, the SQL injection approach did not provide a way into the restricted area, so I recorded the result and continued looking for another path during the assessment.
+I then tested the Staff ID input for **SQL injection**, but the attempts did not produce a successful authentication bypass or any useful result.
 
-## Evidence
+### Result
 
-**Staff Login, Authentication & SQL Injection Testing:**  
+The staff login did not provide access, so I moved on to the next exposed entry point identified during reconnaissance.
 
-![Staff Login, Authentication & SQL Injection Testing](./02-staff-login-authentication-sqli-testing.png)
+### Evidence
+
+**02 — Staff Login, Authentication & SQL Injection Testing**
+
+![Staff login, authentication and SQL injection testing](./02-staff-login-authentication-sqli-testing.png)
 
 ---
+
+## Step 3 — Patient Portal Testing
+
+I then tested the Patient Portal identified during reconnaissance:
+
+`https://medirozahospital.com/patient/login.php`
+
+I applied the same input-testing approach used on the staff login.
+
+This time, the test was successful and I gained access to:
+
+`https://medirozahospital.com/patient/portal.php`
+
+### Evidence
+
+**03 — Patient Portal SQL Injection & Access**
+
+`03-patient-portal-sqli-access.png`
+
+The evidence combines the Patient Portal login, the input test, and the successful portal access.
+
+---
+
+## Step 4 — Retrieve the Patient Reports
+
+After gaining access to the patient portal, I reached the **My lab reports** page.
+
+The portal displayed three password-protected/encrypted PDF pathology reports:
+
+1. **Pathology Report — S. Dlamini**  
+   Lab Ref: `LR-2024-1187` | `2024-11-04` | PDF (encrypted)
+
+2. **Pathology Report — P. Reddy**  
+   Lab Ref: `LR-2024-1192` | `2024-11-05` | PDF (encrypted)
+
+3. **Pathology Report — E. Thompson**  
+   Lab Ref: `LR-2024-1205` | `2024-11-06` | PDF (encrypted)
+
+Each report had a **Download** option.
+
+## M1 Result
+
+The patient portal was successfully accessed and the three encrypted patient PDF reports required for M2 were identified.
+
+### M1 Deliverable
+
+- [x] Proof of access
+- [x] 3 confidential patient PDF reports identified/retrieved
 
 # 🔐 M2 — Data Extraction
 
