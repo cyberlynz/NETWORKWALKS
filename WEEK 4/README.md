@@ -69,70 +69,35 @@ The brief points me to:
 
 ## Recon Notes
 
-I started my reconnaissance against:
+I started my reconnaissance with **Nikto v2.6.1** against:
 
 `https://medirozahospital.com/`
 
-I used **Nikto v2.6.1** to identify information exposed by the web server and to enumerate potentially interesting directories.
-
-### Nikto Results
-
-The scan identified the following target information:
+The scan identified:
 
 | Item | Result |
 |---|---|
 | Target IP | `199.188.201.16` |
-| Target Hostname | `medirozahospital.com` |
-| Target Port | `443` |
+| Port | `443` |
 | Web Server | LiteSpeed |
-| Platform | Unknown |
-
-The SSL information shown by Nikto included:
-
-- Subject: `/CN=medirozahospital.com`
-- CN: `medirozahospital.com`
-- SAN: `medirozahospital.com, www.medirozahospital.com`
-- Cipher: `TLS_AES_256_GCM_SHA384`
-- Issuer: `/C=US/O=SSL.com TLS Issuing RSA CA R1`
 
 ### Directory Enumeration
 
-Nikto identified several accessible directories and entries that required further investigation:
+Nikto found directory indexing on:
 
-| Path | Nikto Result |
-|---|---|
-| `/staff/` | Directory indexing found — **CWE-548** |
-| `/patient/` | Directory indexing found — **CWE-548** |
-| `/old/` | Directory indexing found — **CWE-548** |
+- `/staff/`
+- `/patient/`
+- `/old/`
 
-Nikto also reported entries in `/robots.txt`:
+It also reported these paths through `/robots.txt`:
 
-| Entry | Result |
-|---|---|
-| `/staff` | Returned a non-forbidden or redirect HTTP response (200) |
-| `/patient` | Returned a non-forbidden or redirect HTTP response (200) |
-| `/old` | Returned a non-forbidden or redirect HTTP response |
+- `/staff`
+- `/patient`
+- `/old`
 
-The scan reported that `/robots.txt` contained **3 entries which should be manually viewed**.
+These became the main directories I needed to inspect further during M1.
 
-### Other Reconnaissance Observations
-
-The scan also reported:
-
-- Allowed HTTP methods: `OPTIONS, HEAD, GET, POST`
-- Missing suggested `strict-transport-security` header
-- Missing suggested `referrer-policy` header
-- Missing suggested `content-security-policy` header
-- Missing suggested `x-content-type-options` header
-- Missing suggested `permissions-policy` header
-
-At this stage, these are reconnaissance observations from the Nikto scan. I use them as leads for the next part of the assessment rather than treating every observation as a confirmed vulnerability.
-
-### Reconnaissance Evidence
-
-**Screenshot:** `01-nikto-reconnaissance.png`
-
-This screenshot shows the Nikto scan output, including the target details, web server information, exposed directories, and `robots.txt` entries.
+![Nikto reconnaissance and directory enumeration](./01-nikto-reconnaissance.png)
 
 ## Vulnerability Identified
 
