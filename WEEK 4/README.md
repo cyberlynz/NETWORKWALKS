@@ -161,14 +161,7 @@ The portal displayed three password-protected/encrypted PDF pathology reports:
 
 Each report had a **Download** option.
 
-## M1 Result
-
-The patient portal was successfully accessed and the three encrypted patient PDF reports required for M2 were identified.
-
-### M1 Deliverable
-
-- [x] Proof of access
-- [x] 3 confidential patient PDF reports identified/retrieved
+---
 
 # 🔐 M2 — Data Extraction
 
