@@ -69,52 +69,70 @@ The brief points me to:
 
 ## Recon Notes
 
-I started by opening the target website and reviewing the public-facing areas before moving into the restricted functionality.
+I started my reconnaissance against:
 
-During the walkthrough, I reviewed:
+`https://medirozahospital.com/`
 
-- Home
-- About
-- Doctors
-- Contact
-- Patient Portal
-- Staff Login
+I used **Nikto v2.6.1** to identify information exposed by the web server and to enumerate potentially interesting directories.
 
-### Home
+### Nikto Results
 
-The homepage displayed the hospital introduction:
+The scan identified the following target information:
 
-> **“Compassionate care, advanced medicine.”**
+| Item | Result |
+|---|---|
+| Target IP | `199.188.201.16` |
+| Target Hostname | `medirozahospital.com` |
+| Target Port | `443` |
+| Web Server | LiteSpeed |
+| Platform | Unknown |
 
-I also reviewed the **Book an appointment**, **Meet our doctors**, and **Our Departments** sections.
+The SSL information shown by Nikto included:
 
-### About
+- Subject: `/CN=medirozahospital.com`
+- CN: `medirozahospital.com`
+- SAN: `medirozahospital.com, www.medirozahospital.com`
+- Cipher: `TLS_AES_256_GCM_SHA384`
+- Issuer: `/C=US/O=SSL.com TLS Issuing RSA CA R1`
 
-I reviewed the **About Mediroza** page, including information about the hospital, its values, and accreditation.
+### Directory Enumeration
 
-### Doctors
+Nikto identified several accessible directories and entries that required further investigation:
 
-I reviewed the Doctors page and the information presented about the hospital's doctors.
+| Path | Nikto Result |
+|---|---|
+| `/staff/` | Directory indexing found — **CWE-548** |
+| `/patient/` | Directory indexing found — **CWE-548** |
+| `/old/` | Directory indexing found — **CWE-548** |
 
-### Contact
+Nikto also reported entries in `/robots.txt`:
 
-I reviewed the Contact and find us page, including the displayed address, phone number, email, and opening hours.
+| Entry | Result |
+|---|---|
+| `/staff` | Returned a non-forbidden or redirect HTTP response (200) |
+| `/patient` | Returned a non-forbidden or redirect HTTP response (200) |
+| `/old` | Returned a non-forbidden or redirect HTTP response |
 
-### Staff Login
+The scan reported that `/robots.txt` contained **3 entries which should be manually viewed**.
 
-I opened the **Staff Login** page.
+### Other Reconnaissance Observations
 
-It contained:
+The scan also reported:
 
-- Staff ID
-- Password
-- Sign in
+- Allowed HTTP methods: `OPTIONS, HEAD, GET, POST`
+- Missing suggested `strict-transport-security` header
+- Missing suggested `referrer-policy` header
+- Missing suggested `content-security-policy` header
+- Missing suggested `x-content-type-options` header
+- Missing suggested `permissions-policy` header
 
-The page also displayed:
+At this stage, these are reconnaissance observations from the Nikto scan. I use them as leads for the next part of the assessment rather than treating every observation as a confirmed vulnerability.
 
-**Internal staff access only.**
+### Reconnaissance Evidence
 
-This gave me an authentication mechanism to examine during the assessment.
+**Screenshot:** `01-nikto-reconnaissance.png`
+
+This screenshot shows the Nikto scan output, including the target details, web server information, exposed directories, and `robots.txt` entries.
 
 ## Vulnerability Identified
 
