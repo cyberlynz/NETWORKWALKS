@@ -169,55 +169,51 @@ Each report had a **Download** option.
 
 ## What I need to do
 
-Crack whatever is protecting the **3 files retrieved in M1**.
+Crack the encryption on all 3 retrieved files.
 
-## Hints
+## What I Tried
 
-The brief is specific about the approach:
+I first attempted to recover the PDF passwords using **John the Ripper**, but the approach did not produce a result.
 
-- Analyse the encryption on each file.
-- Select appropriate tools and wordlists to recover the contents.
-- Do not assume a single approach will work for all 3 files.
-- Think carefully when one method fails and try another.
+I then moved to the **NetworkWalks Hash Calculator** and uploaded each patient PDF to extract a crackable PDF hash.
 
-## File 1
+### Patient Report 1
 
-| | |
-|---|---|
-| Filename | |
-| What's protecting it | |
-| Tools I tried | |
-| Wordlist used | |
-| Outcome | |
+The tool identified the PDF as encrypted and generated a **pdf2john / hashcat-compatible crackable hash**.
 
-## File 2
+### Patient Report 2
 
-| | |
-|---|---|
-| Filename | |
-| What's protecting it | |
-| Tools I tried | |
-| Wordlist used | |
-| Outcome | |
+I repeated the same process and the tool generated a crackable PDF hash for the second encrypted report.
 
-## File 3
+### Patient Report 3
 
-| | |
-|---|---|
-| Filename | |
-| What's protecting it | |
-| Tools I tried | |
-| Wordlist used | |
-| Outcome | |
+I repeated the process again and obtained a crackable PDF hash for the third encrypted report.
+
+The three screenshots also show the tool reporting:
+
+- **Revision:** R3
+- **Version:** V2
+- **Key length:** 128 bit
+
+## Result
+
+I successfully extracted crackable hashes from all three encrypted PDF reports after the initial John the Ripper approach did not work.
+
+The extracted hashes can now be used for the next password-recovery attempt.
 
 ## Evidence
 
-Command output and screenshots will be used to show the protection on each file, the recovery process, and successful access to the recovered contents.
+**04 — NetworkWalks Hash Extraction**
+
+`04-networkwalks-hash-extraction.png`
+
+The combined evidence shows the extraction of the crackable hash for each of the three patient reports.
 
 ## Deliverable
 
-- [ ] Contents of all 3 files recovered
-- [ ] Proof of access for each
+- [x] Crackable hash extracted from PDF 1
+- [x] Crackable hash extracted from PDF 2
+- [x] Crackable hash extracted from PDF 3
 
 ---
 
