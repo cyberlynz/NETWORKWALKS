@@ -173,49 +173,35 @@ Crack the encryption on all 3 retrieved files.
 
 ## What I Tried
 
-I first attempted to recover the PDF passwords using **John the Ripper**, but the approach did not produce a result.
+I first tried **John the Ripper**, but it did not produce a result.
 
-I then moved to the **NetworkWalks Hash Calculator** and uploaded each patient PDF to extract a crackable PDF hash.
+I then used the **NetworkWalks Hash Calculator** to extract a crackable hash from each encrypted PDF.
 
 ### Patient Report 1
 
-The tool identified the PDF as encrypted and generated a **pdf2john / hashcat-compatible crackable hash**.
+Uploaded `patient_report_1.pdf` to the Hash Calculator and obtained a crackable PDF hash.
 
 ### Patient Report 2
 
-I repeated the same process and the tool generated a crackable PDF hash for the second encrypted report.
+Repeated the same process with `patient_report_2.pdf` and obtained its crackable PDF hash.
 
 ### Patient Report 3
 
-I repeated the process again and obtained a crackable PDF hash for the third encrypted report.
+Repeated the process with `patient_report_3.pdf` and obtained its crackable PDF hash.
 
-The three screenshots also show the tool reporting:
+The Hash Calculator identified each file as encrypted and generated a hash in a **pdf2john / hashcat-compatible format**.
 
-- **Revision:** R3
-- **Version:** V2
-- **Key length:** 128 bit
+### Result
 
-## Result
+The three patient PDFs were successfully processed and crackable hashes were extracted after the initial John the Ripper attempt did not work.
 
-I successfully extracted crackable hashes from all three encrypted PDF reports after the initial John the Ripper approach did not work.
+### Evidence
 
-The extracted hashes can now be used for the next password-recovery attempt.
+The evidence consists of the three **NetworkWalks Hash Calculator** screenshots showing the extracted hashes for:
 
-## Evidence
-
-**04 — NetworkWalks Hash Extraction**
-
-`04-networkwalks-hash-extraction.png`
-
-The combined evidence shows the extraction of the crackable hash for each of the three patient reports.
-
-## Deliverable
-
-- [x] Crackable hash extracted from PDF 1
-- [x] Crackable hash extracted from PDF 2
-- [x] Crackable hash extracted from PDF 3
-
----
+- `patient_report_1.pdf`
+- `patient_report_2.pdf`
+- `patient_report_3.pdf`
 
 # 🕵️ M3 — Critical Data Exposure
 
