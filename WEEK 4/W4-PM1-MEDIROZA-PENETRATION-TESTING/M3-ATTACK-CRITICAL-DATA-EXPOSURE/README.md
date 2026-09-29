@@ -1,64 +1,54 @@
-# M3 — Attack: Critical Data Exposure
+# M3 — Attack (Cracking)
 
-## Objective
+## What I Did
 
-Find the critical data exposure on the client server.
+For this stage, I went back over everything I had recovered in M1 and M2.
 
-## Approach
+The brief instructed me to look beyond the obvious information and examine the file properties carefully because one finding should point to a further critical exposure on the server.
 
-For M3, I went back through the information recovered during M1 and M2 and examined the retrieved files more closely.
+AI tools were also permitted and encouraged for analysis and reporting.
 
-The brief instructed me to:
+## File and Metadata Review
 
-- Analyse everything retrieved so far.
-- Look beyond the obvious content.
-- Examine the file properties carefully.
-- Follow the finding that points to a further critical exposure on the server.
+I examined the recovered files and their properties for information that could provide the next lead.
 
-AI tools were also permitted and encouraged for data analysis and reporting.
-
-## 1. File and Metadata Review
-
-I reviewed the retrieved files and their properties/metadata for information that could point to another exposed resource.
-
-| Area Checked | Result |
+| Area | Finding |
 |---|---|
-| File properties | To be recorded from evidence |
-| Metadata | To be recorded from evidence |
-| Embedded information | To be recorded from evidence |
-| Lead to further exposure | To be recorded from evidence |
+| File properties | |
+| Metadata | |
+| Other useful information | |
+| Lead to server exposure | |
 
-## 2. Critical Exposure
+## Critical Data Exposure
 
-I documented the finding that connected the earlier information to the additional exposure on the server.
+I documented the finding that led to the additional exposure, including:
 
-| Item | Details |
-|---|---|
-| Exposure identified | To be recorded from evidence |
-| How it was discovered | To be recorded from evidence |
-| Path to the exposure | To be recorded from evidence |
-| Impact demonstrated | To be recorded from evidence |
+- What I found.
+- How I found it.
+- How it led to the exposed information.
 
-## 3. Staff Salaries
+## Staff Salaries
 
-The required task was to find the salaries of all hospital employees.
+The task was to find the salaries of all hospital employees.
 
-**Result:** To be documented from captured evidence.
+**Result:**  
 
-## 4. Shareholder Details
+## Shareholder Details
 
-The required task was to find the shareholder details of the hospital.
+The task was to find the shareholder details of the hospital.
 
-**Result:** To be documented from captured evidence.
+**Result:**  
 
-## 5. Evidence
+## Evidence
 
-- `20-file-properties.png`
-- `21-critical-exposure.png`
-- `22-staff-salaries.png`
-- `23-shareholder-details.png`
+The supporting evidence should show:
 
-Sensitive information should be redacted to the minimum necessary when screenshots are prepared for the public repository.
+1. The file property or other clue that led to the exposure.
+2. The path used to reach the exposure.
+3. Staff salary information.
+4. Shareholder details.
+
+The final write-up should use a readable summary rather than unnecessary raw data.
 
 ## Deliverable
 
