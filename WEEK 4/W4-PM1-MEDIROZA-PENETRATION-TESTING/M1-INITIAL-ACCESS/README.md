@@ -1,32 +1,16 @@
 # M1 — Initial Access
 
-## Objective
+## What I Did
 
-Attack the website and retrieve 3 confidential patient PDF lab reports.
+I started the assessment by carrying out reconnaissance against the Mediroza General Hospital target.
 
-## Approach
+**Target:** `https://medirozahospital.com`
 
-I started by carrying out reconnaissance against the target to understand what was publicly accessible and to identify possible entry points.
+I reviewed the publicly accessible website and then inspected the available areas that could provide entry points into the application.
 
-The project brief required me to:
+### Website Review
 
-- Conduct reconnaissance on the target.
-- Identify exposed entry points.
-- Analyse the behaviour of authentication mechanisms.
-- Look for weaknesses in how the application handled user input.
-- Gain access to a restricted area of the site.
-
-## 1. Target
-
-I accessed:
-
-`https://medirozahospital.com`
-
-## 2. Website Reconnaissance
-
-I reviewed the publicly accessible areas of the website and the available navigation.
-
-The walkthrough showed:
+The walkthrough showed the following navigation and pages:
 
 - Home
 - About
@@ -35,70 +19,48 @@ The walkthrough showed:
 - Patient Portal
 - Staff Login
 
-## 3. Staff Login
+### Staff Login
 
-I opened the **Staff Login** page.
-
-The page contained:
+I opened the **Staff Login** page and observed:
 
 - Staff ID
 - Password
 - Sign in
 
-It also displayed:
+The page displayed:
 
 **Internal staff access only.**
 
-This provided an authentication point to examine as part of the assessment.
+I treated this as an authentication point to examine during the assessment.
 
-## 4. Public Pages Reviewed
+### Other Pages
 
-### Doctors
+I also reviewed the Doctors, Contact, Home, and About pages to understand what information was publicly exposed before moving further into the assessment.
 
-I opened the Doctors page and reviewed the information presented about the hospital's doctors.
+### What the Brief Required
 
-### Contact
+After reconnaissance, I worked through the specific M1 areas:
 
-I opened the Contact page and reviewed the displayed address, phone number, email, and opening hours.
+- Identify exposed entry points.
+- Analyse authentication behaviour.
+- Examine how the application handles user input.
+- Gain access to the restricted area.
+- Retrieve the 3 confidential patient PDF lab reports.
 
-### Home
+## Evidence
 
-I returned to the homepage and reviewed the main content, including **Book an appointment**, **Meet our doctors**, and **Our Departments**.
+I organised the evidence in this order:
 
-The page also displayed:
-
-**“Compassionate care, advanced medicine.”**
-
-### About
-
-I opened the About page and reviewed information covering the hospital, its values, and accreditation.
-
-## 5. Authentication and Input Testing
-
-I then documented the behaviour observed while testing the identified authentication mechanism and application input.
-
-| Test Area | Result |
-|---|---|
-| Authentication behaviour | To be recorded from evidence |
-| User input behaviour | To be recorded from evidence |
-| Application response | To be recorded from evidence |
-| Weakness identified | To be recorded from evidence |
-
-## 6. Restricted Area and Retrieval
-
-Once the weakness is confirmed, I will document the exact path used to reach the restricted area and retrieve the three patient PDF reports.
-
-| Step | Evidence |
-|---|---|
-| Entry point identified | `04-entry-point.png` |
-| Authentication behaviour | `05-authentication-testing.png` |
-| Input handling | `06-input-testing.png` |
-| Restricted access | `07-restricted-area.png` |
-| Patient PDF 1 | `08-patient-report-1.png` |
-| Patient PDF 2 | `09-patient-report-2.png` |
-| Patient PDF 3 | `10-patient-report-3.png` |
+1. Reconnaissance
+2. Exposed entry point
+3. Authentication behaviour
+4. Input handling
+5. Restricted-area access
+6. Patient PDF 1
+7. Patient PDF 2
+8. Patient PDF 3
 
 ## Deliverable
 
 - Proof of access.
-- The 3 retrieved PDF lab reports.
+- 3 retrieved PDF lab reports.
