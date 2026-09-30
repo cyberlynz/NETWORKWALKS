@@ -307,14 +307,6 @@ I also used the exposed database to locate the shareholder information required 
 | 9 | Michael Roberts | 6.00 | 60,000 | Ordinary |
 | 10 | Dr. Vikram Chetty | 4.00 | 40,000 | Preferential |
 
-## Evidence
-
-**06 — Exposed Database Backup**
-
-The screenshot shows the exposed `/old/` directory and the `mediroza_db_backup_2019.sql` file.
-
-Additional evidence for the extracted staff and shareholder information will be added as it is captured.
-
 # 📝 M4 — Pentest Report
 
 **Milestone 4**
