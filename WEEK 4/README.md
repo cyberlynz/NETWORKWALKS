@@ -294,18 +294,18 @@ I extracted the employee salary information from the exposed database backup.
 
 I also used the exposed database to locate the shareholder information required by the assessment.
 
-| ID | Shareholder | Type | Job title | Department | Share % | Shares held | Share class |
-|---:|---|---|---|---|---:|---:|---|
-| 1 | Dr. Rajesh Naidoo | Staff | Chief Pathologist | Diagnostics Lab | 18.00 | 180,000 | Ordinary |
-| 2 | Cedar Health Holdings (Pty) Ltd | Company | n/a | n/a | 15.00 | 150,000 | Ordinary |
-| 3 | Dr. Johan van der Merwe | Staff | Medical Director | Management | 12.00 | 120,000 | Ordinary |
-| 4 | Reddy Family Trust | Trust | n/a | n/a | 11.00 | 110,000 | Ordinary |
-| 5 | Thabo Molefe | Staff | Network Engineer | IT | 10.00 | 100,000 | Ordinary |
-| 6 | Sarah Botha | Staff | Chief Financial Officer | Finance | 9.00 | 90,000 | Ordinary |
-| 7 | Dr. Ahmed Kara | Staff | Consultant Physician | Internal Medicine | 8.00 | 80,000 | Preferential |
-| 8 | Naledi Zulu | Staff | Pharmacy Assistant | Pharmacy | 7.00 | 70,000 | Ordinary |
-| 9 | Michael Roberts | Staff | HR Director | Human Resources | 6.00 | 60,000 | Ordinary |
-| 10 | Dr. Vikram Chetty | Staff | Anaesthetist | Theatre | 4.00 | 40,000 | Preferential |
+| ID | Shareholder Name | Share % | Shares Held | Share Class |
+|---:|---|---:|---:|---|
+| 1 | Dr. Rajesh Naidoo | 18.00 | 180,000 | Ordinary |
+| 2 | Cedar Health Holdings (Pty) Ltd | 15.00 | 150,000 | Ordinary |
+| 3 | Dr. Johan van der Merwe | 12.00 | 120,000 | Ordinary |
+| 4 | Reddy Family Trust | 11.00 | 110,000 | Ordinary |
+| 5 | Thabo Molefe | 10.00 | 100,000 | Ordinary |
+| 6 | Sarah Botha | 9.00 | 90,000 | Ordinary |
+| 7 | Dr. Ahmed Kara | 8.00 | 80,000 | Preferential |
+| 8 | Naledi Zulu | 7.00 | 70,000 | Ordinary |
+| 9 | Michael Roberts | 6.00 | 60,000 | Ordinary |
+| 10 | Dr. Vikram Chetty | 4.00 | 40,000 | Preferential |
 
 ## Evidence
 
