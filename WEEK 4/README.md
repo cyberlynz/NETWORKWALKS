@@ -286,7 +286,7 @@ The exposed database also contained the shareholder information required by the 
 
 ---
 
-# 📝 M4 — Pentest Report
+# [📝 M4 — Pentest Report](./Mediroza_Pentest_Report.pdf)
 
 ## Scope and Methodology
 
@@ -423,28 +423,6 @@ The assessment showed that weaknesses in web application access controls, protec
 Addressing the identified vulnerabilities and implementing the recommended remediation measures will help strengthen the security of the web infrastructure, protect sensitive patient and business information, and reduce the likelihood of similar security issues occurring in the future.
 
 ---
-
-## 📂 Evidence
-
-| Evidence | File |
-|---|---|
-| Nikto reconnaissance | [01-nikto-reconnaissance.png](./01-nikto-reconnaissance.png) |
-| Staff login, authentication and SQL injection testing | [02-staff-login-authentication-sqli-testing.png](./02-staff-login-authentication-sqli-testing.png) |
-| Patient Portal SQL injection and access | [03-patient-portal-sqli-access.png](./03-patient-portal-sqli-access.png) |
-| Patient PDF hash extraction | [04-patient-pdf-hash-extraction.png](./04-patient-pdf-hash-extraction.png) |
-| Patient PDF password cracking | [05-patient-pdf-password-cracking.png](./05-patient-pdf-password-cracking.png) |
-| Exposed database backup | [06-exposed-database-backup.png](./06-exposed-database-backup.png) |
-
----
-
-## ✅ Final Assessment Status
-
-| Milestone | Status |
-|---|---|
-| M1 — Initial Access | ✅ Completed |
-| M2 — Data Extraction | ✅ Completed |
-| M3 — Attack (cracking) | ✅ Completed |
-| M4 — Pentest Report | ✅ Completed |
 
 ---
 
