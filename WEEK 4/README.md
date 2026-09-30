@@ -233,62 +233,49 @@ The passwords for all three encrypted patient PDFs were recovered, completing th
 
 Find the **critical data exposure on the client server**.
 
-This stage builds directly on M1 and M2. I need to go back over what I have already recovered and look closely for the lead to the further exposure.
-
-## Hints
-
-The brief tells me to:
-
-- Conduct a thorough analysis of everything retrieved so far.
-- Look beyond the obvious content.
-- Examine all file properties carefully.
-- Follow the finding that points to a further critical exposure on the server.
-- Use AI tools where useful for data analysis and reporting.
-
-## Tasks
-
-- [ ] Find the salaries of all hospital employees.
-- [ ] Find the shareholder details of the hospital.
-
 ## Going Back Over What I've Got
 
-I will examine the files recovered in M2 and check their properties and metadata for the lead described in the brief.
+After completing the reconnaissance and initial access work, I went back to the directories identified earlier by Nikto and investigated them further.
 
-The important point here is to look beyond the visible document contents and identify the information that can take me to the next exposure.
+The **`/old/`** directory stood out because directory indexing exposed a database backup file:
+
+`mediroza_db_backup_2019.sql`
+
+The exposed backup became the lead for the M3 investigation because it contained critical information relating to **hospital staff and shareholders**.
+
+![Exposed database backup in /old/](./06-old-directory-database-backup.png)
 
 ## What It Turned Out To Be
 
-**Exposure:**  
-____________________________________________
+**Exposed resource:** `/old/mediroza_db_backup_2019.sql`
 
-**How I found it:**  
-____________________________________________
+**Finding:** A database backup was directly accessible through the web directory.
 
-**Why it matters:**  
-____________________________________________
+**Impact:** The exposed backup provided access to sensitive hospital information required for the M3 tasks.
 
 ## What I Found
 
-| | |
-|---|---|
-| Staff salaries | |
-| Shareholder details | |
+### Staff Salaries
 
-I will summarise the information rather than include an unnecessary raw dump.
+I used the exposed database backup to locate the salary information for hospital employees.
+
+### Shareholder Details
+
+I also used the backup to locate the shareholder information required by the assessment.
+
+The sensitive information is documented separately from the raw database content.
 
 ## Evidence
 
-Screenshots and command output will show:
+**06 — Exposed Database Backup**
 
-- The file property or other clue.
-- How that clue led to the exposure.
-- The staff salary information.
-- The shareholder information.
+The screenshot shows the `/old/` directory listing and the exposed `mediroza_db_backup_2019.sql` database backup.
 
 ## Deliverable
 
-- [ ] Full evidence of the exposure
-- [ ] A readable summary of what was uncovered
+- [ ] Full documented evidence of the exposure
+- [ ] Readable summary of the staff salary information
+- [ ] Readable summary of the shareholder details
 
 ---
 
