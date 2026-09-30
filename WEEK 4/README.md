@@ -114,9 +114,15 @@ I made multiple login attempts and received:
 
 I then tested the Staff ID input for **SQL injection**, but the attempts did not produce a successful authentication bypass or any useful result.
 
+### Password Cracking
+
+After extracting the crackable hashes, I used the **NetworkWalks Password Cracker** to recover the PDF passwords.
+
+I tested the hashes against **multiple wordlists**. The attempts used the built-in password list and the **JTR_default_password.txt** wordlist, and successful matches were returned for the protected PDF files.
+
 ### Result
 
-The staff login did not provide access, so I moved on to the next exposed entry point identified during reconnaissance.
+The hashes were successfully used in the password-cracking stage to recover the passwords needed to open the encrypted patient reports.
 
 ### Evidence
 
