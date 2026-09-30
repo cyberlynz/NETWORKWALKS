@@ -235,13 +235,13 @@ Find the **critical data exposure on the client server**.
 
 ## Going Back Over What I've Got
 
-After completing the reconnaissance and initial access work, I went back to the directories identified earlier by Nikto and investigated them further.
+After reviewing the reconnaissance results from Nikto, I went back to the exposed directories identified earlier.
 
-The **`/old/`** directory stood out because directory indexing exposed a database backup file:
+The **`/old/`** directory contained an exposed database backup:
 
 `mediroza_db_backup_2019.sql`
 
-The exposed backup became the lead for the M3 investigation because it contained critical information relating to **hospital staff and shareholders**.
+This became the lead for M3 because the database contained information relating to hospital staff and shareholders.
 
 ![Exposed database backup in /old/](./06-old-directory-database-backup.png)
 
@@ -249,35 +249,61 @@ The exposed backup became the lead for the M3 investigation because it contained
 
 **Exposed resource:** `/old/mediroza_db_backup_2019.sql`
 
-**Finding:** A database backup was directly accessible through the web directory.
-
-**Impact:** The exposed backup provided access to sensitive hospital information required for the M3 tasks.
+The database backup was directly accessible through the web directory and contained the information required for the M3 tasks.
 
 ## What I Found
 
-### Staff Salaries
+### Monthly Salaries with Departments (ZAR, Highest First)
 
-I used the exposed database backup to locate the salary information for hospital employees.
+I extracted the employee salary information from the exposed database backup.
+
+| Rank | Employee | Job title | Department | Salary (ZAR) |
+|---|---|---|---|---:|
+| 1 | Dr. Johan van der Merwe | Medical Director | Management | 160,000 |
+| 2 | Sarah Botha | Chief Financial Officer | Finance | 152,000 |
+| 3 | Dr. Rajesh Naidoo | Chief Pathologist | Diagnostics Lab | 138,000 |
+| 4 | Dr. Vikram Chetty | Anaesthetist | Theatre | 135,000 |
+| 5 | Dr. Anita Naicker | Consultant Cardiologist | Cardiology | 132,000 |
+| 6 | Dr. Suresh Moodley | Consultant Radiologist | Radiology | 130,000 |
+| 7 | Dr. Ahmed Kara | Consultant Physician | Internal Medicine | 128,000 |
+| 8 | Dr. Fatima Patel | Pediatrician | Pediatrics | 118,000 |
+| 9 | Michael Roberts | HR Director | Human Resources | 96,000 |
+| 10 | Dr. Yusuf Cassim | Senior Registrar | Emergency & Trauma | 74,000 |
+| 11 | Kagiso Sithole | Pharmacist | Pharmacy | 61,000 |
+| 12 | Jameel Malik | IT Systems Administrator | IT | 58,000 |
+| 13 | David Smith | Facilities Manager | Operations | 52,000 |
+| 14 | Nisha Singh | Physiotherapist | Rehabilitation | 48,000 |
+| 15 | Thabo Molefe | Network Engineer | IT | 46,000 |
+| 16 | Themba Nkosi | Radiographer | Radiology | 44,000 |
+| 17 | Palesa Radebe | Radiographer | Radiology | 43,000 |
+| 18 | Zanele Mahlangu | Nursing Sister | Theatre | 42,000 |
+| 19 | Deepak Pillay | Lab Technologist | Diagnostics Lab | 41,000 |
+| 20 | Peter van Wyk | Procurement Officer | Supply Chain | 38,000 |
+| 21 | Bongani Ndlovu | Registered Nurse | Cardiology | 35,000 |
+| 21 | Kavitha Govender | Lab Technician | Diagnostics Lab | 35,000 |
+| 23 | Nomvula Khumalo | Registered Nurse | Emergency & Trauma | 34,000 |
+| 24 | Lerato Mokoena | Registered Nurse | Pediatrics | 33,000 |
+| 25 | Susan Pretorius | HR Officer | Human Resources | 32,000 |
+| 26 | Karen O'Connor | Billing Administrator | Finance | 29,000 |
+| 27 | James Wilson | Security Supervisor | Operations | 27,000 |
+| 28 | Naledi Zulu | Pharmacy Assistant | Pharmacy | 26,000 |
+| 29 | Andile Mbeki | Ward Clerk | Administration | 21,000 |
+| 30 | Linda Fourie | Receptionist | Front Office | 19,000 |
 
 ### Shareholder Details
 
-I also used the backup to locate the shareholder information required by the assessment.
+I also used the exposed database to locate the shareholder details required by the assessment.
 
-The sensitive information is documented separately from the raw database content.
+**Shareholder information:**  
+____________________________________________
 
 ## Evidence
 
 **06 — Exposed Database Backup**
 
-The screenshot shows the `/old/` directory listing and the exposed `mediroza_db_backup_2019.sql` database backup.
+The screenshot shows the exposed `/old/` directory and the `mediroza_db_backup_2019.sql` file.
 
-## Deliverable
-
-- [ ] Full documented evidence of the exposure
-- [ ] Readable summary of the staff salary information
-- [ ] Readable summary of the shareholder details
-
----
+Additional evidence for the extracted staff and shareholder information will be added as it is captured.
 
 # 📝 M4 — Pentest Report
 
