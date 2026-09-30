@@ -199,7 +199,7 @@ The three patient PDFs were successfully processed and crackable hashes were ext
 
 **04 — Patient PDF Hash Extraction**
 
-<img src="https://raw.githubusercontent.com/cyberlynz/NETWORKWALKS/main/WEEK%204/04-patient-pdf-hash-extraction.jpg" alt="Patient PDF hash extraction" width="100%">
+<img src="https://raw.githubusercontent.com/cyberlynz/NETWORKWALKS/main/WEEK%204/04-patient-pdf-hash-extraction.png" alt="Patient PDF hash extraction" width="100%">
 
 The screenshot shows the extracted crackable hashes for all three patient PDFs.
 
