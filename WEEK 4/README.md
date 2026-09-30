@@ -183,23 +183,15 @@ I first tried **John the Ripper**, but it did not produce a result.
 
 I then used the **NetworkWalks Hash Calculator** to extract a crackable hash from each encrypted PDF.
 
-### Patient Report 1
+### Patient PDF Hash Extraction
 
-I uploaded `patient_report_1.pdf` to the Hash Calculator and obtained a crackable PDF hash.
+I processed:
 
-### Patient Report 2
+- `patient_report_1.pdf`
+- `patient_report_2.pdf`
+- `patient_report_3.pdf`
 
-I repeated the same process with `patient_report_2.pdf` and obtained its crackable PDF hash.
-
-### Patient Report 3
-
-I repeated the process with `patient_report_3.pdf` and obtained its crackable PDF hash.
-
-The tool identified each file as encrypted and generated a hash in a **pdf2john / hashcat-compatible format**.
-
-### Result
-
-The three patient PDFs were successfully processed and crackable hashes were extracted after the initial John the Ripper attempt did not work.
+The Hash Calculator identified the files as encrypted and generated crackable hashes in **pdf2john / hashcat-compatible format**.
 
 ### Evidence
 
@@ -207,10 +199,31 @@ The three patient PDFs were successfully processed and crackable hashes were ext
 
 <img src="https://raw.githubusercontent.com/cyberlynz/NETWORKWALKS/main/WEEK%204/04-patient-pdf-hash-extraction.png" alt="Patient PDF hash extraction" width="100%">
 
-The screenshot shows the extracted crackable hashes for all three patient PDFs.
+### Password Cracking
 
+After extracting the hashes, I used the **NetworkWalks Password Cracker** to recover the PDF passwords.
 
----
+I tested the hashes against **multiple wordlists**. The cracking interface showed successful matches for the protected files.
+
+The passwords recovered in the demonstrated attempts were:
+
+| Patient PDF | Recovered Password |
+|---|---|
+| `patient_report_1.pdf` | `123456` |
+| `patient_report_2.pdf` | `password` |
+| `patient_report_3.pdf` | `!@#$%^&` |
+
+### Evidence
+
+**05 — Patient PDF Password Cracking**
+
+<img src="https://raw.githubusercontent.com/cyberlynz/NETWORKWALKS/main/WEEK%204/05-patient-pdf-password-cracking.png" alt="Patient PDF password cracking" width="100%">
+
+The screenshot shows the successful password matches and the wordlists used during the cracking attempts.
+
+### Result
+
+The passwords for all three encrypted patient PDFs were recovered, completing the file recovery stage of M2.
 
 # 🕵️ M3 — Critical Data Exposure
 
